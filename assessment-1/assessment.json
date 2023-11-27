@@ -1,0 +1,33 @@
+{
+  "id": 2,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which one of the following answers describes a test condition?",
+      "attachment": "",
+      "options": [
+        {
+          "id": "a",
+          "statement": "A distinguishing characteristic of a component or system",
+          "correct": 0
+        },
+        {
+          "id": "b",
+          "statement": "A testable aspect of a component or system identified as a basis for testing",
+          "correct": 0
+        },
+        {
+          "id": "c",
+          "statement": "The degree to which a software product provides functions which meet stated and implied needs when the software is used under specified conditions",
+          "correct": 1
+        },
+        {
+          "id": "d",
+          "statement": "Test cases designed to execute combinations of conditions and actions resulting from them",
+          "correct": 0
+        }
+      ],
+      "explanation": "a) Is not correct. R4 is dependent on R2, so R2 should be tested before R4\nb) Is not correct. R4 is dependent on R2, R5 and R6, so R5 and R6 should be tested before R4\nc) Is correct. The tests are specified in a sequence that takes the dependencies into account\nd) Is not correct. R2 is dependent on R3, so R3 should be tested before R2"
+    }
+  ]
+}
