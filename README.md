@@ -12,6 +12,7 @@ ISTQB-CTFL Certified Tester Foundation Level
   - use radio?
 - Move all data to a data file
 - Add 'Learning objectives', and 'K-level'
+- Add areas of improvement
 
 ## Ready
 
