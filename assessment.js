@@ -1,6 +1,7 @@
 displayPoints()
 displayScore()
 displayStatus()
+refillForm()
 
 // form
 const form = document.forms[0];
@@ -27,7 +28,7 @@ window.addEventListener('click', function(event) {
         form.classList.remove('highlight-answers');
         resetTimer();
         setPoints(assessmentId,'0');
-            displayPoints()
+            displayPoints();
         setScore(assessmentId,'0');
             displayScore();
         timerInterval = setInterval(updateTimer, 1000);
@@ -39,16 +40,22 @@ window.addEventListener('click', function(event) {
     if (event.target.matches('[data-action="finish"]')) {
         form.classList.add('highlight-answers');
         const formData = new FormData(form);
+        let answers = [];
         // variables
         let actualPoints = 0;
         let actualScore = 0;
         let message = '';
         // iterate FormData values
         for (const [name, value] of formData) {
-            console.log(name, value)
+            // only checked
+            console.log(name, value);
+            answers.push([name, value]);
             if (value === '1') { actualPoints++ }
             else {}
         }
+        // save answers
+        answers = JSON.stringify(answers);
+        localStorage.setItem(form.id, answers);
         // compute results
         actualScore = (actualPoints / maxPoints) * 100;
         // update interface
@@ -57,7 +64,7 @@ window.addEventListener('click', function(event) {
             displayPoints();
         setScore(assessmentId, actualScore);
             displayScore();
-        setStatus(assessmentId, (actualScore >= 65) ? 'pass' : 'fail')
+        setStatus(assessmentId, (actualScore >= 65) ? 'pass' : 'fail');
             displayStatus();
     }
 

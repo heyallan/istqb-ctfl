@@ -24,7 +24,7 @@ function displayScore() {
 }
 
 function getStatus(id) {
-    return localStorage.getItem(`${id}-status`) || 'Pending';
+    return localStorage.getItem(`${id}-status`) || 'Ready';
 }
 
 function setStatus(id, value) {
@@ -47,10 +47,22 @@ function displayStatus() {
                 message = '✅ Pass';
                 break;
             default:
-                message = 'Pending';
+                message = 'Ready';
         }
         item.innerText = message;
     });
+}
+
+
+function refillForm() {
+    const formId = document.forms[0]?.id;
+    if (!formId) { console.log('No form on this page'); return; }
+    const answers = JSON.parse(localStorage.getItem(formId));
+    console.log('answers', answers);
+    if (!answers) { console.log('No answers associated with this form'); return; }
+    for (const answer of answers) {
+        document.querySelector(`[name="${answer[0]}"]`).checked = true;
+    }
 }
 
 
@@ -87,6 +99,7 @@ function reset(id) {
         displayPoints();
     setScore(id, 0);
         displayScore();
-    setStatus(id, 'pending');
+    setStatus(id, 'ready');
         displayStatus();
+    localStorage.removeItem(id);
 }

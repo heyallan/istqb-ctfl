@@ -50,6 +50,6 @@ input[type="checkbox"] {
 }
 
 /* wrong answer */
-.highlight-answers label:has([value="0"]:checked) {
+.highlight-answers label:has(:not([value="1"]):checked) {
     background-color: pink;
 }
