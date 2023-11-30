@@ -10,6 +10,8 @@ ISTQB-CTFL Certified Tester Foundation Level
 - prevent selecting all options
   - it messes with points
   - use radio?
+- Move all data to a data file
+- Add 'Learning objectives', and 'K-level'
 
 ## Ready
 
