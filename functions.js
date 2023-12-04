@@ -1,24 +1,30 @@
-function setPoints(target, value) {
-    localStorage.setItem(`${target}-points`, value);
+const messages = {
+    ready: 'Ready',
+    inProgress: '📝 In progress',
+    pass: '✅ Pass',
+    fail: '❌ Fail'
+}
+function setPoints(id, value) {
+    localStorage.setItem(`${id}-points`, value);
 }
 
 function displayPoints() {
     document.querySelectorAll('[data-action="get-points"]').forEach(function(item) {
-        const source = item.getAttribute('data-from');
-        const points = localStorage.getItem(`${source}-points`);
+        const id = item.closest('form')?.id || item.getAttribute('data-from');
+        const points = localStorage.getItem(`${id}-points`);
         item.innerText = points || 0;
     });
 }
 
 
-function setScore(target, value) {
-    localStorage.setItem(`${target}-score`, value);
+function setScore(id, value) {
+    localStorage.setItem(`${id}-score`, value);
 }
 
 function displayScore() {
     document.querySelectorAll('[data-action="get-score"]').forEach(function(item) {
-        const source = item.getAttribute('data-from');
-        const points = localStorage.getItem(`${source}-score`);
+        const id = item.closest('form')?.id || item.getAttribute('data-from');
+        const points = localStorage.getItem(`${id}-score`);
         item.innerText = points || 0;
     });
 }
@@ -33,21 +39,21 @@ function setStatus(id, value) {
 
 function displayStatus() {
     document.querySelectorAll('[data-action="get-status"]').forEach(function(item) {
-        const source = item.getAttribute('data-from');
+        const id = item.closest('form')?.id || item.getAttribute('data-from');
+        const status = getStatus(id);
         let message = '';
-        const status = getStatus(source);
         switch (status) {
             case 'in-progress':
-                message = '📝 In progress';
+                message = messages.inProgress;
                 break;
             case 'fail':
-                message = '❌ Fail';
+                message = messages.fail;
                 break;
             case 'pass':
-                message = '✅ Pass';
+                message = messages.pass;
                 break;
             default:
-                message = 'Ready';
+                message = messages.ready;
         }
         item.innerText = message;
     });
