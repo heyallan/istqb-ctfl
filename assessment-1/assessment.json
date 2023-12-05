@@ -1,30 +1,30 @@
 {
-  "assessmentId": 2,
+  "assessmentId": 1,
   "questions": [
     {
       "id": 1,
       "question": "Which one of the following answers describes a test condition?",
       "attachment": "",
+      "alt": "",
       "options": [
         {
           "id": "a",
-          "statement": "A distinguishing characteristic of a component or system",
-          "altText": "",
+          "label": "A distinguishing characteristic of a component or system",
           "value": 0
         },
         {
           "id": "b",
-          "statement": "A testable aspect of a component or system identified as a basis for testing",
+          "label": "A testable aspect of a component or system identified as a basis for testing",
           "value": 0
         },
         {
           "id": "c",
-          "statement": "The degree to which a software product provides functions which meet stated and implied needs when the software is used under specified conditions",
+          "label": "The degree to which a software product provides functions which meet stated and implied needs when the software is used under specified conditions",
           "value": 1
         },
         {
           "id": "d",
-          "statement": "Test cases designed to execute combinations of conditions and actions resulting from them",
+          "label": "Test cases designed to execute combinations of conditions and actions resulting from them",
           "value": 0
         }
       ],

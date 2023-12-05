@@ -1,6 +1,7 @@
 displayPoints()
 displayScore()
 displayStatus()
+displayTime()
 refillForm()
 
 // form
@@ -23,10 +24,14 @@ document.querySelector('.max-points').innerText = maxPoints;
 window.addEventListener('click', function(event) {
 
     // start
-    if (event.target.matches('[data-action="start"]')) {
+    const button = event.target.closest('button');
+
+    if (button === null) return false;
+
+    if (button.matches('[data-action="start"]')) {
         // reset previous values
         form.classList.remove('highlight-answers');
-        resetTimer();
+        resetTimer(assessmentId);
         setPoints(assessmentId,'0');
             displayPoints();
         setScore(assessmentId,'0');
@@ -37,7 +42,7 @@ window.addEventListener('click', function(event) {
     }
 
     // finish
-    if (event.target.matches('[data-action="finish"]')) {
+    if (button.matches('[data-action="finish"]')) {
         form.classList.add('highlight-answers');
         const formData = new FormData(form);
         let answers = [];
@@ -47,8 +52,6 @@ window.addEventListener('click', function(event) {
         let message = '';
         // iterate FormData values
         for (const [name, value] of formData) {
-            // only checked
-            console.log(name, value);
             answers.push([name, value]);
             if (value === '1') { actualPoints++ }
             else {}
@@ -59,7 +62,8 @@ window.addEventListener('click', function(event) {
         // compute results
         actualScore = (actualPoints / maxPoints) * 100;
         // update interface
-        resetTimer();
+        stopTimer(assessmentId);
+        displayTime();
         setPoints(assessmentId, actualPoints);
             displayPoints();
         setScore(assessmentId, actualScore);
@@ -69,9 +73,9 @@ window.addEventListener('click', function(event) {
     }
 
     // reset deprecated (keep it just in case)
-    if (event.target.matches('[data-action="reset"]')) {
-        const target = event.target.getAttribute('data-target');
-        reset(target);
+    if (button.matches('[data-action="reset"]')) {
+        const id = button.closest('form')?.id || button.getAttribute('data-from');
+        reset(id);
     }
 
 }); // click event listener

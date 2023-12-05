@@ -62,47 +62,66 @@ function displayStatus() {
 
 function refillForm() {
     const formId = document.forms[0]?.id;
-    if (!formId) { console.log('No form on this page'); return; }
-    const answers = JSON.parse(localStorage.getItem(formId));
-    console.log('answers', answers);
-    if (!answers) { console.log('No answers associated with this form'); return; }
-    for (const answer of answers) {
-        document.querySelector(`[name="${answer[0]}"]`).checked = true;
+    if (!formId) { return; }
+    const options = JSON.parse(localStorage.getItem(formId));
+    if (!options) { return; }
+    for (let optionName of options) {
+        optionName = optionName[0];
+        document.querySelector(`[name="${optionName}"]`).checked = true;
     }
 }
 
 
-const timer = document.querySelector('.timer');
+const timer = document.querySelector('[data-action="get-time"]');
 let timerInterval;
 let seconds = 0;
 let minutes = 0;
+function formatNumbers(minutes, seconds) {
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
+    const formattedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+    return `${formattedMinutes}:${formattedSeconds}`
+}
 function updateTimer() {
     seconds++;
     if (seconds === 60) {
         seconds = 0;
         minutes++;
     }
-    let formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
-    let formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
-    timer.textContent = `${formattedMinutes}:${formattedSeconds}`;
+    timer.textContent = formatNumbers(minutes, seconds);
     if (minutes === 60) {
         clearInterval(timerInterval);
         alert(messageTimesUp);
     }
 }
-function resetTimer() {
+function stopTimer(id) {
     // stop interval
     clearInterval(timerInterval);
-    // clear accumulator
+    // save time
+    window.localStorage.setItem(`${id}-time`, formatNumbers(minutes, seconds))
+}
+function resetTimer(id) {
+    // flush interval
+    clearInterval(timerInterval);
+    // flush accumulator
     seconds = 0;
     minutes = 0;
-    // reset interface
-    timer.innerText = '00:00';
+    // flush memory
+    window.localStorage.setItem(`${id}-time`, formatNumbers(minutes, seconds))
+    // flush interface
+    displayTime();
+}
+function displayTime() {
+    document.querySelectorAll('[data-action="get-time"]').forEach(function(item) {
+        const id = item.closest('form')?.id || item.getAttribute('data-from');
+        item.innerText = window.localStorage.getItem(`${id}-time`) || '00:00';
+    })
 }
 
 function reset(id) {
     setPoints(id, 0);
         displayPoints();
+    resetTimer(id);
+        displayTime();
     setScore(id, 0);
         displayScore();
     setStatus(id, 'ready');
