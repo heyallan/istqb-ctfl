@@ -44,6 +44,7 @@
           <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-score">0</span>/<span class="max-score">0</span></div>
         </div>
       </div>
+      <!-- actions-->
       <div class="margin-bottom-2">
         <div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
         <button type="button" data-action="start">
@@ -61,11 +62,19 @@
             <polygon points="22 2 15 22 11 13 2 9 22 2" />
           </svg>
           Finish</button>
+        <button type="button" data-action="reset">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <polyline points="3 6 5 6 21 6" />
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+            <line x1="10" x2="10" y1="11" y2="17" />
+            <line x1="14" x2="14" y1="11" y2="17" />
+          </svg>
+          Reset</button>
         <a href=".." class="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3"/></svg>
           Exit
         </a>
-      </div>
+      </div><!-- /actions-->
       <fieldset>
         <legend>Question #1</legend>
         <div class="question">Which one of the following answers describes a test condition?</div>
@@ -681,28 +690,14 @@
           c) Is correct. Static analysis tools are especially suitable for developers
           d) Is not correct. Performance testing tools are not better suited for developers than for testers</div>
       </fieldset>
+      <!-- actions -->
       <div class="margin-bottom-1">
         <div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
-        <button type="button" data-action="start">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <polyline points="14 2 14 8 20 8" />
-            <line x1="16" x2="8" y1="13" y2="13" />
-            <line x1="16" x2="8" y1="17" y2="17" />
-            <polyline points="10 9 9 9 8 9" />
-          </svg>
-          Start</button>
-        <button type="button" data-action="finish">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <line x1="22" x2="11" y1="2" y2="13" />
-            <polygon points="22 2 15 22 11 13 2 9 22 2" />
-          </svg>
-          Finish</button>
         <a href="#" class="button">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="17 11 12 6 7 11" /><polyline points="17 18 12 13 7 18" /></svg>
           Back To Top
         </a>
-      </div>
+      </div><!-- /actions -->
     </form>
   </main>
 
