@@ -72,9 +72,11 @@ window.addEventListener('click', function(event) {
             displayStatus();
     }
 
-    // reset deprecated (keep it just in case)
+    // reset
     if (button.matches('[data-action="reset"]')) {
         const id = button.closest('form')?.id || button.getAttribute('data-from');
+        form.classList.remove('highlight-answers');
+        form.reset();
         reset(id);
     }
 

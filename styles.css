@@ -1,26 +1,25 @@
-/*:root {*/
-/*    font-family: Inter, sans-serif;*/
-/*    font-feature-settings: 'liga' 1, 'calt' 1; !* fix for Chrome *!*/
-/*}*/
-/*@supports (font-variation-settings: normal) {*/
-/*    :root { font-family: InterVariable, sans-serif; }*/
-/*}*/
-
 :root {
     --border-width-default: 1px;
     --font-family-heading: 'IBM Plex Sans', sans-serif;
-    border-top: 8px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, royalblue, hotpink, royalblue, turquoise);
+
 }
-.font-family-heading,
-.button,
-[type="button"] {
-    font-family: var(--font-family-heading);
+
+@media only screen {
+    :root {
+        border-top: 8px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, royalblue, hotpink, royalblue, turquoise);
+    }
 }
 
 body {
     background: rgb(248,249,253);
+}
+
+.font-family-heading,
+.button,
+[type="button"] {
+    font-family: var(--font-family-heading);
 }
 
 .underscore {
@@ -71,20 +70,9 @@ legend {
 }
 
 .stat {
-    /*border: 2px solid var(--border-color-default);*/
-    /*padding: 0.5rem 1rem;*/
-    /*border-radius: var(--border-radius-default);*/
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 25%;
-}
-
-.stat-name {
-
-}
-
-.stat-value {
-
 }
 
 /* display explanation */
@@ -92,15 +80,23 @@ legend {
     display: block;
 }
 
-/* correct answer */
+/* targeting "right answer not checked" is easier than targeting incorrect answer checked */
+/* fieldset */
+.highlight-answers fieldset:has([value="1"]:not(:checked)) {
+    border: 2px solid var(--color-red);
+}
+
+/* right answer */
 .highlight-answers label:has([value="1"]) {
     background-color: lightgreen;
 }
 
-/* wrong answer */
+/* wrong answer (if checked only) */
 .highlight-answers label:has(:not([value="1"]):checked) {
     background-color: pink;
 }
+
+/* utilities */
 
 .border-color-primary {
     border-color: var(--color-primary);
@@ -114,6 +110,7 @@ legend {
     border-radius: 200px;
 }
 
+/* decoration */
 .bg-bubble {
     position: absolute;
     right: 0;
@@ -125,4 +122,53 @@ legend {
     opacity: 0.2;
     background-size: contain;
     z-index: -1;
+}
+
+.btn-link {
+    /*background: none;*/
+    /*color: inherit;*/
+    padding: 0 0.5em;
+}
+
+.learning-objective,
+.note {
+    color: mediumvioletred;
+}
+
+.anchor-link {
+    color: inherit;
+}
+
+.btn-text {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+}
+
+.btn-small {
+    padding: 0.25em 0.8em;
+    font-size: smaller;
+}
+
+dt {
+    text-transform: capitalize;
+}
+
+dt + dd {
+    margin-bottom: 2rem;
+    margin-inline-start: 2rem;
+}
+
+@media only print {
+    .container {
+        max-width: 600px;
+    }
+
+    .no-print {
+        display: none;
+    }
+    .printable > .flex > [class*="width-"] {
+        --basis: 100%;
+    }
 }
