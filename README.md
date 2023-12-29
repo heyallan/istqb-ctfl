@@ -27,6 +27,8 @@
 
 ## Ready
 
+- add syllabus
+- add glossary
 - Remember score
 - Reset score
 - Remember selections
