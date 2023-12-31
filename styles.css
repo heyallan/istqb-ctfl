@@ -1,7 +1,7 @@
 :root {
     --border-width-default: 1px;
     --font-family-heading: 'IBM Plex Sans', sans-serif;
-
+    --color-secondary: mediumvioletred;
 }
 
 @media only screen {
@@ -56,12 +56,15 @@ legend {
 
 .explanation {
     display: none;
-    white-space: pre-line;
     margin-top: 1rem;
     padding: 1rem 2rem;
     border: 2px solid var(--color-primary);
     background-color: var(--color-primary-light);
     border-radius: var(--border-radius-default);
+}
+
+.answer {
+    white-space: pre-line;
 }
 
 .stats {
@@ -130,9 +133,11 @@ legend {
     padding: 0 0.5em;
 }
 
-.learning-objective,
-.note {
-    color: mediumvioletred;
+.question-meta {
+    display: none;
+}
+.highlight-answers .question-meta {
+    display: block;
 }
 
 .anchor-link {

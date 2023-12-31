@@ -4,6 +4,7 @@
 
 ## Todo
 
+- [ ] add support for questions with 2 answers
 - [ ] update anchor links: use only numerical anchors 
 - [ ] Add tools
   - [ ] notepad
@@ -12,6 +13,8 @@
 - [ ] syllabus
   - [ ] add notebook
   - [ ] add progress checks
+- [ ] improve img alt for SEO
+- [ ] optimize img size (A23 and before)
 - [ ] Prevent selecting all options
   - [ ] It messes with points
   - [ ] Use radio?
