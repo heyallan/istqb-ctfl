@@ -4,10 +4,14 @@
 
 ## Todo
 
+- [ ] update anchor links: use only numerical anchors 
 - [ ] Add tools
   - [ ] notepad
   - [ ] calculator
   - [ ] bookmark
+- [ ] syllabus
+  - [ ] add notebook
+  - [ ] add progress checks
 - [ ] Prevent selecting all options
   - [ ] It messes with points
   - [ ] Use radio?

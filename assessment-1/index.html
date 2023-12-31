@@ -2,92 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ISTQB-CTFL Certified Tester Foundation Level</title>
-  <meta name="description" content="Online Practice Assessment">
-  <link rel="stylesheet" href="https://unpkg.com/@subcomponents/reset@3.1.1/dist/reset.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@subcomponents/layout@1.4.3/dist/layout.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/@subcomponents/grid@3.2.0/dist/grid.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/@subcomponents/properties@3.1.0/dist/properties.min.css">
-  <link rel="stylesheet" href="/istqb-ctfl/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script defer src="/istqb-ctfl/functions.js"></script>
-  <script defer src="/istqb-ctfl/index.js"></script>
-  <script defer src="/istqb-ctfl/assessment.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ISTQB-CTFL Certified Tester Foundation Level</title>
+	<meta name="description" content="Online Practice Assessment">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/reset@3.1.1/dist/reset.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/layout@1.4.3/dist/layout.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/grid@3.2.0/dist/grid.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/properties@3.1.0/dist/properties.min.css">
+	<link rel="stylesheet" href="/istqb-ctfl/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap">
+	<script defer src="/istqb-ctfl/functions.js"></script>
+	<script defer src="/istqb-ctfl/index.js"></script>
+	<script defer src="/istqb-ctfl/assessment.js"></script>
 </head>
 
 <body>
 
-  <main class="container">
-    <h1><span class="underscore">ISTQB-CTFL Certified Tester Foundation Level</span></h1>
+<main class="container">
+	<!--title-->
+	<h1><span class="underscore">ISTQB-CTFL Certified Tester Foundation Level</span></h1>
 	<h2 class="font-weight-400 color-primary">Online Practice Assessment #1</h2>
 
+	<!--exam-->
 	<form id="assessment1">
-	  <div class="stats margin-bottom-2 font-family-heading">
-		<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
-		  <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Status</div>
-		  <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-status">Ready</span></div>
+		<!--stats-->
+		<div class="stats margin-bottom-2 font-family-heading">
+			<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+				<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Status</div>
+				<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-status">Ready</span></div>
+			</div>
+			<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+				<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Time</div>
+				<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span class="timer" data-action="get-time">00:00</span></div>
+			</div>
+			<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+				<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Points</div>
+				<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-points">0</span>/<span class="max-points">0</span></div>
+			</div>
+			<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+				<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Score</div>
+				<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-score">0</span>/<span class="max-score">0</span></div>
+			</div>
 		</div>
-		<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
-		  <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Time</div>
-		  <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span class="timer" data-action="get-time">00:00</span></div>
-		</div>
-		<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
-		  <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Points</div>
-		  <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-points">0</span>/<span class="max-points">0</span></div>
-		</div>
-		<div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
-		  <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Score</div>
-		  <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-score">0</span>/<span class="max-score">0</span></div>
-		</div>
-	  </div>
-	  <!-- actions-->
-	  <div class="margin-bottom-2">
-		<div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
-		<button type="button" data-action="start">
-		  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-			<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-			<polyline points="14 2 14 8 20 8" />
-			<line x1="16" x2="8" y1="13" y2="13" />
-			<line x1="16" x2="8" y1="17" y2="17" />
-			<polyline points="10 9 9 9 8 9" />
-		  </svg>
-		  Start</button>
-		<button type="button" data-action="finish">
-		  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-			<line x1="22" x2="11" y1="2" y2="13" />
-			<polygon points="22 2 15 22 11 13 2 9 22 2" />
-		  </svg>
-		  Submit</button>
-		<button type="button" data-action="reset">
-		  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-			<polyline points="3 6 5 6 21 6" />
-			<path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
-			<line x1="10" x2="10" y1="11" y2="17" />
-			<line x1="14" x2="14" y1="11" y2="17" />
-		  </svg>
-		  Reset</button>
-		<a href=".." class="button">
-		  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3"/></svg>
-		  Exit
-		</a>
-	  </div><!-- /actions-->
-	  <fieldset>
-		<legend>Question #1</legend>
-		<div class="question">Which one of the following answers describes a test condition?</div>
-		<label><input name="1a" type="checkbox" value="0">a) A distinguishing characteristic of a component or system</label>
-		<label><input name="1b" type="checkbox" value="1">b) A testable aspect of a component or system identified as a basis for testing</label>
-		<label><input name="1c" type="checkbox" value="0">c) The degree to which a software product provides functions which meet stated and implied needs when the software is used under specified conditions</label>
-		<label><input name="1d" type="checkbox" value="0">d) Test cases designed to execute combinations of conditions and actions resulting from them</label>
-		<div class="explanation">a) Is not correct. Definition of feature according to glossary
-		  b) Is correct. From glossary
-		  c) Is not correct. Definition of functionality suitability according to glossary
-		  d) Is not correct. Like Definition of Decision table testing according to glossary</div>
-	  </fieldset>
-	  <fieldset>
+
+		<!-- actions-->
+		<div class="margin-bottom-2">
+			<div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
+			<button type="button" data-action="start">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" x2="8" y1="13" y2="13" /><line x1="16" x2="8" y1="17" y2="17" /><polyline points="10 9 9 9 8 9" /></svg>
+		  		Start
+			</button>
+			<button type="button" data-action="finish">
+		  		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="22" x2="11" y1="2" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>
+		  		Submit
+			</button>
+			<button type="button" data-action="reset">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="3 6 5 6 21 6" /><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /><line x1="10" x2="10" y1="11" y2="17" /><line x1="14" x2="14" y1="11" y2="17" /></svg>
+		  		Reset
+			</button>
+			<a href=".." class="button">
+		  		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3"/></svg>
+		  		Exit
+			</a>
+		</div><!-- /actions-->
+
+		<!--questions-->
+		<fieldset>
+			<legend>Question #1</legend>
+			<p class="question">Which one of the following answers describes a test condition?</p>
+			<label><input id="1a" name="1" type="radio" value="0">a) A distinguishing characteristic of a component or system</label>
+			<label><input id="1b" name="1" type="radio" value="1">b) A testable aspect of a component or system identified as a basis for testing</label>
+			<label><input id="1c" name="1" type="radio" value="0">c) The degree to which a software product provides functions which meet stated and implied needs when the software is used under specified conditions</label>
+			<label><input id="1d" name="1" type="radio" value="0">d) Test cases designed to execute combinations of conditions and actions resulting from them</label>
+			<div class="explanation">a) Is not correct. Definition of feature according to glossary
+		  		b) Is correct. From glossary
+		  		c) Is not correct. Definition of functionality suitability according to glossary
+		  		d) Is not correct. Like Definition of Decision table testing according to glossary</div>
+		</fieldset>
+		<fieldset>
+
 		<legend>Question #2</legend>
 		<div class="question">Which of the following statements is a valid objective for testing?</div>
 		<label><input name="2a" type="checkbox" value="0">a) The test should start as late as possible so that development had enough time to create a good product</label>
@@ -699,7 +695,7 @@
 		</a>
 	  </div><!-- /actions -->
 	</form>
-  </main>
+</main>
 
 </body>
 
