@@ -5,7 +5,8 @@
 ## Todo
 
 - [ ] add support for questions with 2 answers
-- [ ] update anchor links: use only numerical anchors 
+- [ ] update anchor links: use only numerical anchors
+- [ ] check for misspellings (*)
 - [ ] Add tools
   - [ ] notepad
   - [ ] calculator

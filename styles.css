@@ -133,6 +133,10 @@ legend {
     padding: 0 0.5em;
 }
 
+.note {
+    color: var(--color-secondary);
+}
+
 .question-meta {
     display: none;
 }
