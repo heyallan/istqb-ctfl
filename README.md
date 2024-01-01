@@ -5,32 +5,23 @@
 ## Todo
 
 - [ ] add support for questions with 2 answers
-- [ ] update anchor links: use only numerical anchors
 - [ ] check for misspellings (*)
 - [ ] Add tools
   - [ ] notepad
   - [ ] calculator
   - [ ] bookmark
-- [ ] syllabus
-  - [ ] add notebook
-  - [ ] add progress checks
-- [ ] improve img alt for SEO
-- [ ] optimize img size (A23 and before)
-- [ ] Prevent selecting all options
-  - [ ] It messes with points
-  - [ ] Use radio?
-- [ ] Update attachments
+  - [ ] progress bar
 - [ ] Move all data to json file
-- [ ] Add metadata 'Learning objectives', and 'K-level'
-- [ ] Add modal (Tutoring)
+- [ ] Link metadata 'Learning objectives' to syllabus
+- [ ] Add tutoring page
   - [ ] ISTQB study group (premium price)
   - [ ] English
   - [ ] Web development
   - [ ] Test automation
   - [ ] Job hunting
-- [ ] How to get results
+- [ ] Results via
   - [ ] Email
-  - [ ] WhatsApp
+  - [ ] WA
 - [ ] Add attachments as PDF
 
 ## Ready
