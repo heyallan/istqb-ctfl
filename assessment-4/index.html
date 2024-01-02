@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISTQB-CTFL Certified Tester Foundation Level</title>
+    <meta name="description" content="Practice Assessment">
+    <link rel="stylesheet" href="https://unpkg.com/@subcomponents/reset@3.1.1/dist/reset.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@subcomponents/layout@1.4.3/dist/layout.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@subcomponents/grid@3.2.0/dist/grid.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/@subcomponents/properties@3.1.0/dist/properties.min.css">
+    <link rel="stylesheet" href="/istqb-ctfl/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap">
+    <script defer src="/istqb-ctfl/functions.js"></script>
+    <script defer src="/istqb-ctfl/index.js"></script>
+    <script defer src="/istqb-ctfl/assessment.js"></script>
+</head>
+
+<body>
+
+<main class="container">
+    <!--title-->
+    <h1><span class="underscore">ISTQB-CTFL Certified Tester Foundation Level</span></h1>
+    <h2 class="font-weight-400 color-primary">Practice Assessment #4</h2>
+
+    <!--exam-->
+    <form id="assessment4">
+        <!--stats-->
+        <div class="stats margin-bottom-2 font-family-heading">
+            <div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+                <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Status</div>
+                <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-status">Ready</span></div>
+            </div>
+            <div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+                <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Time</div>
+                <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span class="timer" data-action="get-time">00:00</span></div>
+            </div>
+            <div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+                <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Points</div>
+                <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-points">0</span>/<span class="max-points">0</span></div>
+            </div>
+            <div class="stat border border-color-primary border-radius-0.2 box-shadow bg-white">
+                <div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Score</div>
+                <div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-score">0</span>/<span class="max-score">0</span></div>
+            </div>
+        </div>
+
+        <!-- actions-->
+        <div class="margin-bottom-2">
+            <div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
+            <button type="button" data-action="start">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" x2="8" y1="13" y2="13" /><line x1="16" x2="8" y1="17" y2="17" /><polyline points="10 9 9 9 8 9" /></svg>
+                Start
+            </button>
+            <button type="button" data-action="finish">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="22" x2="11" y1="2" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>
+                Submit
+            </button>
+            <button type="button" data-action="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="3 6 5 6 21 6" /><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /><line x1="10" x2="10" y1="11" y2="17" /><line x1="14" x2="14" y1="11" y2="17" /></svg>
+                Reset
+            </button>
+            <a href=".." class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3"/></svg>
+                Exit
+            </a>
+        </div><!-- /actions-->
+
+        <!--questions-->
+        <fieldset>
+            <legend>Question #1</legend>
+            <p class="question">Which of the following is a typical test objective?</p>
+            <label><input id="1a" name="1" type="radio" value="0">a) Finding and fixing defects in the test object</label>
+            <label><input id="1b" name="1" type="radio" value="0">b) Maintaining effective communications with developers</label>
+            <label><input id="1c" name="1" type="radio" value="0">c) Validating that legal requirements have been met</label>
+            <label><input id="1d" name="1" type="radio" value="1">d) Building confidence in the quality of the test object</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Finding and fixing defects in the test object is not a typical test objective as although identifying defects is an objective of testing, fixing defects is not a testing activity
+                    b) Is not correct. Maintaining effective communications with developers is not a typical test objective as although it is useful in achieving other objectives of testing, such as providing stakeholders with information that enables them to make informed decisions, it is not a primary reason for performing testing
+                    c) Is not correct. Validating that legal requirements have been met is not a typical test objective because validation is concerned with checking whether the system meets users’ and other stakeholders’ needs in its operational environment. Checking that legal requirements have been met is a form of verification
+                    d) Is correct. Building confidence in the quality of the test object is achieved by executing tests that pass</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.1.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #2</legend>
+            <p class="question">A designer documents a design for a user interface that does not suitably address disabled users because the designer is tired. The programmer implements the user interface in line with the design but as they are working under severe time pressure, they do not include suitable exception handling in their program code for bonus calculations. When the operational system is used, complaints are made by some disabled users about the interface and the company is subsequently fined by the relevant regulatory authority. No one notices that bonus calculations are sometimes incorrect.
+
+                Which of the following statements is CORRECT?</p>
+            <label><input id="2a" name="2" type="radio" value="0">a) The miscalculation of bonuses is a defect that occasionally occurs</label>
+            <label><input id="2b" name="2" type="radio" value="0">b) The fine received for failing to address some disabled users is a failure</label>
+            <label><input id="2c" name="2" type="radio" value="1">c) The programmer working under severe time pressure is a root cause</label>
+            <label><input id="2d" name="2" type="radio" value="0">d) The design of the user interface includes a designer error</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. The miscalculation of bonuses is a failure by the system, not a defect
+                    b) Is not correct. The system not suitably supporting disabled users is a failure which eventually results in a fine, but the fine itself is not a failure (it appears to be the correct functioning of the regulatory system)
+                    c) Is correct. The error is made by the programmer and this mistake is caused by them working under severe time pressure, which is the root cause of the subsequent defect
+                    d) Is not correct. The poor design of the user interface, which does not suitably address disabled users, is a design defect caused by the designer error. Thus the design of the user interface includes a design defect not a designer error</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.2.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #3</legend>
+            <p class="question">High-level test conditions are being used by testers to generate test cases and execute tests. Even though the test conditions remain the same, the test cases are varied each time. Which of the following ‘principles of testing’ is being addressed through the variation of test cases?</p>
+            <label><input id="3a" name="3" type="radio" value="1">a) Tests wear out</label>
+            <label><input id="3b" name="3" type="radio" value="0">b) Absence-of-defects fallacy</label>
+            <label><input id="3c" name="3" type="radio" value="0">c) Early testing saves time and money</label>
+            <label><input id="3d" name="3" type="radio" value="0">d) Defects cluster together</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. The ‘tests wear out’ principle is concerned with the idea that repeating identical tests on unaltered code is unlikely to uncover novel defects and therefore, modifying tests may be essential. By using highlevel test conditions to generate new tests each time, the tests will not be identical and should not ‘wear out’
+                    b) Is not correct. The ‘absence-of-defects fallacy’ principle is concerned with ensuring that users’ needs are fulfilled even if lots of testing is done and no defects are found (i.e., validation is also necessary). The use of high-level test conditions to generate test cases and execute tests does not directly address this concern
+                    c) Is not correct. The ‘early testing saves time and money’ principle is concerned with fixing defects early on to prevent the occurrence of subsequent defects in derived work products, thereby reducing costs and the likelihood of failures. This is typically addressed by starting testing (both static and dynamic) as early as possible, but this is not addressed by using high-level test conditions to generate test cases and execute tests
+                    d) Is not correct. The ‘Defects cluster together’ principle is concerned with the distribution of defects in a system, which typically follows a Pareto distribution. The use of high-level test conditions to generate test cases and execute tests does not address this concern, which is typically addressed by risk-based testing</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.3.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #4</legend>
+            <p class="question">Given the following test tasks:
+                1. Derive test cases from test conditions
+                2. Identify reusable testware
+                3. Organize test cases into test procedures
+                4. Evaluate test basis and test object
+
+                And the following test activities:
+                A. Test analysis
+                B. Test design
+                C. Test implementation
+                D. Test completion
+
+                Which of the following BEST matches the tasks with the activities?</p>
+            <label><input id="4a" name="4" type="radio" value="0">a) 1B, 2A, 3D, 4C</label>
+            <label><input id="4b" name="4" type="radio" value="1">b) 1B, 2D, 3C, 4A</label>
+            <label><input id="4c" name="4" type="radio" value="0">c) 1C, 2A, 3B, 4D</label>
+            <label><input id="4d" name="4" type="radio" value="0">d) 1C, 2D, 3A, 4B</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Considering each of the listed test activities and their tasks:
+                    A. Test analysis - To identify the features that require testing, the test basis is analyzed and defined as test conditions, which are then prioritized along with related risks. During this test analysis, defects in the test basis are typically uncovered, and the test object's testability may also be assessed. (Task 4)
+                    B. Test design - Involves using test conditions to create test cases and other necessary testware, such as test data requirements and test charters for exploratory testing. (Task 1)
+                    C. Test implementation - Test procedures, such as manual and automated test scripts, are created from test cases and may be assembled into test suites. Test procedures are prioritized and arranged in a test execution schedule. (Task 3)
+                    D. Test completion - Occurs at project milestones, such as release, end of iteration or end of test level. Testware is identified and archived or handed to the appropriate teams for reuse, the test environment is shut down, and the test activities are analyzed for lessons learned and future improvements. (Task 2)
+
+                    Thus:
+                    a) Is not correct
+                    b) Is correct. The CORRECT match is: 1B, 2D, 3C, 4A
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.4.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #5</legend>
+            <p class="question">Given the following testware:
+                i. Test completion report
+                ii. Data held in a database used for test inputs and expected results
+                iii. The list of elements needed to build the test environment
+                iv. Documented sequences of test cases in execution order
+                v. Test cases
+
+                Which of the following BEST shows the testware produced as a result of performing test implementation?</p>
+            <label><input id="5a" name="5" type="radio" value="1">a) ii, iv</label>
+            <label><input id="5b" name="5" type="radio" value="0">b) iii, v</label>
+            <label><input id="5c" name="5" type="radio" value="0">c) i, ii, v</label>
+            <label><input id="5d" name="5" type="radio" value="0">d) i, iii, iv</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Considering each of the listed testware, and the test activity that produces it:
+                    i. The test completion report is an output of the test completion activity
+                    ii. Data held in a database used for test inputs and expected results is the test data - output of test implementation activity
+                    iii. The list of elements needed to build the test environment is the test environment requirements - output of test design activity.
+                    iv. Documented sequences of test cases in execution order are the test procedures - output of test implementation activity
+                    v. Test cases - output of test design activity Test implementation produces the following outputs: test procedures (iv), automated test scripts, test suites, test data (ii), test execution schedule, and test environment elements such as stubs, drivers, simulators, and service virtualizations.
+
+                    Thus:
+                    a) Is correct. Items ii and iv in the list are produced as a result of test implementation
+                    b) Is not correct
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.4.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #6</legend>
+            <p class="question">Which of the following is MOST likely to describe a task performed by someone in a test management role?</p>
+            <label><input id="6a" name="6" type="radio" value="0">a) Evaluate test basis and test object</label>
+            <label><input id="6b" name="6" type="radio" value="0">b) Define test environment requirements</label>
+            <label><input id="6c" name="6" type="radio" value="0">c) Assess testability of test object</label>
+            <label><input id="6d" name="6" type="radio" value="1">d) Create test completion report</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Evaluating the test basis for defects and the test object for testability are tasks performed as part of test analysis, so it is likely they are tasks performed by the testing role
+                    b) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Defining the test environment requirements is a task performed as part of test design, so it is likely to be a task performed by the testing role
+                    c) Is not correct. The testing role is primarily responsible for the technical and engineering aspects of testing, such as test analysis, test design, test implementation, and test execution. Assessing the testability of a test object is a task performed as part of test analysis, so it is likely to be a task performed by the testing role
+                    d) Is correct. The test management role primarily involves activities related to test planning, test monitoring and control, and test completion. Thus, creating the test completion report, which is the prime output from the test completion activity, is likely to be a task performed by the test management role</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.4.5</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #7</legend>
+            <p class="question">Which of the following is an advantage of the whole team approach?</p>
+            <label><input id="7a" name="7" type="radio" value="1">a) Improved communication between team members</label>
+            <label><input id="7b" name="7" type="radio" value="0">b) Decreased individual accountability for quality</label>
+            <label><input id="7c" name="7" type="radio" value="0">c) Faster deployment of deliverables to the end users</label>
+            <label><input id="7d" name="7" type="radio" value="0">d) Reduced collaboration with external business users</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. The whole team approach promotes robust communication and collaboration between the team members
+                    b) Is not correct. While the whole team approach prioritizes collective accountability for quality, each individual team member is still equally accountable for quality
+                    c) Is not correct. The whole team approach is about how the team works together, with the aim of higher quality deliverables, but it does not necessarily result in faster deployment to end users
+                    d) Is not correct. When using the whole team approach, testers work with business representatives to create acceptance tests. There is no suggestion that the approach will reduce collaboration with external business users</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.5.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #8</legend>
+            <p class="question">Given the following benefits and drawbacks of the independence of testing:
+                i. The testers work in a different location from the developers
+                ii. Testers question the assumptions programmers make while writing code
+                iii. A confrontational dynamic has been established between testers and developers
+                iv. Developers have convinced themselves that testers are mostly accountable for quality
+                v. Testers have different biases than those held by the developers
+
+                Which are MOST likely to be considered benefits?</p>
+            <label><input id="8a" name="8" type="radio" value="0">a) i, iv</label>
+            <label><input id="8b" name="8" type="radio" value="1">b) ii, v</label>
+            <label><input id="8c" name="8" type="radio" value="0">c) i, iii, iv</label>
+            <label><input id="8d" name="8" type="radio" value="0">d) ii, iii, v</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Considering each of the listed benefits and drawbacks of the independence of testing:
+                    i. Ideally, we want close collaboration between testers and developers, which is not increased by isolation. Thus, this is a disadvantage
+                    ii. Testers and developers have varied backgrounds, technical viewpoints, and potential biases, allowing testers to usefully challenge assumptions made by stakeholders during system specification and implementation. Thus, this is an advantage
+                    iii. The main disadvantage of independence in testing is that testers may become isolated from the development team, leading to communication problems, a lack of collaboration, and potentially an adversarial relationship, with testers being blamed for delays and bottlenecks in the release process. Thus, this is a disadvantage
+                    iv. One of the disadvantages of independence in testing is that testers may become isolated from the development team, leading to developers feeling less accountable for quality. Thus, this is a disadvantage
+                    v. The primary benefit of independence in testing is that testers are more likely to identify different types of failures and defects compared to developers, due to their varied backgrounds, technical viewpoints, and potential biases, including cognitive bias
+
+                    Thus:
+                    a) Is not correct
+                    b) Is correct. The list entries showing benefits are ii and v
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-1.5.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #9</legend>
+            <p class="question">Which of the following is a good testing practice that applies to all software development lifecycles?</p>
+            <label><input id="9a" name="9" type="radio" value="1">a) Each test level has specific and distinct test objectives</label>
+            <label><input id="9b" name="9" type="radio" value="0">b) Test implementation and execution for a given test level should start during the corresponding development phase</label>
+            <label><input id="9c" name="9" type="radio" value="0">c) Testers should start test design as soon as drafts of the relevant work products become available</label>
+            <label><input id="9d" name="9" type="radio" value="0">d) Every dynamic testing activity has a corresponding static testing activity</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. Each test level has specific and distinct test objectives as a different form of test object (e.g., single component, complete system) is tested at each test level and overlapping test objectives would lead to unnecessary duplication
+                    b) Is not correct. Test analysis and design for a given test level should start during the corresponding development phase to facilitate early testing (e.g., acceptance test analysis and design should begin during requirements analysis). Test implementation will generally start later, and test execution will start during the test level
+                    c) Is not correct. Test design for a given test level should start during the corresponding development phase to facilitate early testing, however test design (e.g., test case generation) needs to be based on an agreed test basis, not an early draft, otherwise significant test effort may be wasted on creating test cases for a design that later changes
+                    d) Is not correct. Quality control applies to all development activities, meaning that every software development activity has a corresponding test activity. However, the same symmetry does not apply to dynamic and static testing. There are some static testing activities (e.g., static analysis) for which there is no obvious corresponding dynamic testing activity</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-2.1.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #10</legend>
+            <p class="question">Which of the following is an example of a test-first approach to development?</p>
+            <label><input id="10a" name="10" type="radio" value="1">a) Behavior-Driven Development</label>
+            <label><input id="10b" name="10" type="radio" value="0">b) Test Level Driven Development</label>
+            <label><input id="10c" name="10" type="radio" value="0">c) Function-Driven Development</label>
+            <label><input id="10d" name="10" type="radio" value="0">d) Performance-Driven Development</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. Behavior-Driven Development (BDD) is a well-known example of a test-first approach to development
+                    b) Is not correct. Test Level Driven Development is not a correct example of a test-first approach to development
+                    c) Is not correct. Function-Driven Development is not a correct example of a test-first approach to development
+                    d) Is not correct. Performance-Driven Development is not a correct example of a test-first approach to development</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-2.1.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #11</legend>
+            <p class="question">Which of the following is MOST likely to be a challenge encountered when implementing DevOps?</p>
+            <label><input id="11a" name="11" type="radio" value="0">a) Making sure that non-functional quality characteristics are not overlooked</label>
+            <label><input id="11b" name="11" type="radio" value="0">b) Managing continuously changing test environments</label>
+            <label><input id="11c" name="11" type="radio" value="0">c) The need for more manual testers with suitable experience</label>
+            <label><input id="11d" name="11" type="radio" value="1">d) Setting up the test automation as part of the delivery pipeline</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. DevOps generally increases the visibility of non-functional quality characteristics, such as performance and reliability
+                    b) Is not correct. Automated processes like continuous integration/continuous delivery (CI/CD) used in DevOps facilitate stable test environments
+                    c) Is not correct. Automated processes like CI/CD used in DevOps generally reduce the need for manual testing
+                    d) Is correct. DevOps implementation can pose several risks and challenges, including the need to define and set up the delivery pipeline, introduce and maintain CI/CD tools, and establish and maintain test automation</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-2.1.4</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #12</legend>
+            <p class="question">Which of the following BEST describes retrospectives?</p>
+            <label><input id="12a" name="12" type="radio" value="0">a) Retrospectives allow team members to identify other team members who did not fully contribute to achieving quality as required by the whole-team approach</label>
+            <label><input id="12b" name="12" type="radio" value="1">b) Retrospectives give testers an opportunity to identify activities that were successful so that these are retained when potential improvements are made in the future</label>
+            <label><input id="12c" name="12" type="radio" value="0">c) Retrospectives are where agile team members are allowed to voice their concerns about management and customers in a blame-free environment</label>
+            <label><input id="12d" name="12" type="radio" value="0">d) Retrospectives give agile team members a forum where they focus on discussing the plan and technical decisions for the next iteration</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. The benefits of retrospectives include team bonding and learning from sharing issues, and better collaboration between developers and testers through reviewing and improving working practices. Calling out individuals who a team member may feel did not fully contribute to achieving quality as required by the whole-team approach will not contribute to this team bonding and collaboration
+                    b) Is correct. During the retrospective, the group discusses what aspects of the project were successful and should be retained, as well as areas that could be improved, and how to do so
+                    c) Is not correct. The benefits of retrospectives are based on increased effectiveness and efficiency through process improvements; they are not an opportunity to let off steam and criticize management and customers. Also, the results are recorded, usually in the test completion report, so anything said in the meeting could be read by other stakeholders
+                    d) Is not correct. Retrospectives are meetings that are typically held at the end of an iteration where team members will focus on discussing quality-related issues that have occurred in the current iteration. They are not used for making plans or technical decisions for the next iteration; this would be done in the iteration planning meeting at the start of the next iteration</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-2.1.6</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #13</legend>
+            <p class="question">Which of the following tests is MOST likely to be performed as part of functional testing?</p>
+            <label><input id="13a" name="13" type="radio" value="1">a) The test checks that the sort function puts the elements of the list or array in ascending order</label>
+            <label><input id="13b" name="13" type="radio" value="0">b) The test checks whether the sort function completes sorting within one second of starting</label>
+            <label><input id="13c" name="13" type="radio" value="0">c) The test checks how easily the sort function can be changed from sorting ascending to sorting descending</label>
+            <label><input id="13d" name="13" type="radio" value="0">d) The test checks that the sort function still functions correctly when moved from a 32-bit to a 64-bit architecture</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. Checking that the sort function puts the elements of the list or array in ascending order is evaluating the functional correctness of the sort function, which is part of functional testing
+                    b) Is not correct. Assessing whether the sort function meets its nonfunctional requirement to complete within one second is part of testing its performance efficiency, which is part of non-functional testing
+                    c) Is not correct. Evaluating the ease with which the sort function can be modified from sorting ascending to sorting descending is testing its modifiability, a form of non-functional maintainability testing, which is part of non-functional testing
+                    d) Is not correct. Assessing that the sort function still functions correctly when moved from a 32-bit to a 64-bit architecture is testing its adaptability, a form of portability testing, which is part of non-functional testing</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-2.2.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #14</legend>
+            <p class="question">Which of the following is MOST likely to be a trigger that leads to maintenance testing of a currency exchange system?</p>
+            <label><input id="14a" name="14" type="radio" value="0">a) The developers reported that changing the currency exchange system was difficult and the testers decided to check if this was true</label>
+            <label><input id="14b" name="14" type="radio" value="1">b) The refund option of the currency exchange system was removed as it did not always repay the correct amount to customers</label>
+            <label><input id="14c" name="14" type="radio" value="0">c) The agile team has started developing a user story that adds a new customer loyalty feature to the currency exchange system</label>
+            <label><input id="14d" name="14" type="radio" value="0">d) The currency exchange system was reconfigured to support both English and local language currency transactions</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Assuming that testers could check the ease of changing the currency exchange system then it would be done by maintainability testing rather than maintenance testing, so this is not a trigger for maintenance testing
+                    b) Is correct. A system modification (such as a fix or enhancement) is an example of a trigger for maintenance testing. The removal of the refund option of the currency exchange system was a fix that would lead to maintenance testing
+                    c) Is not correct. If the agile team has started developing a user story that adds a new customer loyalty feature to the currency exchange system, then this will result in them testing the new feature, and then they would perform regression testing. No maintenance testing is required in this situation
+                    d) Is not correct. Reconfiguration of the currency exchange system to support both the local language and English currency transactions is not a system modification, a change to the operational environment, or a system retirement, which are the three triggers for maintenance testing</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-2.3.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #15</legend>
+            <p class="question">Which of the following CANNOT be examined by static testing?</p>
+            <label><input id="15a" name="15" type="radio" value="0">a) Contract</label>
+            <label><input id="15b" name="15" type="radio" value="0">b) Test plan</label>
+            <label><input id="15c" name="15" type="radio" value="1">c) Encrypted code</label>
+            <label><input id="15d" name="15" type="radio" value="0">d) Test charter</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Most work products can be examined using some form of static testing, and a contract must be interpretable by humans and so could be reviewed, which is a form of static testing
+                    b) Is not correct. Most work products can be examined using some form of static testing, and a test plan must be interpretable by humans and so could be reviewed, which is a form of static testing
+                    c) Is correct. Most work products can be examined using some form of static testing; however it is not suitable for work products that are too complex for human interpretation and should not be analyzed by tools, and encrypted code is too complex for humans and if it is properly encrypted it will not be analyzable by most tools
+                    d) Is not correct. Most work products can be examined using some form of static testing, and a test charter must be interpretable by humans and so could be reviewed, which is a form of static testing</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-3.1.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #16</legend>
+            <p class="question">Which of the following statements about the value of static testing is CORRECT?</p>
+            <label><input id="16a" name="16" type="radio" value="0">a) The defect types found by static testing are different from the defect types that can be found by dynamic testing</label>
+            <label><input id="16b" name="16" type="radio" value="0">b) Dynamic testing can detect the defect types that can be found by static testing plus some additional defect types</label>
+            <label><input id="16c" name="16" type="radio" value="1">c) Dynamic testing can identify some of the defects that can be found by static testing but not all of them</label>
+            <label><input id="16d" name="16" type="radio" value="0">d) Static testing can identify the defect types that can be found by dynamic testing as well as some extra defect types</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. There are some defect types that can be found by both static testing and dynamic testing, such as a programming defect that can be observed by a reviewer in a code review and which causes an observable failure during dynamic testing
+                    b) Is not correct. There are some defect types that can only be detected by static testing, such as unreachable code, design patterns not implemented as desired and defects in non-executable work products
+                    c) Is correct. There are some defect types that can be found by both static testing and dynamic testing, such as a programming defect that can be observed by a reviewer in a code review and which causes an observable failure during dynamic testing. There are also some defect types that can only be detected by static testing, such as unreachable code, design patterns not implemented as desired and defects in nonexecutable work products
+                    d) Is not correct. There are some defect types that can only be detected by dynamic testing, such as performance issues or memory issues that can only be observed when executing the code or system</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-3.1.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #17</legend>
+            <p class="question">Given the following descriptions of review activities:
+                1. Detected anomalies are deliberated upon, and determinations are reached regarding their status, ownership, and any further steps needed
+                2. Issues are recorded, and any needed updates are addressed prior to the acceptance of the work product
+                3. Reviewers employ techniques to come up with suggestions and questions about the work product and to spot anomalies
+                4. The objective of the review and its schedule are established to ensure a focused and efficient review
+                5. Participants are provided with access to the item being reviewed
+
+                Which of the following is the CORRECT sequence in the review process of the activities that correspond to the descriptions?</p>
+            <label><input id="17a" name="17" type="radio" value="0">a) 4 – 3 – 5 – 2 – 1</label>
+            <label><input id="17b" name="17" type="radio" value="0">b) 4 – 5 – 3 – 1 – 2</label>
+            <label><input id="17c" name="17" type="radio" value="0">c) 5 – 4 – 1 – 3 – 2</label>
+            <label><input id="17d" name="17" type="radio" value="0">d) 5 – 4 – 3 – 2 – 1</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">The five listed descriptions and the corresponding review process activities are:
+                    1. This describes part of the ‘communication and analysis’ activity
+                    2. This describes part of the ‘fixing and reporting’ activity
+                    3. This describes part of the ‘individual review’ activity
+                    4. This describes part of the ‘planning’ activity
+                    5. This describes part of the ‘review initiation’ activity
+
+                    The generic review process from ISO/IEC 20246, which is outlined in the syllabus, comprises the following activities in this logical order:
+                    • Planning (4)
+                    • Review initiation (5)
+                    • Individual review (3)
+                    • Communication and analysis (1)
+                    • Fixing and reporting (2)
+
+                    Thus:
+                    a) Is not correct
+                    b) Is correct. The correct sequence of activities is: 4 – 5 – 3 – 1 – 2
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-3.2.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #18</legend>
+            <p class="question">Which participant in the review process is responsible for ensuring that the review meetings run effectively and that everyone at the meetings can voice their opinions freely?</p>
+            <label><input id="18a" name="18" type="radio" value="0">a) Manager</label>
+            <label><input id="18b" name="18" type="radio" value="1">b) Moderator</label>
+            <label><input id="18c" name="18" type="radio" value="0">c) Chairperson</label>
+            <label><input id="18d" name="18" type="radio" value="0">d) Review Leader</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. The manager is responsible for deciding what needs to be reviewed and allocating resources, such as staff and time, for the review
+                    b) Is correct. The moderator (or facilitator) is responsible for ensuring that the review meetings run effectively, including managing time, mediating discussions, and creating a safe environment where everyone can voice their opinions freely
+                    c) Is not correct. The chairperson is not a recognized role in reviews
+                    d) Is not correct. The review leader is responsible for overseeing the review process, such as selecting the review team members, scheduling review meetings, and ensuring that the review is completed successfully</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-3.2.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #19</legend>
+            <div class="question">You perform system testing of an e-commerce web application and are provided with the following requirement:
+
+                <i>REQ 05-017. If the total cost of purchases exceeds $100, the customer gets a 5% discount on subsequent purchases. Otherwise, the customer does not receive a discount</i>
+
+                Which test techniques will be MOST helpful in designing test cases based on this requirement?</div>
+            <label><input id="19a" name="19" type="radio" value="0">a) White-box test techniques</label>
+            <label><input id="19b" name="19" type="radio" value="1">b) Black-box test techniques</label>
+            <label><input id="19c" name="19" type="radio" value="0">c) Experience-based test techniques</label>
+            <label><input id="19d" name="19" type="radio" value="0">d) Risk-based test techniques</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. The document does not refer to the test object’s internal structure but specifies the desired behavior of the test object. Therefore, white-box test techniques will not be helpful in designing test cases
+                    b) Is correct. The document is a requirement that specifies the desired behavior of the test object. Therefore, the most suitable test techniques in this case are the black-box test techniques (e.g., Boundary Value Analysis or Decision Table Testing)
+                    c) Is not correct. Although experience-based test techniques can be used to design test cases based on this document, black-box test techniques will be more suitable. The document describes a precise business rule and, in addition, wording like "exceeds $100" suggests the existence of important equivalence partition boundaries that should be tested using black-box test techniques like boundary value analysis
+                    d) Is not correct. Risk-based test techniques are not a recognized type of test technique</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.1.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #20</legend>
+            <p class="question">The system for selling cinema tickets calculates the discount type based on the client’s birth year (BY) and on the current year (CY) as follows:
+
+                Let D be the difference between CY and BY, that is, D = CY – BY
+                • If D < 0 then print the error message “birth year cannot be greater than current year”
+                • If 0 ≤ D < 18 then apply the student discount
+                • If 18 ≤ D < 65 then apply no discount
+                • If D ≥ 65 then apply the pensioner discount
+
+                Your test suite already contains two test cases:
+                • BY = 1990, CY = 2020, expected result: no discount
+                • BY = 2030, CY = 2029, expected result: print the error message
+
+                Which of the following test data sets should be added to achieve full valid equivalence partitioning coverage for the discount type?</p>
+            <label><input id="20a" name="20" type="radio" value="0">a) BY = 2001, CY = 2065</label>
+            <label><input id="20b" name="20" type="radio" value="1">b) BY = 1900, CY = 1965</label>
+            <label><input id="20c" name="20" type="radio" value="0">c) BY = 1965, CY = 1900</label>
+            <label><input id="20d" name="20" type="radio" value="0">d) BY = 2011, CY = 2029</label>
+            <label><input id="20e" name="20" type="radio" value="1">e) BY = 2000, CY = 2000</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">There are two equivalence partitions that are not yet covered, which correspond to “student discount” and “pensioner discount”.
+
+                    a) Is not correct. CY – BY = 64, so these inputs correspond to the already covered “no discount” partition
+                    b) Is correct. CY – BY = 65, so these inputs correspond to a partition that is not yet covered (“pensioner discount”)
+                    c) Is not correct. CY – BY = –65, so these inputs correspond to the already covered “error message” partition
+                    d) Is not correct. CY – BY = 18, so these inputs correspond to the already covered “no discount” partition
+                    e) Is correct. CY – BY = 0, so these inputs correspond to a partition that is not yet covered (“student discount”)</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.2.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K3</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #21</legend>
+            <p class="question">You are testing a temperature control system for a horticultural cold storage facility. The system receives the temperature (in full degrees Celsius) as the input. If the temperature is between 0 and 2 degrees inclusive, the system displays the message “temperature OK”. For lower temperatures, the system displays the message "temperature too low" and for higher temperatures it displays the message “temperature too high”.
+
+                Using two-value boundary value analysis, which of the following sets of test inputs provides the highest level of boundary value coverage?</p>
+            <label><input id="21a" name="21" type="radio" value="0">a) –1, 3</label>
+            <label><input id="21b" name="21" type="radio" value="0">b) 0, 2</label>
+            <label><input id="21c" name="21" type="radio" value="1">c) –1, 0, 2, 3</label>
+            <label><input id="21d" name="21" type="radio" value="0">d) –2, 0, 2, 4</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">There are three equivalence partitions: {…, –2, –1}, {0, 1, 2}, {3, 4, …}.
+
+                    For 2-value BVA all the boundary values for all the equivalence partitions must be covered.
+
+                    The boundary values are –1 (for the “temperature too low” partition), 0, 2 (for the “temperature OK” partition) and 3 (for the “temperature too high” partition).
+
+                    Thus:
+                    a) Is not correct
+                    b) Is not correct
+                    c) Is correct. The correct option is: –1, 0, 2, 3
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.2.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K3</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #22</legend>
+            <div class="question">You are designing test cases based on the following decision table.
+                <img src="data:image/png;base64,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"
+                     alt="Decision table to derive taste cases">
+                So far you have designed the following test cases:
+                • TC1: 19-year-old, unregistered man with no experience; expected result: category A
+                • TC2: 65-year-old, unregistered woman with 5 years of experience; expected result: category B
+                • TC3: 66-year-old, registered man with no experience; expected result: category C
+                • TC4: 65-year-old, registered woman with 4 years of experience; expected result: category D
+
+                Which of the following test cases, when added to the existing set of test cases, will increase the decision table coverage?
+            </div>
+            <label><input id="22a" name="22" type="radio" value="1">a) 66-year-old, unregistered man with no experience; - expected result: category B</label>
+            <label><input id="22b" name="22" type="radio" value="0">b) 55-year-old, unregistered woman with 2 years of experience; - expected result: category A</label>
+            <label><input id="22c" name="22" type="radio" value="0">c) 19-year-old, registered woman with 5 years of experience; - expected result: category D</label>
+            <label><input id="22d" name="22" type="radio" value="0">d) No additional test case can increase the already achieved decision table coverage</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Test cases TC1, TC2, TC3 and TC4 cover, respectively, rules R2, R3, R7 and R6 in the decision table.
+
+                    a) Is correct. The conditions “66-year-old”, “unregistered” and “no experience” match rule R4, which is not covered by the existing test cases, so after adding this test case, the decision table coverage will increase
+                    b) Is not correct. The conditions “55-year-old”, “unregistered” and “2 years of experience” match rule R2, already covered by TC1. So adding this test case will not increase the coverage
+                    c) Is not correct. The conditions “19-year-old”, “registered” and “5 years of experience” match rule R6, already covered by TC4. So adding this test case will not increase the coverage
+                    d) Is not correct. The existing test cases cover only 4 out of 7 columns of the decision table. The coverage can be increased by adding test cases that cover yet uncovered columns, that is, R1, R4 and R5</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.2.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K3</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #23</legend>
+            <p class="question">You are applying state transition testing to the hotel room reservation system modeled by the following state transition table, with 4 states and 5 different events:
+                <img src="data:image/png;base64,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"
+                     alt="transition testing for a hotel room reservation system">
+                Assuming all test cases start in the ‘Requesting’ state, which of the following test cases, represented as sequences of events, achieves the highest valid transitions coverage?</p>
+            <label><input id="23a" name="23" type="radio" value="0">a) NotAvailable, Available, ChangeRoom, NotAvailable, Cancel</label>
+            <label><input id="23b" name="23" type="radio" value="1">b) Available, ChangeRoom, NotAvailable, Available, Pay</label>
+            <label><input id="23c" name="23" type="radio" value="0">c) Available, ChangeRoom, Available, ChangeRoom, NotAvailable</label>
+            <label><input id="23d" name="23" type="radio" value="0">d) NotAvailable, Cancel, ChangeRoom, Available, Pay</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. This sequence of five events covers 4 different valid transitions (both “NotAvailable” events correspond to the same transition between S1 and S3). This test case covers 4 out of 7 valid transitions
+                    b) Is correct. This sequence of five events covers 5 different transitions (the first “Available” event corresponds to a transition between S1 and S2, and the second “Available” event corresponds to a transition between S3 and S2, so two different transitions are covered). This test case covers 5 out of 7 valid transitions and achieves the highest valid transitions coverage
+                    c) Is not correct. This sequence of five events covers 3 different transitions (both “Available” events correspond to the same transition from S1 to S2; both “ChangeRoom” events correspond to the same transition from S2 to S1). This test case covers 3 out of 7 valid transitions
+                    d) Is not correct. This sequence of five events does not represent a feasible test case, because after “Cancel” the system ends up in the End state and no further valid transitions can be executed</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.2.4</div>
+                <div class="k-level color-muted font-size-small">K-Level: K3</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #24</legend>
+            <p class="question">Your test suite S for a program P achieves 100% statement coverage. It consists of three test cases, each of which achieves 50% statement coverage.
+
+                Which of the following statements is CORRECT?</p>
+            <label><input id="24a" name="24" type="radio" value="0">a) Executing S will cause all possible failures in P</label>
+            <label><input id="24b" name="24" type="radio" value="0">b) S achieves 100% branch coverage for P</label>
+            <label><input id="24c" name="24" type="radio" value="1">c) Every executable statement in P containing a defect has been run at least once during the execution of S</label>
+            <label><input id="24d" name="24" type="radio" value="0">d) After removing one test case from S, the remaining two test cases will still achieve 100% statement coverage</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. A line with a defect, when executed, does not have to cause a failure. For example, a line x := y / z will cause a failure only when z equals 0
+                    b) Is not correct. 100% statement coverage does not guarantee 100% branch coverage. For example, a test case with x=0 for the code
+                    &nbsp;&nbsp;&nbsp;&nbsp;1. IF (x=0) THEN
+                    &nbsp;&nbsp;&nbsp;&nbsp;2. A;
+                    &nbsp;&nbsp;&nbsp;&nbsp;3. ENDIF
+                    achieves 100% statement coverage but does not cover the branch from 1 to 3
+                    c) Is correct. 100% statement coverage means that each executable statement was executed at least once
+                    d) Is not correct. The removed test case may provide coverage of some statements that are not covered by either of the other two test cases, in which case the remaining two test cases together will not achieve 100% statement coverage</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.3.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #25</legend>
+            <p class="question">Why does white-box testing facilitate defect detection even when the software specification is vague, outdated or incomplete?</p>
+            <label><input id="25a" name="25" type="radio" value="1">a) Test cases are designed based on the structure of the test object rather than the specification</label>
+            <label><input id="25b" name="25" type="radio" value="0">b) For each white-box test technique the coverage can be well-defined and easily measured </label>
+            <label><input id="25c" name="25" type="radio" value="0">c) White-box test techniques are very well designed to detect omissions in the requirements</label>
+            <label><input id="25d" name="25" type="radio" value="0">d) White-box test techniques can be used in both static testing and dynamic testing</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. A fundamental strength that all white-box test techniques share is that the entire software implementation is taken into account during testing, which facilitates defect detection even when the software specification is vague, outdated or incomplete. This means white-box testing can find defects such as an extra feature added to the code (either accidentally or deliberately) that is not supposed to be there, which black-box testing cannot detect
+                    b) Is not correct. The fact that the coverage can be precisely defined is not the right reason. The achieved level of coverage would have much more impact than the possibility to measure the coverage
+                    c) Is not correct. If the software does not implement one or more requirements, white-box testing is unlikely to detect the resulting defects of omission
+                    d) Is not correct. While this is true, this is not the right answer, because there is no connection between the capability to be used in both static testing and dynamic testing and the claim that white-box testing facilitates defect detection with poor specifications</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.3.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #26</legend>
+            <p class="question">Which of the following is NOT anticipated by the tester while applying error guessing?</p>
+            <label><input id="26a" name="26" type="radio" value="0">a) The developer misunderstood the formula in the user story for calculating the interest</label>
+            <label><input id="26b" name="26" type="radio" value="0">b) The developer wrote “FA = A*(1+IR^N)” instead of “FA = A*(1+IR)^N” in the source code</label>
+            <label><input id="26c" name="26" type="radio" value="1">c) The developer missed the seminar on new compound interest rate legislation</label>
+            <label><input id="26d" name="26" type="radio" value="0">d) The accuracy of the interest calculated by the system is not precise enough</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Error guessing is about anticipating the errors, defects and failures based on the tester’s knowledge.
+
+                    a) Is not correct. This is an example of anticipating the developer’s error
+                    b) Is not correct. This is an example of anticipating the defect
+                    c) Is correct. This is an example of a potential root cause of a defect, which is neither an error, defect nor failure, and difficult for the tester to anticipate
+                    d) Is not correct. This is an example of anticipating a failure, perhaps based on experience of previous systems in this application domain</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.4.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #27</legend>
+            <p class="question">Which of the following is true about exploratory testing?</p>
+            <label><input id="27a" name="27" type="radio" value="0">a) Test cases are designed before the exploratory testing session starts</label>
+            <label><input id="27b" name="27" type="radio" value="0">b) The tester can perform test execution, but cannot perform test design</label>
+            <label><input id="27c" name="27" type="radio" value="0">c) Exploratory testing results are good predictors of the number of remaining defects</label>
+            <label><input id="27d" name="27" type="radio" value="1">d) During exploratory testing the tester may use black-box test techniques</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. In exploratory testing, test cases are usually created during the exploratory testing session, alongside test analysis, test implementation and test execution
+                    b) Is not correct. In exploratory testing, tests are simultaneously designed, executed, and evaluated while the tester learns about the test object
+                    c) Is not correct. Exploratory testing results depend heavily on the tester’s experience, so even if the results of exploratory testing can be used as a predictor of risk and used to assess whether there will be fewer or more defects, for example, compared to the previous exploratory testing session, they are not a good example of reliable defect prediction models that can predict the number of remaining defects
+                    d) Is correct. During exploratory testing, the testers can use any techniques that they find useful</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.4.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #28</legend>
+            <p class="question">Which collaborative user story writing practice enables the team to achieve a collective understanding of what needs to be delivered?</p>
+            <label><input id="28a" name="28" type="radio" value="0">a) Planning poker, so that a team can achieve consensus on the effort needed to implement a user story</label>
+            <label><input id="28b" name="28" type="radio" value="0">b) Reviews, so that a team can detect inconsistencies and contradictions in a user story</label>
+            <label><input id="28c" name="28" type="radio" value="0">c) Iteration planning, so that user stories with the highest business value for a customer can be prioritized for implementation</label>
+            <label><input id="28d" name="28" type="radio" value="1">d) Conversation, so that team members can understand how the software will be used</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Planning poker can estimate effort for a user story that is already written. It does not help in understanding what should be delivered
+                    b) Is not correct. Reviews are not a collaborative user story writing practice
+                    c) Is not correct. Iteration planning is a project-related practice, used to plan the work, not to understand what needs to be delivered
+                    d) Is correct. Conversation explains how the software will be used and often allows the team to define meaningful acceptance criteria, thus obtaining a shared vision of what should be delivered</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.5.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #29</legend>
+            <p class="question">You have just started designing test cases for the following user story.
+
+                <i>As a customer,
+                I want to be able to filter search results by price range, so that I can find products within my budget more easily.
+
+                Acceptance criteria:
+                1. The filter should work for all versions of the application from version 3.0 upwards
+                2. The filter should allow the customer to set a price range with a minimum and a maximum price
+                3. The search results should update dynamically as the customer adjusts the price range filter</i>
+
+                In all test cases the precondition is as follows: there are only two products available, products A and B. Product A costs $100 and product B costs $110.
+
+                Which of the following is the BEST example of a test case for this user story?</p>
+            <label><input id="29a" name="29" type="radio" value="1">a) Enter webpage and set filter to show prices between $90 and $100. Expected result: results show product A only. Set maximum price to $110. Expected result: results now include both products A and B</label>
+            <label><input id="29b" name="29" type="radio" value="0">b) Enter webpage. Expected result: the default minimum and maximum prices are $100 and $110 respectively. Add product C to stock, with price $120. Refresh the client’s webpage. Expected result: the default maximum price changes to $120</label>
+            <label><input id="29c" name="29" type="radio" value="0">c) Enter webpage and set filter to show prices between $90 and $115. Expected result: results show both products A and B. Change currency from USD to EUR. Expected result: the filter range changes correctly to EUR values, according to the current exchange rate</label>
+            <label><input id="29d" name="29" type="radio" value="0">d) Enter webpage with three different browsers: Edge, Chrome and Opera. In each browser set filter between $90 and $110. Expected result: results include both products A and B and the results layout is the same in all three browsers</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. This test case is related to acceptance criteria 2 and 3, because we check if we can set price range (acceptance criterion 2) and if the results update dynamically after adjusting the price range filter (acceptance criterion 3)
+                    b) Is not correct. This test case is not related to any of the acceptance criteria. It checks if the filter dynamically sets the default minimum and maximum price range, and not that a customer can do it
+                    c) Is not correct. This test case is not related to any of the acceptance criteria. It checks the currency exchange feature, which is not discussed in this user story
+                    d) Is not correct. This test case is not related to any of the acceptance criteria. It checks the application’s compatibility with different browsers, which is not discussed in this user story</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-4.5.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K3</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #30</legend>
+            <p class="question">Which of the following BEST define EXIT criteria in a testing project?</p>
+            <label><input id="30a" name="30" type="radio" value="0">a) The budget is approved</label>
+            <label><input id="30b" name="30" type="radio" value="1">b) Budget runs out</label>
+            <label><input id="30c" name="30" type="radio" value="0">c) Test basis is available</label>
+            <label><input id="30d" name="30" type="radio" value="1">d) Test cases achieved at least 80% statement coverage</label>
+            <label><input id="30e" name="30" type="radio" value="0">e) All test analysts are ISTQB certified at the Foundation Level</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. The approval of the budget is an example of an entry criterion. It would make no sense to approve the budget for some activity that has already been done
+                    b) Is correct. Running out of budget can be viewed as a valid exit criterion
+                    c) Is not correct. Availability of resources is an example of an entry criterion for testing
+                    d) Correct. Coverage is a measure of thoroughness, so it is a typical exit criterion
+                    e) Is not correct. This is an example of an entry criterion, checked before the project starts</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.1.3</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #31</legend>
+            <p class="question">The team wants to estimate the time needed for one tester to execute four test cases for a software component. The team has gathered the following measures of the effort used to execute a single test case:
+
+                • Best-case scenario: 1 hour
+                • Worst-case scenario: 8 hours
+                • Most likely scenario: 3 hours
+
+                Given that the three-point estimation technique is being used, what is the final estimate of the time needed to execute all four test cases?</p>
+            <label><input id="31a" name="31" type="radio" value="1">a) 14 hours</label>
+            <label><input id="31b" name="31" type="radio" value="0">b) 3.5 hours</label>
+            <label><input id="31c" name="31" type="radio" value="0">c) 16 hours</label>
+            <label><input id="31d" name="31" type="radio" value="0">d) 12 hours</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Using the three-point estimation technique, the final estimate (E) is calculated as: E = (a + 4*m + b) / 6, where a is the most optimistic estimate, m is the most likely estimate, and b is the most pessimistic estimate.
+
+                    Thus:
+                    a) Is correct. In this case, the estimate for executing a single test case is: E = (1h + 4*3h + 8h) / 6 = 3.5 hours So, the total time needed for the tester to execute 4 test cases is: 3.5h * 4 = 14 hours
+                    b) Is not correct
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.1.4</div>
+                <div class="k-level color-muted font-size-small">K-Level: K3</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #32</legend>
+            <div class="question">The table shows the traceability matrix from test cases to requirements. “X” means that a given test case covers the corresponding requirement.
+
+                <img src="data:image/png;base64,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"
+                     alt="traceability matrix from test cases to requirements">
+                
+                You want to prioritize the test cases following the additional coverage prioritization technique.
+                
+                You execute all four test cases.
+                
+                Which test case should be executed as the LAST one?</div>
+            <label><input id="32a" name="32" type="radio" value="0">a) TC1</label>
+            <label><input id="32b" name="32" type="radio" value="1">b) TC2</label>
+            <label><input id="32c" name="32" type="radio" value="0">c) TC3</label>
+            <label><input id="32d" name="32" type="radio" value="0">d) TC4</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">TC1 achieves the highest coverage (4/7 – Req1, Req3, Req4 and Req7), so should be executed first.
+
+                    Req2, Req5 and Req6 are still not covered.
+
+                    The next test case that achieves the highest additional coverage of the remaining requirements is TC3, covering 2 out of these 3 requirements (Req5 and Req6). So, TC3 should be executed as the second one.
+
+                    Now the only requirement still not covered is Req2, which is covered by TC4. Therefore, TC4 should be executed as the third test case. So, the last test case executed will be TC2.
+
+                    Thus:
+                    a) Is not correct
+                    b) Is correct
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: </div>
+                <div class="k-level color-muted font-size-small">K-Level: </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #33</legend>
+            <p class="question">How can the testing quadrants be beneficial for testing?</p>
+            <label><input id="33a" name="33" type="radio" value="0">a) They help in test planning by dividing the test process into four stages, corresponding to the four basic test levels: component, integration, system, and acceptance testing</label>
+            <label><input id="33b" name="33" type="radio" value="0">b) They help in assessing the high-level coverage (e.g., requirements coverage) based on low-level coverage (e.g., code coverage)</label>
+            <label><input id="33c" name="33" type="radio" value="1">c) They help non-technical stakeholders to understand the different types of tests and that some test types are more relevant to certain test levels than others</label>
+            <label><input id="33d" name="33" type="radio" value="0">d) They help agile teams to develop a communication strategy based on classifying people according to four basic psychological types, and on modelling the relations between them</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Testing quadrants have nothing to do with describing the relationships between test levels
+                    b) Is not correct. Testing quadrants cannot help in assessing any type of coverage
+                    c) Is correct. Testing quadrants allow managers and other stakeholders to understand the relationships between test types, the activities they support (team support or product critique), and the viewpoint they are focused on (business- or technology-facing)
+                    d) Is not correct. Testing quadrants is not a psychological model</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.1.7</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #34</legend>
+            <p class="question">For a given risk, its risk level is $1,000 and its risk likelihood is estimated as 50%.
+
+                What is the risk impact?</p>
+            <label><input id="34a" name="34" type="radio" value="0">a) $500</label>
+            <label><input id="34b" name="34" type="radio" value="1">b) $2,000</label>
+            <label><input id="34c" name="34" type="radio" value="0">c) $50,000</label>
+            <label><input id="34d" name="34" type="radio" value="0">d) $200</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Risk assessment can use a quantitative or qualitative approach, or a mix of them. In the quantitative approach the risk level is calculated as the multiplication of risk likelihood and risk impact. So, Risk level = Risk likelihood * Risk impact
+                    Then, Risk impact = Risk level / Risk likelihood.
+                    In our case, Risk impact = $1,000 / 50% = $1,000 / 0.5 = $2,000.
+
+                    Thus:
+                    a) Is not correct
+                    b) Is correct
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.2.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #35</legend>
+            <p class="question">Which of the following are product risks?</p>
+            <label><input id="35a" name="35" type="radio" value="0">a) Scope creep</label>
+            <label><input id="35b" name="35" type="radio" value="1">b) Poor architecture</label>
+            <label><input id="35c" name="35" type="radio" value="0">c) Cost-cutting</label>
+            <label><input id="35d" name="35" type="radio" value="0">d) Poor tool support</label>
+            <label><input id="35e" name="35" type="radio" value="1">e) Response time too long</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Scope creep is an example of a project risk related to technical issues
+                    b) Is correct. Poor architecture is an example of a product risk since it refers to a product characteristic
+                    c) Is not correct. Cost-cutting is an example of a project risk, related to organizational issues
+                    d) Is not correct. Poor tool support is an example of a project risk related to technical issues
+                    e) Is correct. Response time too long is an example of a product risk since it refers to a product characteristic</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.2.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #36</legend>
+            <p class="question">Which of the following is NOT a valid purpose for a test report?</p>
+            <label><input id="36a" name="36" type="radio" value="0">a) Tracking test progress and identifying areas that require further attention</label>
+            <label><input id="36b" name="36" type="radio" value="0">b) Providing information on the tests executed, their results, and any issues or defects found</label>
+            <label><input id="36c" name="36" type="radio" value="1">c) Providing information about each defect, such as the steps to reproduce it</label>
+            <label><input id="36d" name="36" type="radio" value="0">d) Providing information on testing planned for the next period</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Tracking test progress and identifying areas that require further attention is an example of supporting the ongoing control of testing. This is one of the purposes of test reports
+                    b) Is not correct. Providing information on the tests executed, their results, and any issues or defects found is an example of summarizing the test activities performed at a given test level. This is one of the purposes of test reports
+                    c) Is correct. Providing information about defects is the purpose of a defect report, not a test report
+                    d) Is not correct. Providing information on testing planned for the next period is one of the purposes of test reports</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.3.2</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #37</legend>
+            <p class="question">The user reported a software failure. An engineer from the support team asked the user for the software version number where the failure was observed. Based on the version number, the team reassembled all the files that made up the release. This later allowed a developer to perform analysis, find the defect, and fix it.
+
+                Which of the following enabled the above activity to be performed by the team?</p>
+            <label><input id="37a" name="37" type="radio" value="0">a) Risk management</label>
+            <label><input id="37b" name="37" type="radio" value="0">b) Test monitoring and control</label>
+            <label><input id="37c" name="37" type="radio" value="0">c) Whole-team approach</label>
+            <label><input id="37d" name="37" type="radio" value="1">d) Configuration management</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. Risk management consists of risk analysis and risk control. Neither of these activities supports the reassembly of the files that made up the release, because these activities deal with risks, not with configuration items
+                    b) Is not correct. Test monitoring is concerned with gathering information about testing. This information is used to assess test progress and to measure whether the test exit criteria or the test tasks associated with the exit criteria are satisfied, such as meeting the targets for coverage of product risks, requirements, or other acceptance criteria. Test control uses the information from test monitoring to provide, in the form of control directives, guidance and the necessary corrective actions to achieve the most effective and efficient testing. None of these activities deal with the management of configuration items
+                    c) Is not correct. The whole-team approach builds on the tester’s skill to work effectively in a team context and to contribute positively to the team goals. So, it focuses on team-related issues, not on configuration items
+                    d) Is correct. Configuration management provides a discipline for identifying, controlling, and tracking work products. Configuration management keeps a record of changed configuration items when a new baseline is created. Using configuration management, it is possible to revert to a previous baseline in order to reproduce previous test results</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.4.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #38</legend>
+            <div class="question">
+                Consider the following defect report for a Book Lending System.
+
+                <blockquote class="font-weight-400"><b>Defect ID:</b> 001
+                <b>Title:</b> Unable to Return a Book
+                <b>Severity:</b> High
+                <b>Priority:</b>
+                <b>Environment:</b> Windows 10, Google Chrome
+                <b>Description:</b> When attempting to return a book using the Book Return feature, the system does not register the return and the book remains checked out to the user.
+                <b>Steps to Reproduce:</b>
+                - Login to the Book Lending System as a user who has checked out a book.
+                - Click on the "Book Return" button for the book that has been checked out.
+                - System does not register the return and the book remains checked out.
+                <b>Expected Result:</b> The book should be returned and no longer appear as checked out to the user.
+                <b>Actual Result:</b> The book remains checked out to the user and is not registered as returned in the system.
+                <b>Attachments:</b> [empty list]</blockquote>
+                Which of the following is MOST likely to help the developer reproduce the failure quickly?
+            </div>
+            <label><input id="38a" name="38" type="radio" value="1">a) Adding information about which users and which books the issue affects to the “Description” section</label>
+            <label><input id="38b" name="38" type="radio" value="0">b) Filling in the missing value for the “Priority” field</label>
+            <label><input id="38c" name="38" type="radio" value="0">c) Adding memory dumps and database snapshots taken after each step described in the “Steps to Reproduce” section to the “Attachments” section.</label>
+            <label><input id="38d" name="38" type="radio" value="0">d) Repeating the same test case for different environments and writing defect reports for each of them separately</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is correct. Adding this information allows the developer to use the same input data, so it is more likely they will be able to reproduce the failure quickly and so identify the defect faster
+                    b) Is not correct. Adding the value of Priority will not help in reproducing the defect itself
+                    c) Is not correct. Although some of this information may be of value, adding the memory dumps and database snapshots after each step will be too much, because most of these artefacts will contain useless information for the developer, and make the report less readable. It will also require the developer to spend a lot of time analyzing this information, which will lengthen the repair process
+                    d) Is not correct. The question was about helping the developer to reproduce the defect observed for a specific environment configuration</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-5.5.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K3</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #39</legend>
+            <p class="question">Given the following test tool categories:
+
+                i. Collaboration tools
+                ii. DevOps tools
+                iii. Management tools
+                iv. Non-functional testing tools
+                v. Test design and implementation tools
+
+                Tools from which of the categories are MOST likely to facilitate test execution?</p>
+            <label><input id="39a" name="39" type="radio" value="0">a) i, v</label>
+            <label><input id="39b" name="39" type="radio" value="1">b) ii, iv</label>
+            <label><input id="39c" name="39" type="radio" value="0">c) i, iii, v</label>
+            <label><input id="39d" name="39" type="radio" value="0">d) ii, iii, iv</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">Considering each of the listed tool categories:
+
+                    i. Collaboration tools – facilitate communication. Communication does not include the facilitation of test execution
+                    ii. DevOps tools - support the DevOps delivery pipeline, workflow tracking, automated build process(es) and CI/CD. The delivery pipeline and CI/CD both include the facilitation of test execution, such as component testing for CI
+                    iii. Management tools – increase the test process efficiency by facilitating management of the SDLC, requirements, tests, defects and configuration. The management of these items does not include the facilitation of test execution
+                    iv. Non-functional testing tools – allow the tester to perform nonfunctional testing that is difficult or impossible to perform manually. Non-functional testing can include both static testing and dynamic testing, including test execution
+                    v. Test design and implementation tools – facilitate generation of test cases, test data and test procedures. The generation of this testware does not include the facilitation of test execution
+
+                    Thus:
+                    a) Is not correct
+                    b) Is correct. Both DevOps tools (ii) and Non-functional testing tools (iv) facilitate test execution
+                    c) Is not correct
+                    d) Is not correct</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-6.1.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K2</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question #40</legend>
+            <p class="question">Which of the following is MOST likely to be a risk of test automation?</p>
+            <label><input id="40a" name="40" type="radio" value="0">a) The detection of additional high-severity defects</label>
+            <label><input id="40b" name="40" type="radio" value="0">b) Providing measures that are too complicated for humans to derive</label>
+            <label><input id="40c" name="40" type="radio" value="1">c) Incompatibility with the development platform</label>
+            <label><input id="40d" name="40" type="radio" value="0">d) Substantially reduced test execution times</label>
+            <div class="explanation">
+                <div class="font-weight-700">Answer:</div>
+                <div class="answer">a) Is not correct. The detection of additional high-severity defects would be a benefit of test automation, rather than a risk
+                    b) Is not correct. The provision of measures that are too complicated for humans to derive themselves is normally considered to be a benefit of test automation
+                    c) Is correct. If the test automation is incompatible with the development platform, then it will not be able to integrate them, and, for instance, pass test inputs to the test object and receive test results from the test object
+                    d) Is not correct. Substantially reduced test execution times would normally be considered a benefit that is provided by test automation</div>
+                <div class="font-weight-700 margin-top-1">Reference:</div>
+                <div class="learning-objective color-muted font-size-small">Learning objective: FL-6.2.1</div>
+                <div class="k-level color-muted font-size-small">K-Level: K1</div>
+            </div>
+        </fieldset>
+
+        <!-- actions -->
+        <div class="margin-bottom-1">
+            <div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
+            <a href="#" class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="17 11 12 6 7 11" /><polyline points="17 18 12 13 7 18" /></svg>
+                Back To Top
+            </a>
+        </div><!-- /actions -->
+
+    </form><!--/exam-->
+</main>
+
+</body>
+
+</html>
