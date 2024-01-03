@@ -63,18 +63,5 @@ if (window.location.href.includes('assessment')) {
     // document.body.innerHTML += `<ui-popup></ui-popup>`;
 }
 
-document.body.innerHTML += `<script type="text/javascript">
-                            var sc_project=12954337;
-                            var sc_invisible=1;
-                            var sc_security="4c7965b8";
-                            </script>
-                            <script type="text/javascript"
-                            src="https://www.statcounter.com/counter/counter.js" async></script>
-                            <noscript><div class="statcounter"><a title="Web Analytics"
-                            href="https://statcounter.com/" target="_blank"><img class="statcounter"
-                            src="https://c.statcounter.com/12954337/0/4c7965b8/1/" alt="Web Analytics"
-                            referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-
-                            <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=da4639fb62aad8d5d4dba80f87dcc666467e6a27'></script>
-                            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1121332/t/1"></script>
+document.body.innerHTML += `<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fheyallan.github.io%2Fistqb-ctfl%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Pop&edge_flat=false"/></a>
                             `
