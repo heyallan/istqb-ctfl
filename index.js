@@ -62,3 +62,19 @@ customElements.define('ui-popup', PopUp);
 if (window.location.href.includes('assessment')) {
     // document.body.innerHTML += `<ui-popup></ui-popup>`;
 }
+
+document.body.innerHTML += `<script type="text/javascript">
+                            var sc_project=12954337;
+                            var sc_invisible=1;
+                            var sc_security="4c7965b8";
+                            </script>
+                            <script type="text/javascript"
+                            src="https://www.statcounter.com/counter/counter.js" async></script>
+                            <noscript><div class="statcounter"><a title="Web Analytics"
+                            href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                            src="https://c.statcounter.com/12954337/0/4c7965b8/1/" alt="Web Analytics"
+                            referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+                             <a href='https://www.free-counters.org/'>Counter</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=da4639fb62aad8d5d4dba80f87dcc666467e6a27'></script>
+                            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1121332/t/1"></script>
+                            `
