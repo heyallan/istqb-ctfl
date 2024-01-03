@@ -63,5 +63,4 @@ if (window.location.href.includes('assessment')) {
     // document.body.innerHTML += `<ui-popup></ui-popup>`;
 }
 
-document.body.innerHTML += `<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fheyallan.github.io%2Fistqb-ctfl%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Pop&edge_flat=false"/></a>
-                            `
+document.body.innerHTML += `<script type="text/javascript">var sc_project=12954337; var sc_invisible=1; var sc_security="4c7965b8";</script><script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>`
