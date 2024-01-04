@@ -99,14 +99,20 @@ setTimeout(() => {
 }, 5000);
 
 
-((doc, script) => {
-	var sc_project=12954337;
-	var sc_invisible=1;
-	var sc_security="4c7965b8";
-	script = doc.createElement('script');
-	script.type = 'text/javascript';
-	script.async = true;
-	script.onload = function() { /* remote script has loaded */ };
-	script.src = 'https://www.statcounter.com/counter/counter.js';
-	doc.getElementsByTagName('head')[0].appendChild(script);
+((document) => {
+	var varScript = undefined;
+	var scriptContent = '';
+	varScript = document.createElement('script');
+	varScript.type = 'text/javascript';
+	scriptContent = document.createTextNode(`var sc_project=12954337; var sc_invisible=1; var sc_security="4c7965b8";`);
+	varScript.appendChild(scriptContent);
+	document.getElementsByTagName('head')[0].appendChild(varScript);
+	// - - - - - - - - - - - - -
+	var remoteScript = undefined;
+	remoteScript = document.createElement('script');
+	remoteScript.type = 'text/javascript';
+	remoteScript.async = true;
+	remoteScript.onload = function() { /* remote script has loaded */ };
+	remoteScript.src = 'https://www.statcounter.com/counter/counter.js';
+	document.getElementsByTagName('head')[0].appendChild(remoteScript);
 })(document);
