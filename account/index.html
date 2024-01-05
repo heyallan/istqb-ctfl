@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ISTQB-CTFL Certified Tester Foundation Level</title>
+	<meta name="description" content="Study & Practice Tool">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/reset@3.1.1/dist/reset.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/layout@1.4.3/dist/layout.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/grid@3.2.0/dist/grid.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/properties@3.1.0/dist/properties.min.css">
+	<link rel="stylesheet" href="/istqb-ctfl/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script defer src="/istqb-ctfl/functions.js"></script>
+	<script defer src="/istqb-ctfl/index.js"></script>
+	<script type="module" src="/istqb-ctfl/auth.js"></script>
+</head>
+<body>
+
+<div class="">
+	<p>Please login:</p>
+</div>
+
+<div data-condition="logged" class="hide">
+	Welcome <span class="font-weight-700" data-get="given_name"></span>
+</div>
+
+<div id="logged_out_view">
+	<button id="login" type="button">Login</button>
+	<button id="register" type="button">Registration</button>
+</div>
+
+</body>
+</html>

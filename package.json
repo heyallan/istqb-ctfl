@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@kinde-oss/kinde-auth-pkce-js": "^3.0.27"
+  }
+}

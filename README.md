@@ -13,8 +13,8 @@
   - [ ] progress bar
 - [ ] Move all data to json file
 - [ ] Link metadata 'Learning objectives' to syllabus
-- [ ] Add tutoring page
-  - [ ] ISTQB study group (premium price)
+- [ ] Add tutoring
+  - [ ] study group
   - [ ] English
   - [ ] Web development
   - [ ] Test automation
