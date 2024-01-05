@@ -4,6 +4,7 @@
 
 ## Todo
 
+- [ ] update heading levels (h1 and down)
 - [ ] add support for questions with 2 answers
 - [ ] check for misspellings (*)
 - [ ] Add tools

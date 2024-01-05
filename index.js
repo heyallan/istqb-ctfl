@@ -96,7 +96,7 @@ setTimeout(() => {
     if (sessionStorage.getItem('needhelp') === 'dismiss') return;
 	const popup = document.createElement('ui-popup');
 	document.body.insertAdjacentElement('beforeEnd', popup);
-}, 5000);
+}, 15000);
 
 
 ((document) => {

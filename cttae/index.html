@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ISTQB-CTTAE Test Automation Engineer</title>
+	<meta name="description" content="ISTQB-CTTAE Syllabus">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/reset@3.1.1/dist/reset.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/grid@3.2.0/dist/grid.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/properties@3.1.0/dist/properties.min.css">
+	<link rel="stylesheet" href="/istqb-ctfl/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script defer src="/istqb-ctfl/functions.js"></script>
+	<script defer src="/istqb-ctfl/index.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="margin-top-4 margin-bottom-1">
+		<h1><span class="underscore">ISTQB-CTTAE Test Automation Engineer</span></h1>
+		<p class="font-size-h2 font-family-heading font-weight-400 color-primary">Syllabus</p>
+		<nav class="">
+			<hr class="no-print margin-bottom-0.5">
+			<p class="no-print margin-bottom-0.5">
+				<a class="color-inherit" href="../">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10" /><polyline points="12 8 8 12 12 16" /><line x1="16" x2="8" y1="12" y2="12" /></svg>
+					Back
+				</a>
+				&nbsp;
+				•
+				&nbsp;
+				<button class="btn-text" type="button" data-action="dialog" data-target="tips">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10" /><line x1="12" x2="12" y1="16" y2="12" /><line x1="12" x2="12.01" y1="8" y2="8" /></svg>
+					Tips
+				</button>
+				&nbsp;
+				•
+				&nbsp;
+				<button class="btn-text" type="button" data-action="print">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9" /><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /><rect height="8" width="12" x="6" y="14" /></svg>
+					Print
+				</button>
+			</p>
+			<hr>
+		</nav>
+	</div>
+</div>
+
+<main class="container printable">
+	<div class="flex gap-2">
+		<div class="width-4-md">
+			<p class="text-uppercase font-size-small font-weight-700">Table of contents</p>
+			<a class="display-block margin-bottom-0.5" href="#1-introduction-and-objectives-for-test-automation">1. Introduction and Objectives for Test Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#1-1-purpose-of-test-automation">1.1 Purpose of Test Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#1-2-success-factors-in-test-automation">1.2 Success Factors in Test Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#2-preparing-for-test-automation">2. Preparing for Test Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#2-1-sut-factors-influencing-test-automation">2.1 SUT Factors Influencing Test Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#2-2-tool-evaluation-and-selection">2.2 Tool Evaluation and Selection</a>
+			<a class="display-block margin-bottom-0.5" href="#2-3-design-for-testability-and-automation">2.3 Design for Testability and Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#3-the-generic-test-automation-architecture">3. The Generic Test Automation Architecture</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-introduction-to-gtaa">3.1 Introduction to gTAA</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-1-overview-of-the-gtaa">3.1.1 Overview of the gTAA</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-2-test-generation-layer">3.1.2 Test Generation Layer</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-3-test-definition-layer">3.1.3 Test Definition Layer</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-4-test-execution-layer">3.1.4 Test Execution Layer</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-5-test-adaptation-layer">3.1.5 Test Adaptation Layer</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-6-configuration-management-of-a-tas">3.1.6 Configuration Management of a TAS</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-7-project-management-of-a-tas">3.1.7 Project Management of a TAS</a>
+			<a class="display-block margin-bottom-0.5" href="#3-1-8-tas-support-for-test-management">3.1.8 TAS Support for Test Management</a>
+			<a class="display-block margin-bottom-0.5" href="#3-2-taa-design">3.2 TAA Design</a>
+			<a class="display-block margin-bottom-0.5" href="#3-2-1-introduction-to-taa-design">3.2.1 Introduction to TAA Design</a>
+			<a class="display-block margin-bottom-0.5" href="#3-2-2-approaches-for-automating-test-cases">3.2.2 Approaches for Automating Test Cases</a>
+			<a class="display-block margin-bottom-0.5" href="#3-2-3-technical-considerations-of-the-sut">3.2.3 Technical considerations of the SUT</a>
+			<a class="display-block margin-bottom-0.5" href="#3-2-4-considerations-for-development/qa-processes">3.2.4 Considerations for Development/QA Processes</a>
+			<a class="display-block margin-bottom-0.5" href="#3-3-tas-development">3.3 TAS Development</a>
+			<a class="display-block margin-bottom-0.5" href="#3-3-1-introduction-to-tas-development">3.3.1 Introduction to TAS Development</a>
+			<a class="display-block margin-bottom-0.5" href="#3-3-2-compatibility-between-the-tas-and-the-sut">3.3.2 Compatibility between the TAS and the SUT</a>
+			<a class="display-block margin-bottom-0.5" href="#3-3-3-synchronization-between-tas-and-sut">3.3.3 Synchronization between TAS and SUT</a>
+			<a class="display-block margin-bottom-0.5" href="#3-3-4-building-reuse-into-the-tas">3.3.4 Building Reuse into the TAS</a>
+			<a class="display-block margin-bottom-0.5" href="#3-3-5-support-for-a-variety-of-target-systems">3.3.5 Support for a Variety of Target Systems</a>
+			<a class="display-block margin-bottom-0.5" href="#4-deployment-risks-and-contingencies">4 Deployment Risks and Contingencies</a>
+			<a class="display-block margin-bottom-0.5" href="#4-1-selection-of-test-automation-approach-and-planning-of-deployment/rollout">4.1 Selection of Test Automation Approach and Planning of Deployment/Rollout</a>
+			<a class="display-block margin-bottom-0.5" href="#4-1-1-pilot-project">4.1.1 Pilot Project</a>
+			<a class="display-block margin-bottom-0.5" href="#4-1-2-deployment">4.1.2 Deployment</a>
+			<a class="display-block margin-bottom-0.5" href="#4-1-3-deployment-of-the-tas-within-the-software-lifecycle">4.1.3 Deployment of the TAS Within the Software Lifecycle</a>
+			<a class="display-block margin-bottom-0.5" href="#4-2-risk-assessment-and-mitigation-strategies">4.2 Risk Assessment and Mitigation Strategies</a>
+			<a class="display-block margin-bottom-0.5" href="#4-3-test-automation-maintenance">4.3 Test Automation Maintenance</a>
+			<a class="display-block margin-bottom-0.5" href="#4-3-1-types-of-maintenance">4.3.1 Types of Maintenance</a>
+			<a class="display-block margin-bottom-0.5" href="#4-3-2-scope-and-approach">4.3.2 Scope and Approach</a>
+			<a class="display-block margin-bottom-0.5" href="#5-test-automation-reporting-and-metrics">5 Test Automation Reporting and Metrics</a>
+			<a class="display-block margin-bottom-0.5" href="#5-1-selection-of-tas-metrics">5.1 Selection of TAS Metrics</a>
+			<a class="display-block margin-bottom-0.5" href="#5-2-implementation-of-measurement">5.2 Implementation of Measurement</a>
+			<a class="display-block margin-bottom-0.5" href="#5-3-logging-of-the-tas-and-the-sut">5.3 Logging of the TAS and the SUT</a>
+			<a class="display-block margin-bottom-0.5" href="#5-4-test-automation-reporting">5.4 Test Automation Reporting</a>
+			<a class="display-block margin-bottom-0.5" href="#6-transitioning-manual-testing-to-an-automated-environment">6 Transitioning Manual Testing to an Automated Environment</a>
+			<a class="display-block margin-bottom-0.5" href="#6-1-criteria-for-automation">6.1 Criteria for Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#6-2-identify-steps-needed-to-implement-automation-within-regression-testing">6.2 Identify Steps Needed to Implement Automation within Regression Testing</a>
+			<a class="display-block margin-bottom-0.5" href="#6-3-factors-to-consider-when-implementing-automation-within-new-feature-testing">6.3 Factors to Consider when Implementing Automation within New Feature Testing</a>
+			<a class="display-block margin-bottom-0.5" href="#6-4-factors-to-consider-when-implementing-automation-of-confirmation-testing">6.4 Factors to Consider when Implementing Automation of Confirmation Testing</a>
+			<a class="display-block margin-bottom-0.5" href="#7-verifying-the-tas">7 Verifying the TAS</a>
+			<a class="display-block margin-bottom-0.5" href="#7-1-verifying-automated-test-environment-components">7.1 Verifying Automated Test Environment Components</a>
+			<a class="display-block margin-bottom-0.5" href="#7-2-verifying-the-automated-test-suite">7.2 Verifying the Automated Test Suite</a>
+			<a class="display-block margin-bottom-0.5" href="#8-continuous-improvement">8 Continuous Improvement</a>
+			<a class="display-block margin-bottom-0.5" href="#8-1-options-for-improving-test-automation">8.1 Options for Improving Test Automation</a>
+			<a class="display-block margin-bottom-0.5" href="#8-2-planning-the-implementation-of-test-automation-improvement">8.2 Planning the Implementation of Test Automation Improvement</a>
+		</div><!--/column-->
+		<div class="width-8-md syllabus">
+			<div class="no-print margin-bottom-1 stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">
+				This document contains extracts from the original syllabus. Published here for study purposes. Non-relevant sections have been omitted. To read the full document visit the ISTQB® website.
+			</div>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#1-introduction-and-objectives-for-test-automation">1. Introduction and Objectives for Test Automation</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#1-1-purpose-of-test-automation">1.1 Purpose of Test Automation</a></h2>
+			<p class="learning-objective font-size-small color-secondary">ALTA-E-1.1.1 (K2) Explain the objectives, advantages, disadvantages and limitations of test automation</p>
+			<p>In software testing, test automation (which includes automated test execution) is one or more of thefollowing tasks:</p>
+			<ul>
+				<li>Using purpose built software tools to control and set up test preconditions</li>
+				<li>Executing tests</li>
+				<li>Comparing actual outcomes to predicted outcomes</li>
+			</ul>
+			<p>A good practice is to separate the software used for testing from the system under test (SUT) itself tominimize interference. There are exceptions, for example embedded systems where the test softwareneeds to be deployed to the SUT.</p>
+			<p>Test automation is expected to help run many test cases consistently and repeatedly on different versionsof the SUT and/or environments. But test automation is more than a mechanism for running a test suitewithout human interaction. It involves a process of designing the testware, including:</p>
+			<ul>
+				<li>Software</li>
+				<li>Documentation</li>
+				<li>Test cases</li>
+				<li>Test environments</li>
+				<li>Test data</li>
+			</ul>
+			<p>Testware is necessary for the testing activities that include:</p>
+			<ul>
+				<li>Implementing automated test cases</li>
+				<li>Monitoring and controlling the execution of automated tests</li>
+				<li>Interpreting, reporting and logging the automated test results</li>
+			</ul>
+			<p>Test automation has different approaches for interacting with a SUT:</p>
+			<ul>
+				<li>Testing through the public interfaces to classes, modules or libraries of the SUT (API testing)</li>
+				<li>Testing through the user interface of the SUT (e.g., GUI testing or CLI testing)</li>
+				<li>Testing through a service or protoco</li>
+			</ul>
+			<p>Objectives of test automation include:</p>
+			<ul>
+				<li>Improving test efficiency</li>
+				<li>Providing wider function coverage</li>
+				<li>Reducing the total test cost</li>
+				<li>Performing tests that manual testers cannot</li>
+				<li>Shortening the test execution period</li>
+				<li>Increasing the test frequency/reducing the time required for test cycles</li>
+			</ul>
+			<p>Advantages of test automation include:</p>
+			<ul>
+				<li>More tests can be run per build</li>
+				<li>The possibility to create tests that cannot be done manually (real-time, remote, parallel tests)</li>
+				<li>Tests can be more complex</li>
+				<li>Tests run faster</li>
+				<li>Tests are less subject to operator error</li>
+				<li>More effective and efficient use of testing resources</li>
+				<li>Quicker feedback regarding software quality</li>
+				<li>Improved system reliability (e.g., repeatability, consistency)</li>
+				<li>Improved consistency of tests</li>
+			</ul>
+			<p>Disadvantages of test automation include:</p>
+			<ul>
+				<li>Additional costs are involved</li>
+				<li>Initial investment to setup TAS</li>
+				<li>Requires additional technologies</li>
+				<li>Team needs to have development and automation skills</li>
+				<li>On-going TAS maintenance requirement</li>
+				<li>Can distract from testing objectives, e.g., focusing on automating tests cases at the expense of executing tests</li>
+				<li>Tests can become more complex</li>
+				<li>Additional errors may be introduced by automation</li>
+			</ul>
+			<p>Limitations of test automation include:</p>
+			<ul>
+				<li>Not all manual tests can be automated</li>
+				<li>The automation can only check machine-interpretable results</li>
+				<li>The automation can only check actual results that can be verified by an automated test oracle</li>
+				<li>Not a replacement for exploratory testing</li>
+			</ul>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#1-2-success-factors-in-test-automation">1.2 Success Factors in Test Automation</a></h2>
+			<p class="learning-objective font-size-small color-secondary">ALTA-E-1.2.1 (K2) Identify technical success factors of a test automation project</p>
+			<p>The following success factors apply to test automation projects that are in operation and therefore the focus is on influences that impact on the long term success of the project. Factors influencing the success of test automation projects at the pilot stage are not considered here.</p>
+			<p>Major success factors for test automation include the following:</p>
+			<p><strong>Test Automation Architecture (TAA)</strong></p>
+			<p>The Test Automation Architecture (TAA) is very closely aligned with the architecture of a software product. It should be clear which functional and non-functional requirements the architecture is to support. Typically this will be the most important requirements.</p>
+			<p>Often TAA is designed for maintainability, performance and learnability. (See ISO/IEC 25000:2014 for details of these and other non-functional characteristics.) It is helpful to involve software engineers who understand the architecture of the SUT.</p>
+			<p><strong>SUT Testability</strong></p>
+			<p>The SUT needs to be designed for testability that supports automated testing. In the case of GUI testing, this could mean that the SUT should decouple as much as possible the GUI interaction and data from the appearance of the graphical interface. In the case of API testing, this could mean that more classes, modules or the command-line interface need to be exposed as public so that they can be tested.</p>
+			<p>The testable parts of the SUT should be targeted first. Generally, a key factor in the success of test automation lies in the ease of implementing automated test scripts. With this goal in mind, and also to provide a successful proof of concept, the Test Automation Engineer (TAE) needs to identify modules or components of the SUT that are easily tested with automation and start from there.</p>
+			<p><strong>Test Automation Strategy</strong></p>
+			<p>A practical and consistent test automation strategy that addresses maintainability and consistency of the SUT.</p>
+			<p>It may not be possible to apply the test automation strategy in the same way to both old and new parts of the SUT. When creating the automation strategy, consider the costs, benefits and risks of applying it to different parts of the code</p>
+			<p>Consideration should be given to testing both the user interface and the API with automated test cases to check the consistency of the results.</p>
+			<p><strong>Test Automation Framework (TAF)</strong></p>
+			<p>A test automation framework (TAF) that is easy to use, well documented and maintainable, supports a consistent approach to automating tests.</p>
+			<p>In order to establish an easy to use and maintainable TAF, the following must be done:</p>
+			<ul>
+				<li>Implement reporting facilities: The test reports should provide information (pass/fail/error/not run/aborted, statistical, etc.) about the quality of the SUT. Reporting should provide the information for the involved testers, test managers, developers, project managers and other stakeholders to obtain an overview of the quality.</li>
+				<li>Enable easy troubleshooting: In addition to the test execution and logging, the TAF has to provide an easy way to troubleshoot failing tests. The test can fail due to</li>
+					<ul>
+						<li>failures found in the SUT</li>
+						<li>failures found in the TAS</li>
+						<li>problem with the tests themselves or the test environment.</li>
+					</ul>
+				<li>Address the test environment appropriately: Test tools are dependent upon consistency in the test environment. Having a dedicated test environment is necessary in automated testing. If there is no control of the test environment and test data, the setup for tests may not meet the requirements for test execution and it is likely to produce false execution results.</li>
+				<li>Document the automated test cases: The goals for test automation have to be clear, e.g., which parts of application are to be tested, to what degree, and which attributes are to be tested (functional and non-functional). This must be clearly described and documented.</li>
+				<li>Trace the automated test: TAF shall support tracing for the test automation engineer to trace individual steps to test cases.</li>
+				<li>Enable easy maintenance: Ideally, the automated test cases should be easily maintained so that maintenance will not consume a significant part of the test automation effort. In addition, the maintenance effort needs to be in proportion to the scale of the changes made to the SUT. To do this, the cases must be easily analyzable, changeable and expandable. Furthermore, automated testware reuse should be high to minimize the number of items requiring changes.</li>
+				<li>Keep the automated tests up-to-date: when new or changed requirements cause tests or entire test suites to fail, do not disable the failed tests – fix them.</li>
+				<li>Plan for deployment: Make sure that test scripts can be easily deployed, changed and redeployed.</li>
+				<li>Retire tests as needed: Make sure that automated test scripts can be easily retired if they are no longer useful or necessary.</li>
+				<li>Monitor and restore the SUT: In real practice, to continuously run a test case or set of test cases, the SUT must be monitored continuously. If the SUT encounters a fatal error (such as a crash), the TAF must have the capability to recover, skip the current case, and resume testing with the next case.</li>
+			</ul>
+			<p>The test automation code can be complex to maintain. It is not unusual to have as much code for testing as the code for the SUT. This is why it is of utmost importance that the test code be maintainable. This is due to the different test tools being used, the different types of verification that are used and the different testware artifacts that have to be maintained (such as test input data, test oracles, test reports).</p>
+			<p>With these maintenance considerations in mind, in addition to the important items that should be done, there are a few that should not be done, as follows:</p>
+			<ul>
+				<li>Do not create code that is sensitive to the interface (i.e., it would be affected by changes in the graphical interface or in non-essential parts of the API).</li>
+				<li>Do not create test automation that is sensitive to data changes or has a high dependency on particular data values (e.g., test input depending on other test outputs).</li>
+				<li>Do not create an automation environment that is sensitive to the context (e.g., operating system date and time, operating system localization parameters or the contents of another application). In this case, it is better to use test stubs as necessary so the environment can be controlled.</li>
+			</ul>
+			<p>The more success factors that are met, the more likely the test automation project will succeed. Not all factors are required, and in practice rarely are all factors met. Before starting the test automation project, it is important to analyze the chance of success for the project by considering the factors in place and the factors missing keeping risks of the chosen approach in mind as well as project context. Once the TAA is in place, it is important to investigate which items are missing or still need work.</p>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#2-preparing-for-test-automation">2. Preparing for Test Automation</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#2-1-sut-factors-influencing-test-automation">2.1 SUT Factors Influencing Test Automation</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#2-2-tool-evaluation-and-selection">2.2 Tool Evaluation and Selection</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#2-3-design-for-testability-and-automation">2.3 Design for Testability and Automation</a></h2>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#3-the-generic-test-automation-architecture">3. The Generic Test Automation Architecture</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-introduction-to-gtaa">3.1 Introduction to gTAA</a></h2>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-1-overview-of-the-gtaa">3.1.1 Overview of the gTAA</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-2-test-generation-layer">3.1.2 Test Generation Layer</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-3-test-definition-layer">3.1.3 Test Definition Layer</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-4-test-execution-layer">3.1.4 Test Execution Layer</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-5-test-adaptation-layer">3.1.5 Test Adaptation Layer</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-6-configuration-management-of-a-tas">3.1.6 Configuration Management of a TAS</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-7-project-management-of-a-tas">3.1.7 Project Management of a TAS</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-1-8-tas-support-for-test-management">3.1.8 TAS Support for Test Management</a></h3>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#3-2-taa-design">3.2 TAA Design</a></h2>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-2-1-introduction-to-taa-design">3.2.1 Introduction to TAA Design</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-2-2-approaches-for-automating-test-cases">3.2.2 Approaches for Automating Test Cases</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-2-3-technical-considerations-of-the-sut">3.2.3 Technical considerations of the SUT</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-2-4-considerations-for-development/qa-processes">3.2.4 Considerations for Development/QA Processes</a></h3>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#3-3-tas-development">3.3 TAS Development</a></h2>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-3-1-introduction-to-tas-development">3.3.1 Introduction to TAS Development</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-3-2-compatibility-between-the-tas-and-the-sut">3.3.2 Compatibility between the TAS and the SUT</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-3-3-synchronization-between-tas-and-sut">3.3.3 Synchronization between TAS and SUT</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-3-4-building-reuse-into-the-tas">3.3.4 Building Reuse into the TAS</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#3-3-5-support-for-a-variety-of-target-systems">3.3.5 Support for a Variety of Target Systems</a></h3>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#4-deployment-risks-and-contingencies">4 Deployment Risks and Contingencies</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#4-1-selection-of-test-automation-approach-and-planning-of-deployment/rollout">4.1 Selection of Test Automation Approach and Planning of Deployment/Rollout</a></h2>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#4-1-1-pilot-project">4.1.1 Pilot Project</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#4-1-2-deployment">4.1.2 Deployment</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#4-1-3-deployment-of-the-tas-within-the-software-lifecycle">4.1.3 Deployment of the TAS Within the Software Lifecycle</a></h3>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#4-2-risk-assessment-and-mitigation-strategies">4.2 Risk Assessment and Mitigation Strategies</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#4-3-test-automation-maintenance">4.3 Test Automation Maintenance</a></h2>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#4-3-1-types-of-maintenance">4.3.1 Types of Maintenance</a></h3>
+			<h3><a class="display-block margin-bottom-0.5 color-inherit" href="#4-3-2-scope-and-approach">4.3.2 Scope and Approach</a></h3>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#5-test-automation-reporting-and-metrics">5 Test Automation Reporting and Metrics</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#5-1-selection-of-tas-metrics">5.1 Selection of TAS Metrics</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#5-2-implementation-of-measurement">5.2 Implementation of Measurement</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#5-3-logging-of-the-tas-and-the-sut">5.3 Logging of the TAS and the SUT</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#5-4-test-automation-reporting">5.4 Test Automation Reporting</a></h2>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#6-transitioning-manual-testing-to-an-automated-environment">6 Transitioning Manual Testing to an Automated Environment</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#6-1-criteria-for-automation">6.1 Criteria for Automation</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#6-2-identify-steps-needed-to-implement-automation-within-regression-testing">6.2 Identify Steps Needed to Implement Automation within Regression Testing</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#6-3-factors-to-consider-when-implementing-automation-within-new-feature-testing">6.3 Factors to Consider when Implementing Automation within New Feature Testing</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#6-4-factors-to-consider-when-implementing-automation-of-confirmation-testing">6.4 Factors to Consider when Implementing Automation of Confirmation Testing</a></h2>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#7-verifying-the-tas">7 Verifying the TAS</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#7-1-verifying-automated-test-environment-components">7.1 Verifying Automated Test Environment Components</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#7-2-verifying-the-automated-test-suite">7.2 Verifying the Automated Test Suite</a></h2>
+			<h1><a class="display-block margin-bottom-0.5 color-inherit" href="#8-continuous-improvement">8 Continuous Improvement</a></h1>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#8-1-options-for-improving-test-automation">8.1 Options for Improving Test Automation</a></h2>
+			<h2><a class="display-block margin-bottom-0.5 color-inherit" href="#8-2-planning-the-implementation-of-test-automation-improvement">8.2 Planning the Implementation of Test Automation Improvement</a></h2>
+		</div><!--/column-->
+	</div><!--/flex row-->
+</main><!--/container-->
+
+<dialog id="tips">
+	<p class="font-weight-700">Here are some study tips</p>
+	<ul>
+		<li>All section titles have anchor links</li>
+		<li>Link back to any section by clicking the title then copy and share the URL</li>
+		<li>All sections have learning objectives under each subtitle</li>
+		<li>Now you can share your favorite testing principles with your colleagues</li>
+		<li>Optimized for print</li>
+		<li>Printable version is 60% shorter than the original without affecting content</li>
+		<li>If you use MicroSoft Edge browser you get high quality 'Read Aloud' for free</li>
+	</ul>
+	<button class="btn-small" autofocus data-action="dialog-close" data-target="tips">OK</button>
+</dialog>
+
+</body>
