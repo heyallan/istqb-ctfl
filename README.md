@@ -4,9 +4,11 @@
 
 ## Todo
 
-- [ ] update heading levels (h1 and down)
+- [ ] update heading levels (all must be lower than h1)
+- [ ] make all id's numerical for easier cross reference
 - [ ] add support for questions with 2 answers
 - [ ] check for misspellings (*)
+- [ ] brakdown content into subpages
 - [ ] Add tools
   - [ ] notepad
   - [ ] calculator

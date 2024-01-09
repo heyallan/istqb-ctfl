@@ -68,7 +68,7 @@ function refillForm() {
 	for (let optionName of options) {
 		optionName = optionName[0];
 		document.querySelector(`[name="${optionName}"]`).checked = true;
-    }
+	}
 }
 
 
@@ -83,7 +83,7 @@ function formatNumbers(minutes, seconds) {
 }
 function updateTimer() {
 	seconds++;
-    if (seconds === 60) {
+	if (seconds === 60) {
 		seconds = 0;
 		minutes++;
 	}

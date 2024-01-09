@@ -85,18 +85,19 @@ class PopUp extends HTMLElement {
 		`;
 		const closeButton = this.querySelector('[data-action="close"]');
 		closeButton.closest('button').addEventListener('click', function(event) {
-		    sessionStorage.setItem('needhelp', 'dismiss')
-		    document.querySelector('#needhelp').style.display = 'none';
+			sessionStorage.setItem('needhelp', 'dismiss')
+			document.querySelector('#needhelp').style.display = 'none';
 		});
 	}
 }
 
 customElements.define('ui-popup', PopUp);
+
 setTimeout(() => {
-    if (sessionStorage.getItem('needhelp') === 'dismiss') return;
+	if (sessionStorage.getItem('needhelp') === 'dismiss') return;
 	const popup = document.createElement('ui-popup');
 	document.body.insertAdjacentElement('beforeEnd', popup);
-}, 15000);
+}, 30000);
 
 
 ((document) => {

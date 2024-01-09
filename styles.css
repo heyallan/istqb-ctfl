@@ -191,3 +191,12 @@ dt + dd {
 	padding: 1em 1em;
 }
 
+table {
+	display: table;
+	max-width: initial;
+	overflow: initial;
+	white-space: initial;
+}
+th, td {
+	vertical-align:top;
+}
