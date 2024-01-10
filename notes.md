@@ -1,3 +1,3 @@
-Auth
-
-- logged views should be injected, not pre-rendered
+- Optimize for mobile (simplify options)
+- Logged views should be injected, not hard coded
+- Redirect: https://opensource.com/article/19/7/permanently-redirect-github-pages
