@@ -4,25 +4,24 @@
 
 ## Todo
 
-- [ ] update heading levels (all must be lower than h1)
 - [ ] make all id's numerical for easier cross reference
 - [ ] add support for questions with 2 answers
 - [ ] check for misspellings (*)
 - [ ] brakdown content into subpages
-- [ ] Add tools
+- [ ] Add exam new format
   - [ ] notepad
   - [ ] calculator
   - [ ] bookmark
   - [ ] progress bar
 - [ ] Move all data to json file
-- [ ] Link metadata 'Learning objectives' to syllabus
+- [ ] Cross reference 'Learning objectives' from exams to syllabus
 - [ ] Add tutoring
   - [ ] study group
   - [ ] English
   - [ ] Web development
   - [ ] Test automation
   - [ ] Job hunting
-- [ ] Results via
+- [ ] Submit results via
   - [ ] Email
   - [ ] WA
 - [ ] Add attachments as PDF

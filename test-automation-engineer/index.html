@@ -4,13 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ISTQB-CTTAE Test Automation Engineer</title>
-	<meta name="description" content="ISTQB-CTTAE Syllabus">
+	<title>Test Automation Engineer (CT-TAE)</title>
+	<meta name="description" content="Test Automation Engineer (CT-TAE)">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 16 16'><text x='0' y='14'>📕</text></svg>" />
-	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/reset@3.1.1/dist/reset.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/grid@3.2.0/dist/grid.min.css"/>
-	<link rel="stylesheet" href="https://unpkg.com/@subcomponents/properties@3.1.0/dist/properties.min.css">
-	<link rel="stylesheet" href="/istqb-ctfl/styles.css">
+	<link rel="stylesheet" href="/istqb-ctfl/css/reset.min.css">
+	<link rel="stylesheet" href="/istqb-ctfl/css/grid.min.css"/>
+	<link rel="stylesheet" href="/istqb-ctfl/css/properties.min.css">
+	<link rel="stylesheet" href="/istqb-ctfl/css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -19,21 +19,16 @@
 </head>
 <body>
 
+<ui-navbar></ui-navbar>
+
+<div class="container margin-top-2">
+	<h1>Test Automation Engineer (CT-TAE)</h1>
+	<p>The Test Automation Engineer certification is focused on the design, development, and maintenance of test automation solutions, and also covers the automation of dynamic functional tests.</p>
+</div><!--/container-->
+
 <div class="container">
-	<h1>Certified Tester Test Automation Engineer (CT-TAE)</h1>
-	<p>The ISTQB® Test Automation Engineer (CT-TAE) certification focuses on the design, development, and maintenance of test automation solutions. It also covers the concepts, methods, tools, and processes for automating dynamic functional tests, and the relationship of those tests to test management, configuration management, defect management, software development processes, and quality assurance. Methods described are generally applicable across a variety of software life cycle approaches, types of software systems, and test types.</p>
-	<nav class="">
-		<hr class="no-print margin-bottom-0.5">
-		<p class="no-print margin-bottom-0.5">
-			<a class="color-inherit" href="../">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" x2="8" y1="12" y2="12"></line></svg>
-				Back
-			</a>
-		</p>
-		<hr>
-	</nav>
-	<div class="display-flex gap-1 justify-center">
-		<div class="width-12 width-3-md">
+	<div class="display-flex gap-1">
+		<div class="width-12 width-4-lg">
 			<div class="padding-1 border border-radius-0.3 bg-white box-shadow" style="height:100%">
 				<div class="display-flex gap-1">
 					<div class="width-min">
@@ -42,12 +37,12 @@
 					<div class="width-auto">
 						<h3 class="font-size-h5 margin-0">Syllabus</h3>
 						<p>Body of knowledge for the exam</p>
-						<a href="./syllabus" class="button border-radius-round text-uppercase font-size-small padding-x-1.5">Open</a>
+						<a href="/istqb-ctfl/test-automation-engineer/syllabus/" class="button border-radius-round text-uppercase font-size-small padding-x-1.5">Open</a>
 					</div>
-				</div>
-		</div>
-	</div>
-	<div class="width-12 width-3-md">
+				</div><!--/content-->
+			</div><!--/border-->
+		</div><!--/flex-item-->
+		<div class="width-12 width-4-lg">
 			<div class="padding-1 border border-radius-0.3 bg-white box-shadow" style="height:100%">
 				<div class="display-flex gap-1">
 					<div class="width-min">
@@ -55,14 +50,14 @@
 					</div>
 					<div class="width-auto">
 						<h3 class="font-size-h5 margin-0">Assessment 1</h3>
-						<p>Body of knowledge for the exam</p>
-						<a href="./assessment-1" class="button border-radius-round text-uppercase font-size-small padding-x-1.5">Open</a>
+						<p>Status: <span data-action="get-status" data-from="cttae-assessment-1">Ready</span></p>
+						<a href="/istqb-ctfl/test-automation-engineer/assessment-1" class="button border-radius-round text-uppercase font-size-small padding-x-1.5">Open</a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
+		</div><!--/flex-item-->
+	</div><!--/flex-grid-->
+</div><!--/container-->
 
 </body>
 </html>

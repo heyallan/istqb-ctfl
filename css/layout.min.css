@@ -1,0 +1,2 @@
+/** 1.4.3 https://github.com/subcomponents/layout */
+:root{--body-width:960px;--main-width:70%;--aside-width:30%;--gap:1rem}body{margin:4rem auto;padding:0 2rem;max-width:var(--body-width)}@media (min-width:850px){body{display:flex;flex-flow:row wrap;gap:0 var(--gap);align-content:flex-start}body>*{flex:1 1 100%;min-width:0}body>main{flex-basis:calc(var(--main-width) - var(--gap))}body>aside{flex-basis:calc(var(--aside-width) - var(--gap))}}

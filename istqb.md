@@ -1,4 +1,4 @@
-# ISTQB
+# ISTQB Certifications
 
 Core - Foundation Level:
 - Certified Tester Foundation Level (CTFL)
