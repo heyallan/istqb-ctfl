@@ -175,7 +175,7 @@ dt + dd {
 	}
 
 	.no-print {
-		display: none;
+		display: none !important;
 	}
 	.printable > .flex > [class*="width-"] {
 		--basis: 100%;
