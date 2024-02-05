@@ -165,8 +165,8 @@ dt {
 }
 
 dt + dd {
-	margin-bottom: 2rem;
-	margin-inline-start: 2rem;
+	margin-bottom: 1em;
+	margin-inline-start: 1em;
 }
 
 @media only print {

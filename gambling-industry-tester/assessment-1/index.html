@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice Assessment #1 - Gambling Industry Tester (CT-GT)</title>
+	<meta name="description" content="This assessment contains questions and answers and associated justifications">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 16 16'><text x='0' y='14'>📕</text></svg>" />
+	<link rel="stylesheet" href="/istqb-ctfl/css/reset.min.css">
+	<link rel="stylesheet" href="/istqb-ctfl/css/grid.min.css"/>
+	<link rel="stylesheet" href="/istqb-ctfl/css/properties.min.css">
+	<link rel="stylesheet" href="/istqb-ctfl/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap">
+	<script defer src="/istqb-ctfl/functions.js"></script>
+	<script defer src="/istqb-ctfl/index.js"></script>
+	<script defer src="/istqb-ctfl/assessment.js"></script>
+</head>
+
+<body>
+
+<ui-navbar></ui-navbar>
+
+<main class="container margin-top-2">
+	<!--title-->
+	<h1><span class="underscore">Practice Assessment #1 - Gambling Industry Tester (CT-GT)</span></h1>
+	<h2 class="font-weight-400 color-primary">This assessment contains questions and answers and associated justifications</h2>
+
+	<!--exam-->
+	<form id="ctgt-assessment-1">
+		<!--stats-->
+		<div class="display-flex gap-1 margin-bottom-2 font-family-heading">
+			<div class="width-6 width-auto-lg">
+				<div class=" border border-color-primary border-radius-0.2 box-shadow bg-white">
+					<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Status</div>
+					<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-status">Ready</span></div>
+				</div>
+			</div>
+			<div class="width-6 width-auto-lg">
+				<div class=" border border-color-primary border-radius-0.2 box-shadow bg-white">
+					<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Time</div>
+					<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span class="timer" data-action="get-time">00:00</span></div>
+				</div>
+			</div>
+			<div class="width-6 width-auto-lg">
+				<div class=" border border-color-primary border-radius-0.2 box-shadow bg-white">
+					<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Points</div>
+					<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-points">0</span>/<span class="max-points">0</span></div>
+				</div>
+			</div>
+			<div class="width-6 width-auto-lg">
+				<div class=" border border-color-primary border-radius-0.2 box-shadow bg-white">
+					<div class="stat-name padding-x-0.5 padding-y-0.5 font-weight-700 font-size-x-small text-uppercase bg-primary-highlight">Score</div>
+					<div class="stat-value padding-x-0.5 padding-y-0.5 border-top-1 border-color-primary font-size-small"><span data-action="get-score">0</span>/<span class="max-score">0</span></div>
+				</div>
+			</div>
+		</div><!--/stats-->
+
+		<!-- actions-->
+		<div class="margin-bottom-2">
+			<div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
+			<button type="button" data-action="start">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" x2="8" y1="13" y2="13" /><line x1="16" x2="8" y1="17" y2="17" /><polyline points="10 9 9 9 8 9" /></svg>
+		  		Start
+			</button>
+			<button type="button" data-action="finish">
+		  		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="22" x2="11" y1="2" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" /></svg>
+		  		Submit
+			</button>
+			<button type="button" data-action="reset">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="3 6 5 6 21 6" /><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /><line x1="10" x2="10" y1="11" y2="17" /><line x1="14" x2="14" y1="11" y2="17" /></svg>
+		  		Reset
+			</button>
+			<a href=".." class="button">
+		  		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3"/></svg>
+		  		Exit
+			</a>
+		</div><!-- /actions-->
+
+		<!--questions-->
+		<fieldset>
+			<legend>Question #1</legend>
+			<p class="question">Which one of the following best describes Audio testing?</p>
+			<label><input id="1a" name="1" type="radio" value="0">a) Testing to determine that the game music and sound effects interacts with the system platform functions as expected</label>
+			<label><input id="1b" name="1" type="radio" value="1">b) Testing to determine that the game music and sound effects play without stuttering or missing elements in the game and enhance the game play</label>
+			<label><input id="1c" name="1" type="radio" value="0">c) Testing to determine that the game music and sound effect’s function when many players simultaneously interact with the casino game</label>
+			<label><input id="1d" name="1" type="radio" value="0">d) Testing to determine that the game music and sound effects meet jurisdictional requirement</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Audio testing does not include interacting with the system platform
+					b) Is correct. As per the glossary
+					c) Is not correct. Audio testing does not include load testing
+					d) Is not correct. Audio testing does not include compliance testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.x</div>
+				<div class="k-level color-muted font-size-small">K-Level: K1</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #2</legend>
+			<p class="question">Which one of the following is specific skill for gambling industry testing, not required for other testing areas?</p>
+			<label><input id="2a" name="2" type="radio" value="0">a) Testing compliance to industry standards</label>
+			<label><input id="2b" name="2" type="radio" value="1">b) Math testing, including random number generators</label>
+			<label><input id="2c" name="2" type="radio" value="0">c) Testing the interoperability between external systems</label>
+			<label><input id="2d" name="2" type="radio" value="0">d) Applying techniques to test coverage of code structure</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Whilst Gambling industry compliance testing is listed as a skill for Gambling testing, certification to industry standards is common across many industry types – covered in core Foundation under Acceptance testing
+					b) Is correct. Per Syllabus ‘Math testing. Testing the multitude of pay tables, permutations, Random Number Generator (RNG) results and return to player (RTP) computations’
+					c) Is not correct. Whilst listed in this section it does say ’Interoperability Testing is common in all software that communicates with other software, systems and/or sub-systems’ – covered in core Foundation
+					d) Is not correct. White-box-structural testing of code applies to all application types – covered in core Foundation</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.1.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K1</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #3</legend>
+			<p class="question">Which of the following correctly describes gambling?</p>
+			<label><input id="3a" name="3" type="radio" value="1">a) The wagering of money on an event where the outcome is unknown where the intent is to win additional money or material goods</label>
+			<label><input id="3b" name="3" type="radio" value="0">b) The wagering of money on an event where the outcome is known where the intent is to win additional money or material goods</label>
+			<label><input id="3c" name="3" type="radio" value="0">c) An event where the outcome is unknown where the intent is to win money or material goods</label>
+			<label><input id="3d" name="3" type="radio" value="0">d) The wagering of money on an event where the outcome is unknown with the intent on winning back the original wager</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. The outcome of each game is unknown and based upon the outcome random result of the RNG
+					b) Is not correct. As the outcome of each event in the game is NOT known
+					c) Is not correct. Gambling requires a wager
+					d) Is not correct. The intent is to win additional money not just a return on investment</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.2.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K1</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #4</legend>
+			<p class="question">Which of the following best explains the role of an independent test lab?</p>
+			<label><input id="4a" name="4" type="radio" value="0">a) When working with an independent test lab, the regulatory commission send their finalized jurisdictional product for testing so that the games can be played in casinos or online</label>
+			<label><input id="4b" name="4" type="radio" value="1">b) When working with an independent test lab, gaming manufacturers send their finalized jurisdictional product for testing, so that the games can be played in casinos or online</label>
+			<label><input id="4c" name="4" type="radio" value="0">c) When working with an independent test lab, gaming manufacturers are looking for assistance in finalizing the game design</label>
+			<label><input id="4d" name="4" type="radio" value="0">d) When working with an independent test lab, the gaming manufacturers have the independent test lab perform functional testing to ensure that the game is true to the specifications</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. It is the game manufacturer who must send their finalized jurisdictional product for testing so that the games can be played in casinos or online - not the regulatory commission
+					b) Is correct. It is the game manufacturer who must send their finalized jurisdictional product for testing so that the games can be played in casinos or online
+					c) Is not correct. Independent test labs certify the gaming manufactures products they do not assist in finalizing the game design
+					d) Is not correct. Independent test labs certify the gaming manufactures products versus specific certification criteria. They do not perform functional testing to ensure that the game is true to the specifications</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.6.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K1</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #5</legend>
+			<p class="question">Which of the following best explains the role of the regulatory commission?</p>
+			<label><input id="5a" name="5" type="radio" value="0">a) The regulatory commission is responsible for testing a game to ensure that it meets all jurisdictional requirements</label>
+			<label><input id="5b" name="5" type="radio" value="0">b) The regulatory commission is responsible for revoking a game from casinos if a minor field issue occurs</label>
+			<label><input id="5c" name="5" type="radio" value="0">c) The regulatory commission is responsible for testing a game to ensure that it meets all game spec requirements</label>
+			<label><input id="5d" name="5" type="radio" value="1">d) The regulatory commission is responsible for revoking a game from casinos if a major field issue occurs</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is a minor field issue that will not involve the regulatory commissions
+					b) Is not correct. This is a minor field issue that will not involve the regulatory commissions
+					c) Is not correct. The regulatory commission will only revoke the game
+					d) Is correct. It is the regulatory commission duty to revoke or the game from casinos until the game is fixed because incorrect payouts are major field issues</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.6.3</div>
+				<div class="k-level color-muted font-size-small">K-Level: K1</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #6</legend>
+			<p class="question">Which one of the following is NOT true of Casino Games?</p>
+			<label><input id="6a" name="6" type="radio" value="0">a) Games like simulating racing base their number selection from a computerized Random Number Generator</label>
+			<label><input id="6b" name="6" type="radio" value="1">b) All the casino game types are typically tested</label>
+			<label><input id="6c" name="6" type="radio" value="0">c) The main difference of VLTs and slot machines is which organization operates them</label>
+			<label><input id="6d" name="6" type="radio" value="0">d) EGMs testing includes the operating system and the platform they are based on
+			</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. As per syllabus simulated racing is an example of random number ticket game
+					b) Is correct. As per syllabus typically table games are not testable, see syllabus section 1.3.1
+					c) Is not correct. As per syllabus ‘The main difference between a VLT and a slot machine is that VLTs are gambling machines that are operated by government lotteries while slot machines are gambling machines operated by private organizations such as casinos’
+					d) Is not correct. As per syllabus EGM testing includes operating system and the platform they are based on</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.3.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #7</legend>
+			<p class="question">Consider the following statements:
+				A. Games that can be played via wireless in-venue and interactive-TV channels
+				B. Progressives are legal across jurisdictions when played online using your computer C. In-venue mobile gambling means that a player can fund an EGM with their mobile devices
+				D. An online player can fund his account using a digital wallet
+				E. Online gambling sites can block the access of individuals who are using proxies trying to circumvent the location-based restrictions Which are true about online and mobile gambling?</p>
+			<label><input id="7a" name="7" type="radio" value="0">a) A, B, and D</label>
+			<label><input id="7b" name="7" type="radio" value="0">b) B, C, and D</label>
+			<label><input id="7c" name="7" type="radio" value="1">c) A, D, and E</label>
+			<label><input id="7d" name="7" type="radio" value="0">d) B, C, and E</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">The True statements are:
+					A. As per syllabus: “Online gambling includes all areas of gambling offered via Internet, mobile, wireless in-venue, and interactive-TV channels”
+					D. As per syllabus: “This [transferring money to and from the online casino] can be accomplished by an electronic wallet (also known as a digital wallet)”
+					E. Aspersyllabus:“Individualslookingtocircumventrestricting online gambling to specific locations, use technical measures such as proxy servers to try to circumvent restrictions imposed by geolocation software. Some online gambling sites are capable of detecting the use of proxies and anonymizers and block their access to the online gambling systems”
+
+					The Incorrect Statements are:
+					B. Is not True because the platform with which an online player accesses the gambling service does not change the geolocation restrictions of his jurisdiction
+					C. Is not True because in-venue mobile gambling allows players to access the Casino’s online offering which is available via a mobile browser or a mobile application only when connected to the Casino’s Wi-Fi or within their Bluetooth range
+
+					Thus:
+					a) Is not correct
+					b) Is not correct
+					c) Is correct
+					d) Is not correct</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.3.4</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #8</legend>
+			<p class="question">Which of the following statements about Random Number Generators (RNG) is NOT true?</p>
+			<label><input id="8a" name="8" type="radio" value="0">a) The Random Number Generator can be a computational or a physical device</label>
+			<label><input id="8b" name="8" type="radio" value="0">b) For machine-based gambling, hardware generators are generally preferred over pseudo- random algorithms</label>
+			<label><input id="8c" name="8" type="radio" value="1">c) For online gambling, pseudo-random algorithms are generally preferred over hardware generators</label>
+			<label><input id="8d" name="8" type="radio" value="0">d) The Random Number Generator is certified by either an independent test lab (ITL) or by the jurisdiction’s regulatory board</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This statement is correct as per syllabus: “The Random Number Generator is a computational or physical device”
+					b) Is not correct. This statement is correct as per syllabus: “[...] hardware generators are generally preferred over pseudo-random algorithms”
+					c) Is correct. Any series of numbers produced solely by a computer can never be truly random, and online products are not an exception
+					d) Is not correct. This statement is correct as per syllabus: “The Random Number Generator is certified by either an independent test lab (ITL) or by the jurisdiction’s regulatory board”</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.4.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #9</legend>
+			<p class="question">Which of the following test conditions would NOT belong to a geolocation testing suite?</p>
+			<label><input id="9a" name="9" type="radio" value="0">a) Verify that the responsible gambling options/restrictions match the expected regulation for a particular region or country</label>
+			<label><input id="9b" name="9" type="radio" value="0">b) Verify that the appropriate loyalty rewards are awarded to players of a particular region or country</label>
+			<label><input id="9c" name="9" type="radio" value="1">c) Verify that the correct Random Number Generator (RNG) is assigned to a player based on a particular region or country</label>
+			<label><input id="9d" name="9" type="radio" value="0">d) Verify that the player can access only the game offering of his/her region or country</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is a statement that we would find in the test suite. As per syllabus: “Some responsible gambling and player loyalty programs require knowing where the player is located”
+					b) Is not correct. This is a statement that we would find in the test suite. As per syllabus: “Some responsible gambling and player loyalty programs require knowing where the player is located”
+					c) Is correct. The RNG is not assigned to players
+					d) Is not correct. This is a statement that we would find in the test suite. As per syllabus: “Testing this function consists of ensuring the geolocation functions accurately restricts play based on the rules mandated by the location from which the player is playing”</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.4.4</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #10</legend>
+			<p class="question">Which of the following statements are NOT true about the importance of obtaining a First Pass on a gambling product?</p>
+			<label><input id="10a" name="10" type="radio" value="0">a) The development cost increases, causing a negative impact on the project</label>
+			<label><input id="10b" name="10" type="radio" value="1">b) The manufacture’s reputation amongst the product’s users decreases, negatively impacting the company’s revenue</label>
+			<label><input id="10c" name="10" type="radio" value="0">c) The launch date is delayed, causing a negative impact on the project and company’s revenue</label>
+			<label><input id="10d" name="10" type="radio" value="0">d) The certification cost increases, causing a negative impact on the project</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This statement is correct as per syllabus: “If the product does not receive a first-time pass, there are extra costs for additional development, QA and product certification”
+					b) Is correct. This is a false statement
+					c) Is not correct. This statement is correct as per syllabus: “[...] a product that does not receive a first pass is delayed from entering the market until it is certified, therefore negatively impacting its time-to-market”
+					d) Is not correct. This statement is correct as per syllabus: “If the product does not receive a first-time pass, there are extra costs for additional development, QA and product certification”</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.5.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #11</legend>
+			<p class="question"></p>
+			<label><input id="11a" name="11" type="radio" value="0">a) Local area linked progressive is a type of progressive jackpot</label>
+			<label><input id="11b" name="11" type="radio" value="0">b) A small percentage of each wager placed by a player on the game contributes to the jackpot award amount</label>
+			<label><input id="11c" name="11" type="radio" value="1">c) For each jackpot controller a jackpot server exists</label>
+			<label><input id="11d" name="11" type="radio" value="0">d) The progressive jackpot win is associated with the highest winning combination</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Local area linked progressive is one of the 3 types of progressive jackpots
+					b) Is not correct. As stated in the syllabus a small percentage of each wager contributes to the jackpot
+					c) Is correct. This is NOT true, progressive jackpot server is used to manage multiple jackpot controllers
+					d) Is not correct. The progressive jackpot is associated with the highest winning combination</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.4.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #12</legend>
+			<p class="question">In which of the following Gambling Product Development Lifecycle phases is the test team involved?</p>
+			<label><input id="12a" name="12" type="radio" value="0">a) Game Concept and Design Phase</label>
+			<label><input id="12b" name="12" type="radio" value="1">b) Code Complete Phase</label>
+			<label><input id="12c" name="12" type="radio" value="0">c) Acceptance Test Phase</label>
+			<label><input id="12d" name="12" type="radio" value="0">d) Release Build Phase</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Game designers, sound designers, game developers and jurisdictional experts are involved in this phase
+					b) Is correct. This is correct
+					c) Is not correct. This is not a test phase in the gambling software lifecycle
+					d) Is not correct. This is for the ITL to complete</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-1.6.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #13</legend>
+			<p class="question">Which of the following best explains compliance testing?</p>
+			<label><input id="13a" name="13" type="radio" value="0">a) The equipment manufacturer performs testing to determine the RNG and that the payout percentages is within the range regulated in that jurisdiction</label>
+			<label><input id="13b" name="13" type="radio" value="0">b) The equipment manufacturer tests against the jurisdictional specifications and independent specialist standards</label>
+			<label><input id="13c" name="13" type="radio" value="1">c) The gambling manufacturer submits what they consider to be a finalized product to an independent test lab who tests the product versus a set of jurisdictional standards</label>
+			<label><input id="13d" name="13" type="radio" value="0">d) The gambling manufacturer submits what they consider to be a finalized product to an independent test lab who tests the product versus the game design documents and other functional requirements</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Although this testing is part of compliance testing, the fact that it is being performed by the equipment manufacturer makes it pre-compliance testing
+					b) Is not correct. Although this testing is part of compliance testing, the fact that it is being performed by the equipment manufacturer makes it pre-compliance testing
+					c) Is correct. This is what compliance testing is
+					d) Is not correct. because compliance testing does not involve game design documents or other functional requirements</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-2.1.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #14</legend>
+			<p class="question">Which of the below statements is true if an already deployed game presents a major defect?</p>
+			<label><input id="14a" name="14" type="radio" value="0">a) Game developers fix the defect and publish the new version to casino floors and the online platforms</label>
+			<label><input id="14b" name="14" type="radio" value="0">b) Machine manufacturers test and certify the game follows jurisdictional rules</label>
+			<label><input id="14c" name="14" type="radio" value="0">c) Independent test labs force its removal from casino floors and online platforms</label>
+			<label><input id="14d" name="14" type="radio" value="1">d) Gambling regulatory commissions approve the new version of the game</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. As per syllabus: A new version of the game needs to be recertified by the ITL and approved by the regulatory commissions
+					b) Is not correct. As per syllabus: “Machine Manufacturers – who make and sell the hardware, platforms, operating systems and games (developed in house or sub-contracted)”
+					c) Is not correct. As per syllabus: “Independent test labs – test and certify that the game software, hardware, firmware, platform and operating system follow all the jurisdictional rules for each location where the game will be played”
+					d) Is correct. As per syllabus: the regulatory commissions approve every game played in their jurisdiction see syllabus section 2.2.1</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-2.2.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #15</legend>
+			<p class="question">Which of the following best explains VLTs and their ecosystem?</p>
+			<label><input id="15a" name="15" type="radio" value="1">a) The VLTs are the devices on which the players choose to play one game of the many available games. Slot machines communicate to a Site and/or Bank Controller and one or more central servers through a communication interface board</label>
+			<label><input id="15b" name="15" type="radio" value="0">b) The VLTs ecosystem is comprised of a slot machine or EGM, a Slot Machine Interface Board (SMIB), a Data Collection Unit or Bank Controller, and Central servers such as progressive servers or slot accounting servers</label>
+			<label><input id="15c" name="15" type="radio" value="0">c) The VLTs ecosystem is comprised of a slot machine or EGM, slot machine interface boards (SMIB), network switches, a bingo server, other central servers such as the casino accounting system and reporting servers</label>
+			<label><input id="15d" name="15" type="radio" value="0">d) In the VLTs Ecosystem, the slot machine does not obtain its outcomes from a Random Number Generator local to the machine, instead the pull of the one-armed bandit or the press of the button mechanically decides what outcome you get</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. This answer explains the VLT ecosystem
+					b) Is not correct. This answer is a SLOT ecosystem
+					c) Is not correct. This answer is wrong as there is no bingo server in this ecosystem
+					d) Is not correct. This answer is wrong because the outcome is based on the RNG, not a mechanical device</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-2.2.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #16</legend>
+			<p class="question">Which of the following best explains Slots and their ecosystem?</p>
+			<label><input id="16a" name="16" type="radio" value="0">a) The Slots are the devices on which the players choose to play one game of the many available games. Slot machines communicate to a Site and/or Bank Controller and one or more central servers through a communication interface board</label>
+			<label><input id="16b" name="16" type="radio" value="1">b) The SLOT ecosystem is comprised of a slot machine or EGM, a Slot Machine Interface Board (SMIB), a Data Collection Unit or Bank Controller, and Central servers such as progressive servers or slot accounting servers</label>
+			<label><input id="16c" name="16" type="radio" value="0">c) The SLOT ecosystem is comprised of a slot machine or EGM, slot machine interface boards (SMIB), network switches, a bingo server, other central servers such as the casino accounting system and reporting servers</label>
+			<label><input id="16d" name="16" type="radio" value="0">d) In the SLOT Ecosystem, the slot machine does not obtain its outcomes from a Random Number Generator local to the machine, instead the pull of the one-armed bandit or the press of the button mechanically decides what outcome you get</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This answer explains the VLT ecosystem
+					b) Is correct. This answer is a SLOT ecosystem
+					c) Is not correct. This answer is wrong as there is no bingo server in this ecosystem
+					d) Is not correct. This answer is wrong because the outcome is based on the RNG, not a mechanical device</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-2.2.3</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #17</legend>
+			<p class="question">Which one of the following would be an effective use of Exploratory testing during Game functional testing?</p>
+			<label><input id="17a" name="17" type="radio" value="0">a) Using a Checklist to see if the game is legal in supported regions</label>
+			<label><input id="17b" name="17" type="radio" value="0">b) Testing the Game on a variety of network speeds</label>
+			<label><input id="17c" name="17" type="radio" value="0">c) Checking if Bonus games perform correctly</label>
+			<label><input id="17d" name="17" type="radio" value="1">d) Checking the game is “fun to play” rather than functionally correct</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This would not be Exploratory Testing
+					b) Is not correct. This is Non-functional rather than Functional Testing
+					c) Is not correct. The tester would need to know what comprises Bonus games and how they should perform
+					d) Is correct. It is difficult to design a Checklist that quantifies the level of Fun in a game as it is so subjective. Syllabus 3.1.1 – “There is also a “fun factor or a player perspective testing”. Testers are asked to play the game, to do exploratory testing and provide feedback on whether a game is fun to play or not”</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.1.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #18</legend>
+			<p class="question">Which one of the following areas of testing would not be specifically targeted when performing a functional test of casino games?</p>
+			<label><input id="18a" name="18" type="radio" value="0">a) Pay tables are specific to the stake</label>
+			<label><input id="18b" name="18" type="radio" value="0">b) Ability to recall Game History</label>
+			<label><input id="18c" name="18" type="radio" value="1">c) Game performance does not degrade at peak times</label>
+			<label><input id="18d" name="18" type="radio" value="0">d) Help pages are available showing how the game is expected to behave</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Syllabus 3.1.2 states “pays and pay tables” are one of the specific areas to test
+					b) Is not correct. Syllabus 3.1.2 states “Game of Player History” are one of the specific areas to test
+					c) Is correct. Although this is important it is potentially true of any software and is a non-functional test activity
+					d) Is not correct. Syllabus 3.1.2 states “Help Files” are one of the specific areas to test</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.1.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #19</legend>
+			<p class="question">Which of the following areas of testing is specific to casino game compliance testing?</p>
+			<label><input id="19a" name="19" type="radio" value="0">a) Memory leaks and allocation by games</label>
+			<label><input id="19b" name="19" type="radio" value="1">b) Adherence to jurisdictional specifications</label>
+			<label><input id="19c" name="19" type="radio" value="0">c) Adherence of graphic sequence to game design</label>
+			<label><input id="19d" name="19" type="radio" value="0">d) Game functioning with specified configuration parameters</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is not specific to casino games (see 3.1.1)
+					b) Is correct. As described in the Syllabus 3.1.3 – “Many areas of the compliance testing will be the same as those performed in functional testing, but testing is against the jurisdictional specifications and not game specifications”
+					c) Is not correct. This is not specific to casino games (see 3.1.1)
+					d) Is not correct. This is not specific to casino games (see 3.1.1)</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.1.3</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #20</legend>
+			<p class="question">Which of the following options does not relate to Math testing within the Gambling Industry?</p>
+			<label><input id="20a" name="20" type="radio" value="0">a) Checking the game plays at the designated percentage</label>
+			<label><input id="20b" name="20" type="radio" value="1">b) Checking the game reports all revenue transactions</label>
+			<label><input id="20c" name="20" type="radio" value="0">c) Checking random numbers are truly random</label>
+			<label><input id="20d" name="20" type="radio" value="0">d) Checking the game plays as per the designated stakes</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Syllabus Section 3.2.1 first paragraph states Math Testing includes “return to player computations”
+					b) Is correct. This is Casino Testing rather than Math testing
+					c) Is not correct. Syllabus Section 3.2.1 first paragraph states Math Testing includes “random number generation results”
+					d) Is not correct. Syllabus Section 3.2.1 first paragraph states Math Testing includes “multitude of different pay tables” which may well relate to different stakes</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.2.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #21</legend>
+			<p class="question">Which of the following would NOT be part of Platform Functional Testing?</p>
+			<label><input id="21a" name="21" type="radio" value="0">a) Determining the player meets the age requirements</label>
+			<label><input id="21b" name="21" type="radio" value="0">b) Efficient payment of large amounts of coins after a big win</label>
+			<label><input id="21c" name="21" type="radio" value="0">c) Casino system integration to business intelligence systems</label>
+			<label><input id="21d" name="21" type="radio" value="1">d) Checking that the game returns the specified percentage</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This would be part of the platform security features as defined in the syllabus section 3.3.1
+					b) Is not correct. This would be part of Convenience features, such as payment processing as defined in the syllabus section 3.3.1
+					c) Is not correct. This would be part of business-to-business platform as defined in the syllabus section 3.3.1
+					d) Is correct. This is part of Math Testing not Platform Functional Testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.3.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #22</legend>
+			<p class="question">A customer complains to an operator that a Stand-Alone Progressive Pot that should increase until won is seemingly being reset on a daily basis without delivering a win. Which of the following Platform Areas is the most likely cause of this failure?</p>
+			<label><input id="22a" name="22" type="radio" value="0">a) Accounting meters</label>
+			<label><input id="22b" name="22" type="radio" value="0">b) Tilt conditions</label>
+			<label><input id="22c" name="22" type="radio" value="1">c) Power-up and Power-down functionality</label>
+			<label><input id="22d" name="22" type="radio" value="0">d) Setup and configuration</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. It is unlikely that logging gameplay information will cause Pots to reset
+					b) Is not correct. Possible but unlikely as this event seems to be Time rather than Event driven
+					c) Is correct. The scenario indicates that the Pots may be being reset if the machine is switched off (say) overnight
+					d) Is not correct. Unless explicitly specified then Pots should be reset on an Event rather than by a value in the Setup</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.3.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #23</legend>
+			<p class="question">What is the principal, final objective of Platform Compliance Testing?</p>
+			<label><input id="23a" name="23" type="radio" value="1">a) Platform abstraction meets jurisdictional specifications</label>
+			<label><input id="23b" name="23" type="radio" value="0">b) Platforms are available in jurisdictional countries</label>
+			<label><input id="23c" name="23" type="radio" value="0">c) The game is legal in the jurisdictional countries</label>
+			<label><input id="23d" name="23" type="radio" value="0">d) The platform supports an Open Architecture</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. As per Syllabus 3.3.3 – “The end objective of platform compliance testing is to determine that every platform abstraction level meets all the jurisdictional specifications including technical integrity, safety and security”
+					b) Is not correct. Jurisdiction means all abstractions should not be available in all countries
+					c) Is not correct. This is Game Compliance Testing
+					d) Is not correct. This is Functional not Compliance Testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.3.3</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #24</legend>
+			<p class="question">Which one of the following tests would be included in a platform compliance test?</p>
+			<label><input id="24a" name="24" type="radio" value="0">a) Operator mode - validating the casino operator’s role against the game’s functional specifications</label>
+			<label><input id="24b" name="24" type="radio" value="0">b) Testing security meters and accounting meters using the test team’s checklist and plans</label>
+			<label><input id="24c" name="24" type="radio" value="0">c) Testing graphic sequences and game messages against the system design documents</label>
+			<label><input id="24d" name="24" type="radio" value="1">d) Testing power up and power down against jurisdictional requirements</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Those are the right areas to test, but we do not test them versus functional requirements
+					b) Is not correct. QA platform plans, and checklists are not used, compliance checklists are used
+					c) Is not correct. Those are the right areas to test, but we do not test them versus game design docs
+					d) Is correct. Right areas and versus jurisdictional requirements</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.3.4</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #25</legend>
+			<p class="question">Which one of the following tests would be included in a casino system functional test?</p>
+			<label><input id="25a" name="25" type="radio" value="0">a) Testing the tower light located on top of the gem</label>
+			<label><input id="25b" name="25" type="radio" value="0">b) Testing the casino system reports all revenue to the government and stakeholders</label>
+			<label><input id="25c" name="25" type="radio" value="0">c) Testing the game functions as stated in the game spec</label>
+			<label><input id="25d" name="25" type="radio" value="1">d) Testing all peripherals integrate as per the game spec</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. As per syllabus this is a part of hardware testing
+					b) Is not correct. As per syllabus this is a part of casino system compliance testing
+					c) Is not correct. As per syllabus this is a part of gambling and wager functional testing
+					d) Is correct. As per question, this is a part of casino system functional test, see syllabus 3.4.1</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.4.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #25</legend>
+			<p class="question">Which of the following best identifies what is meant by casino system compliance testing?</p>
+			<label><input id="25a" name="25" type="radio" value="1">a) It uses compliance test plans and checklists to determine that each major area of the system and integrated system meets jurisdictional requirements</label>
+			<label><input id="25b" name="25" type="radio" value="0">b) It uses compliance test plans and checklists to determine that each major area of the system and integrated system meets the game design specification</label>
+			<label><input id="25c" name="25" type="radio" value="0">c) It uses compliance test plans and checklists to determine that each major area of the system and integrated system meets the technical requirements</label>
+			<label><input id="25d" name="25" type="radio" value="0">d) It uses compliance test plans and checklists to determine that each major area of the system and integrated system meets the mathematical design specification</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. That is what we do in casino system compliance testing, see syllabus section 3.4.2
+					b) Is not correct. It is wrong because casino system compliance testing is based on jurisdictional requirements, not game design requirements
+					c) Is not correct. It is wrong because casino system compliance testing is based on jurisdictional requirements, not technical requirements
+					d) Is not correct. It is wrong because casino system compliance testing is based on jurisdictional requirements, not math design specs</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.4.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #27</legend>
+			<p class="question">Which of the following identifies an area that is covered by casino system compliance testing?</p>
+			<label><input id="27a" name="27" type="radio" value="0">a) Ensuring diagnostic logs meet the jurisdictional specifications</label>
+			<label><input id="27b" name="27" type="radio" value="1">b) Ensuring transactions are recorded and accessible as per the jurisdictional specifications</label>
+			<label><input id="27c" name="27" type="radio" value="0">c) Ensuring peripherals integrate as per the game specifications</label>
+			<label><input id="27d" name="27" type="radio" value="0">d) Ensuring the rules of play meet the jurisdictional specifications</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is an area covered by platform compliance testing
+					b) Is correct. This is an area covered by casino compliance testing, see syllabus 3.4.3
+					c) Incorrect peripheral integration is done during functional testing
+					d) Is not correct. This is an area covered by casino game compliance testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.4.3</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #28</legend>
+			<p class="question">Your organization is developing a new casino game called Hot Pink and you have been tasked with performing protocol functional test. Which one of the following tests would you perform?</p>
+			<label><input id="28a" name="28" type="radio" value="1">a) Ensure the slot machine meter reporting and event logging are operating correctly</label>
+			<label><input id="28b" name="28" type="radio" value="0">b) Ensure the transactions are recorded and accessible</label>
+			<label><input id="28c" name="28" type="radio" value="0">c) Ensure the casino game reports revenue to the government and stakeholders correctly</label>
+			<label><input id="28d" name="28" type="radio" value="0">d) Ensure the player history, what the player put in the machine and their results are accurate</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. As per syllabus this is a part of protocol functional testing
+					b) Is not correct. As per syllabus this is a part of casino functional testing
+					c) Is not correct. As per syllabus this is a part of casino functional testing
+					d) Is not correct. As per syllabus this is a part of game functional testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.5.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #29</legend>
+			<p class="question">Which of the following best identifies what areas are covered by casino protocol functional testing?</p>
+			<label><input id="29a" name="29" type="radio" value="0">a) During casino protocol functional testing the tester ensures the jurisdictional specifications are met for the communication link with EGM and Host</label>
+			<label><input id="29b" name="29" type="radio" value="0">b) During casino protocol functional testing the tester ensures the jurisdictional and games specifications are met for the communication link with EGM and Host</label>
+			<label><input id="29c" name="29" type="radio" value="1">c) During casino protocol functional testing the tester ensures the game specifications are met for the communication link with EGM and Host</label>
+			<label><input id="29d" name="29" type="radio" value="0">d) During casino protocol functional testing the tester ensures the security specifications and game specifications are met for the communication link with EGM and Host</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Jurisdictional specs are not considered during casino protocol functional testing, See Syllabus 3.5.3
+					b) Is not correct. Jurisdictional specs are not considered during casino protocol functional testing, See Syllabus 3.5.3
+					c) Is correct. This is what we test when we do protocol testing
+					d) Is not correct. Security specs are not considered during casino protocol functional testing, See Syllabus 3.8.1</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.5.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #30</legend>
+			<p class="question">Which of the following best explains the concepts of protocol compliance testing?</p>
+			<label><input id="30a" name="30" type="radio" value="0">a) It tests the communication protocol for the non-networked EGMs against jurisdictional specifications</label>
+			<label><input id="30b" name="30" type="radio" value="0">b) It tests gambling protocols which are used only with online gambling</label>
+			<label><input id="30c" name="30" type="radio" value="0">c) It tests compliance of hardware on the EGMs against jurisdictional specifications</label>
+			<label><input id="30d" name="30" type="radio" value="1">d) It tests gambling protocols which connect slot machines to the host systems for software download, remote configuration, and remote software verification against jurisdictional specifications</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Protocol compliance testing is for networked EGMs
+					b) Is not correct. Protocol compliance is for connected slot machines
+					c) Is not correct. This is what we test when we do platform testing
+					d) Is correct. This is the correct answer, see section 3.5.3 in the syllabus</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.5.3</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #31</legend>
+			<p class="question">Which of the following best identifies what areas are covered by protocol compliance testing?</p>
+			<label><input id="31a" name="31" type="radio" value="1">a) Testing that critical information related to revenue, integrity, and security is preserved in the event of a communication loss, in accordance with jurisdictional specifications</label>
+			<label><input id="31b" name="31" type="radio" value="0">b) Testing host reporting of accounting meters and communication loss for online systems in accordance with the network design specification</label>
+			<label><input id="31c" name="31" type="radio" value="0">c) Testing that erroneous data or signals will not adversely affect the operation of an EGM in accordance with the communication protocol design specification</label>
+			<label><input id="31d" name="31" type="radio" value="0">d) Testing that the casino system reports revenue to the government and stakeholders correctly in accordance with jurisdictional specifications</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. As stated in section 3.5.4
+					b) Is not correct. Test basis for protocol compliance testing is not the network design specification it is the jurisdictional specifications
+					c) Is not correct. Test basis for protocol compliance testing is not the protocol design specification it is the jurisdictional specifications
+					d) Is not correct. We do not test the casino system during protocol compliance testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.5.4</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #32</legend>
+			<p class="question">A slot machine has been rigorously tested by the machine’s manufacturer. The following defects were raised during testing but the defect management tool lacks information on the types of testing each defect resulted from, information that would support defect cluster and root cause analysis. Which one of the following defect reports should be marked as resulting from hardware testing?</p>
+			<label><input id="32a" name="32" type="radio" value="1">a) After a forced entry to the machine’s cashbox; the machine failed to identify and record the event</label>
+			<label><input id="32b" name="32" type="radio" value="0">b) During the loss of communication between the EGM and the external servers, the player continued to place wagers, the player transactions displayed on the EGM’s game history, but they were not transmitted to the servers when the communication resumed</label>
+			<label><input id="32c" name="32" type="radio" value="0">c) When the EGM is placed in Operator Mode the operator can set game limits above 10,000</label>
+			<label><input id="32d" name="32" type="radio" value="0">d) When the player places a max bet, the player wins an incorrect amount</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. As per syllabus this is an area where a tester will find defects during hardware testing
+					b) Is not correct. As per syllabus this testing takes place during protocol compliance testing
+					c) Is not correct. As per syllabus this testing takes place during platform functional testing
+					d) Is not correct. As per syllabus this testing takes place during math testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.6.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #33</legend>
+			<p class="question">Your organization is responsible for hardware compliance testing on a new EGM for New York. Which one of the following tests would you perform?</p>
+			<label><input id="33a" name="33" type="radio" value="0">a) Validate the Bank Note Acceptor will accept US funds and slot vouchers</label>
+			<label><input id="33b" name="33" type="radio" value="1">b) Validate that the player identification device only accepts player identification cards configured for New York</label>
+			<label><input id="33c" name="33" type="radio" value="0">c) Validate player bet limits are within RNG limits (Max Limit $500) for New York</label>
+			<label><input id="33d" name="33" type="radio" value="0">d) Validate the mechanical reel spins at the speed as per the game specification</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Per syllabus, this is included in hardware functional testing
+					b) Is correct. Per syllabus, this is included in hardware compliance testing
+					c) Is not correct. Per syllabus, this is included in casino functional testing
+					d) Is not correct. Per syllabus, this is included in hardware functional testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.6.4</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #34</legend>
+			<p class="question">Which of the following best explains the concepts of hardware integration testing?</p>
+			<label><input id="34a" name="34" type="radio" value="1">a) Hardware integration testing attempts to identify failures in the interface between hardware components, usually for a single casino platform</label>
+			<label><input id="34b" name="34" type="radio" value="0">b) Hardware integration testing is the testing of the integration between the EGM, the operating systems, runtime libraries, and the servers</label>
+			<label><input id="34c" name="34" type="radio" value="0">c) Hardware integration testing is the testing of the platform, protocol, and the casino system integration components</label>
+			<label><input id="34d" name="34" type="radio" value="0">d) Hardware integration testing is limited to the testing of the EGM and how the SMIB cards integrate with it</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is correct. This is the correct answer, see syllabus 3.6.5
+					b) Is not correct. Hardware integration testing is limited only to hardware and the operating systems & runtime libraries are software, see syllabus 3.6.5
+					c) Is not correct. Hardware integration testing tests hardware only, not protocols, platforms, nor casino systems, see syllabus 3.6.5
+					d) Is not correct. This is incorrect as we are not limited to testing the integration of these two components, see syllabus 3.6.5</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.6.5</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #35</legend>
+			<p class="question">Which of the following is an example of a hardware integration defect?</p>
+			<label><input id="35a" name="35" type="radio" value="0">a) EGM volume will not go louder or quieter when being adjusted on the machine</label>
+			<label><input id="35b" name="35" type="radio" value="0">b) Player wagers do not show up in the end of day reports</label>
+			<label><input id="35c" name="35" type="radio" value="0">c) EGM will not go into operator mode</label>
+			<label><input id="35d" name="35" type="radio" value="1">d) Coin acceptors do not accept the different jurisdictional currency</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Non-volatile RAM clears, rebooting, volume control is all part of protocol testing, see syllabus 3.5.2
+					b) Is not correct. Cashless wagering, redemption, and end to end testing are all part of casino system testing, see syllabus 3.4.1
+					c) Is not correct. setup and configuration, operator mode is all part of platform testing, see syllabus 3.3.2
+					d) Is correct. This is the correct answer, see syllabus 3.6.6</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.6.6</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #36</legend>
+			<p class="question">Which of the following best explains the concepts of remote gambling system testing?</p>
+			<label><input id="36a" name="36" type="radio" value="0">a) It tests gambling products on the Internet such as Sports Betting and Social Gambling</label>
+			<label><input id="36b" name="36" type="radio" value="1">b) It tests the tools that manage the casino, including monitoring of credit issuance and redemption to player</label>
+			<label><input id="36c" name="36" type="radio" value="0">c) It tests the areas of gambling offered via mobile, wireless in-venue</label>
+			<label><input id="36d" name="36" type="radio" value="0">d) It tests gambling products which allows on premise casinos to add mobile technology and content to their existing offerings</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is online gambling
+					b) Is correct. This is the correct answer, see syllabus 3.7.1
+					c) Is not correct. This is online gambling
+					d) Is not correct. This is in venue mobile gambling</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.7.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #37</legend>
+			<p class="question">Which one of the following does NOT describe system and network security testing in the gambling world?</p>
+			<label><input id="37a" name="37" type="radio" value="0">a) Testing that determines the network performs its critical functions have been implemented</label>
+			<label><input id="37b" name="37" type="radio" value="0">b) Testing that determines the regulatory network security specifications are met</label>
+			<label><input id="37c" name="37" type="radio" value="0">c) Testing that determines the network and its services are secured from unauthorized modification</label>
+			<label><input id="37d" name="37" type="radio" value="1">d) Testing that determines the online system security features such as geolocation and age verification have been implemented</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is done during System and Network security testing
+					b) Is not correct. This is done during System and Network security testing
+					c) Is not correct. This is done during System and Network security testing
+					d) Is correct. This is done during platform functional testing</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.8.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #38</legend>
+			<p class="question">Which of the following is NOT a common jackpot controller defect?</p>
+			<label><input id="38a" name="38" type="radio" value="0">a) Bonus value is not subtracted from the current value</label>
+			<label><input id="38b" name="38" type="radio" value="0">b) Player places a minimum bet and wins max bonus jackpot</label>
+			<label><input id="38c" name="38" type="radio" value="0">c) Player enters bonus mode, wins the jackpot, and plays their remaining bonus spins</label>
+			<label><input id="38d" name="38" type="radio" value="1">d) Jackpot revenue report not showing the correct values</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is an example of a jackpot controller defect per syllabus 3.9.2
+					b) Is not correct. This is an example of a jackpot controller defect per syllabus 3.9.2
+					c) Is not correct. This is an example of a jackpot controller defect per syllabus 3.9.2
+					d) Is correct. This is an example of remote gambling system testing per syllabus</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.9.2</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #39</legend>
+			<p class="question">What makes online gambling different than in-venue gambling?</p>
+			<label><input id="39a" name="39" type="radio" value="0">a) Online gambling includes unique game types, such as Sports Betting</label>
+			<label><input id="39b" name="39" type="radio" value="1">b) Games are accessed through online websites</label>
+			<label><input id="39c" name="39" type="radio" value="0">c) Games need to meet high user expectations</label>
+			<label><input id="39d" name="39" type="radio" value="0">d) It must comply with rigorous legislation, including geolocation</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. Sports Betting is also offered in brick-and-mortar venues
+					b) Is correct. As per syllabus, “The internet allows us to access these games of chance through online websites, downloadable applications, and online platforms such as Valve’s Steam. See syllabus 3.10.1”
+					c) Is not correct. Users have high expectations when playing games on the casino floor too
+					d) Is not correct. In-venue gambling must also comply with all relevant legislation</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.10.1</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question #40</legend>
+			<p class="question">Which of the following test types does not relate to online gambling?</p>
+			<label><input id="40a" name="40" type="radio" value="0">a) Portability testing to ensure that a game can play on multiple types of mobile devices</label>
+			<label><input id="40b" name="40" type="radio" value="1">b) G2S protocol testing using a checklist defined by the Gambling Standards Association</label>
+			<label><input id="40c" name="40" type="radio" value="0">c) Functional testing to ensure that the gameplay corresponds to the rules of the game</label>
+			<label><input id="40d" name="40" type="radio" value="0">d) Compliance testing to ensure that the game meets its jurisdictional specifications</label>
+			<div class="explanation">
+				<div class="font-weight-700">Answer:</div>
+				<div class="answer">a) Is not correct. This is a valid testing type for an online gambling tester
+					b) Is correct. The G2S is the protocol that connects the slot machine (EGM – Electronic Gaming Device) to the host systems, and therefore not applicable to online gambling
+					c) Is not correct. This is a valid testing type for an online gambling tester
+					d) Is not correct. This is a valid testing type for an online gambling tester</div>
+				<div class="font-weight-700 margin-top-1">Reference:</div>
+				<div class="learning-objective color-muted font-size-small">Learning objective: GT-3.10.3</div>
+				<div class="k-level color-muted font-size-small">K-Level: K2</div>
+			</div>
+		</fieldset>
+
+		<!-- actions -->
+		<div class="margin-bottom-1">
+			<div class="font-size-x-small text-uppercase font-weight-700">Actions</div>
+			<a href="#" class="button">
+		  		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="17 11 12 6 7 11" /><polyline points="17 18 12 13 7 18" /></svg>
+		  		Back To Top
+			</a>
+	  	</div><!-- /actions -->
+
+	</form><!--/exam-->
+</main>
+
+</body>
+
+</html>

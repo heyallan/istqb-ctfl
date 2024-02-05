@@ -8,7 +8,6 @@ class navbar extends HTMLElement {
 		super();
 	}
 	connectedCallback() {
-		// else
 		this.innerHTML = `
 <div class="no-print border-bottom-1 bg-white box-shadow">
 	<div class="container">
