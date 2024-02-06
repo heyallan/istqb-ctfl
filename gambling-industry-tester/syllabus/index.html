@@ -50,7 +50,7 @@
 <a class="display-block margin-bottom-0.5 margin-left-1 no-print" href="#1.5.2-escape-compliance-defects">1.5.2 Escape compliance defects</a>
 <a class="display-block margin-bottom-0.5 margin-left-1" href="#1.6-gambling-software-development-lifecycle">1.6 Gambling Software Development Lifecycle</a>
 <a class="display-block margin-bottom-0.5 margin-left-1 no-print" href="#1.6.1-the-gambling-software-development-lifecycle-overview">1.6.1 The gambling software development lifecycle overview</a>
-<a class="display-block margin-bottom-0.5 margin-left-1 no-print" href="#1.6.2-the-role-of-the-independent-test-lab-itl">1.6.2 The role of the independent test lab (ITL)</a>
+<a class="display-block margin-bottom-0.5 margin-left-1 no-print" href="#1.6.2-the-role-of-the-independent-test-lab-itl">1.6.2 The role of the independent test lab (<abbr title="Independent Test Lab">ITL</abbr>)</a>
 <a class="display-block margin-bottom-0.5 margin-left-1 no-print" href="#1.6.3-the-role-of-regulatory-commissions">1.6.3 The role of regulatory commissions</a>
 <a class="display-block margin-bottom-0.5" href="#2-the-gambling-industry-ecosystems">2 The Gambling Industry Ecosystems</a>
 <a class="display-block margin-bottom-0.5 margin-left-1" href="#2.1-testing-phases-within-the-gambling-software-development-lifecycle">2.1 Testing phases within the Gambling Software Development Lifecycle</a>
@@ -128,9 +128,9 @@
 				<p>Some of the specific testing for the gambling industry, not present in other testing areas, include the following:</p>
 				<ol>
 					<li><strong>Gambling industry ecosystem:</strong> The unique hardware, firmware and operating systems that are proprietary to the gambling industry.</li>
-					<li><strong>Gambling industry compliance testing:</strong> There are over 440 different certification boards worldwide for gambling industry games. These boards have rules that games in the gambling industry must comply with. These rules impact hardware, software, platform, operating systems, visual and auditory functionality, mathematics, and return to player (RTP) calculations. One gambling industry game can be played in multiple gambling jurisdictions and needs to comply with the laws of each location.</li>
+					<li><strong>Gambling industry compliance testing:</strong> There are over 440 different certification boards worldwide for gambling industry games. These boards have rules that games in the gambling industry must comply with. These rules impact hardware, software, platform, operating systems, visual and auditory functionality, mathematics, and return to player (<abbr title="Return To Player">RTP</abbr>) calculations. One gambling industry game can be played in multiple gambling jurisdictions and needs to comply with the laws of each location.</li>
 					<li><strong>Fun factor or player perspective testing:</strong> This is something unique to gambling industry games, since they are an entertainment product. Not only are casino games supposed to work intuitively and provide the player pleasure, they must also be fun to play. This requires a unique insight into game design, with experience and information about the user group and what that group enjoys.</li>
-					<li><strong>Math testing:</strong> Testing the multitude of pay tables, permutations, Random Number Generator (RNG) results and RTP computations. This type of testing requires the tester to understand what triggers different types of payout behavior and to understand financial return to the player and how these triggers can be treated by different parameters. Understanding math testing is critical to succeed in this field.</li>
+					<li><strong>Math testing:</strong> Testing the multitude of pay tables, permutations, Random Number Generator (<abbr title="Random Number Generator">PAR</abbr>) results and <abbr title="Return To Player">RTP</abbr> computations. This type of testing requires the tester to understand what triggers different types of payout behavior and to understand financial return to the player and how these triggers can be treated by different parameters. Understanding math testing is critical to succeed in this field.</li>
 					<li><strong>Audio testing:</strong> Creating sound or playing media is common in software. However, gambling industry game music must engage the user in the game and enhance the game play. Not only should the audio play without stuttering or missing elements, it should also add to the game play. This requires extensive audio skills and specific understanding of game audio.</li>
 					<li><strong>Multiplayer testing:</strong> This type of testing is performed when many players are simultaneously interacting with casino games, with computer-controlled opponents, with game servers, and with each other. Typical ISTQB® risk- based testing is followed to ensure against using unlimited amounts of time testing different scenarios. Understanding multiplayer game design, and how to test it efficiently, is required knowledge for this type of testing.</li>
 					<li><strong>Interoperability Testing:</strong> is common in all software that communicates with other software, systems and/or components. Casino/Video Lottery games have a unique aspect in that they must implement interoperability using gambling industry open protocol standards or proprietary protocols as per the specifications of the central server deployed in the jurisdiction to which the game is deployed.</li>
@@ -149,10 +149,15 @@
 				<h2 id="1.3-types-of-gambling">1.3 Types of Gambling</h2>
 				<h3 id="1.3.1-casino-games">1.3.1 Casino games</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.3.1 (K2) Explain casino games</p>
-				<p>There are three categories of casino games: table games, electronic gaming machines (EGMs) and random number ticket games.</p>
+				<p>There are three categories of casino games:</p>
+				<ul>
+					<li>Table games</li>
+					<li>Electronic gaming machines (<abbr title="Electronic Gaming Machine">EGM</abbr>s)</li>
+					<li>Random number ticket games</li>
+				</ul>
 				<p>Examples of table games are roulette, blackjack, baccarat or poker, which typically are not tested unless they are an electronic table game version of these games.</p>
-				<p>The second group are EGMs, typically known as video lottery terminals (VLTs) or slot machines. These are usually played by one player at a time and do not require the involvement of casino employees to play. These games need to be tested, i.e., the game software, the machines, the operating systems, and platforms that they are based on.</p>
-				<p>VLTs and slot machines are both gambling machines that allow players to bet on the outcome of a game. Physically, VLTs and slot machines are very similar in nature. The main difference between a VLT and a slot machine is that VLTs are gambling machines that are operated by government lotteries while slot machines are gambling machines operated by private organizations such as casinos.</p>
+				<p>The second group are <abbr title="Electronic Gaming Machine">EGM</abbr>s, typically known as video lottery terminals (VLTs) or slot machines. These are usually played by one player at a time and do not require the involvement of casino employees to play. These games need to be tested, i.e., the game software, the machines, the operating systems, and platforms that they are based on.</p>
+				<p>VLTs and slot machines are both gambling machines that allow players to bet on the outcome of a game. Physically, VLTs and slot machines are very similar in nature. <u>The main difference between a VLT and a slot machine is that VLTs are gambling machines that are operated by government lotteries while slot machines are gambling machines operated by private organizations such as casinos.</u></p>
 				<p>Both VLTs and slot machines are regulated and require licenses to be operated within their jurisdictions. Many countries around the world offer legalized VLT or slot play.</p>
 				<p>For example:</p>
 				<ul>
@@ -160,13 +165,13 @@
 					<li>In Canada, the provincial or territorial governments are responsible for regulating gambling operations. All provinces offer the ability to play, each with their own regulations.</li>
 					<li>In Australia, the laws regulating the use of gambling machines are the responsibility of the state governments.</li>
 				</ul>
-				<p>Other terms by which a VLT and slot machine are referred to are: EGM, Video Gambling Terminal, Video Gambling Device, Video Slot Machines and Interactive Video Terminal.</p>
-				<p>The third casino game category is random number ticket games such as Keno and simulated racing. These games are based on the selection of random numbers, either from a computerized RNG or from other gambling equipment.</p>
+				<p>Other terms by which a VLT and slot machine are referred to are: <abbr title="Electronic Gaming Machine">EGM</abbr>, Video Gambling Terminal, Video Gambling Device, Video Slot Machines and Interactive Video Terminal.</p>
+				<p>The third casino game category is random number ticket games such as Keno and simulated racing. These games are based on the selection of random numbers, either from a computerized <abbr title="Random Number Generator">PAR</abbr> or from other gambling equipment.</p>
 				<h3 id="1.3.2-lottery-systems">1.3.2 Lottery systems</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.3.2 (K2) Explain lottery systems</p>
 				<p>A lottery is a form of gambling that involves selling numbered tickets and giving prizes to holders of winning tickets. The prize can be a fixed amount of cash or goods, but more commonly, the prize fund is a fixed percentage of the revenues from the tickets sold.</p>
 				<p>There are typically two forms of lottery products sold: traditional lottery tickets and instant tickets.</p>
-				<p>Traditional lottery tickets are numbered tickets that are sold for regularly scheduled draws, most often weekly. On the draw date, random numbers are drawn either using a ball drop machine or electronically. Most lotteries that have moved to electronic draws still have ball drop machines as a backup in case of failures with the software solution. Once the numbers are drawn from the ball drop machine, they are entered into the lottery central management system (CMS).</p>
+				<p>Traditional lottery tickets are numbered tickets that are sold for regularly scheduled draws, most often weekly. On the draw date, random numbers are drawn either using a ball drop machine or electronically. Most lotteries that have moved to electronic draws still have ball drop machines as a backup in case of failures with the software solution. Once the numbers are drawn from the ball drop machine, they are entered into the lottery central management system (<abbr title="Central Management System">CMS</abbr>).</p>
 				<p>The chances of winning a lottery jackpot can vary widely depending on the lottery design, and are determined by several factors, including:</p>
 				<ul>
 					<li>The count of possible numbers</li>
@@ -174,8 +179,8 @@
 					<li>Whether or not the order is significant</li>
 					<li>Whether drawn numbers are returned for the possibility of further drawing</li>
 				</ul>
-				<p>Instant tickets are numbered tickets from a pre-determined finite pool of outcomes. The most common form of instant tickets is the scratch card. Scratch cards are typically made of paper, with the outcome printed and hidden by an opaque substance that needs to be scratched off, hence the name of these tickets. The cards usually present the information in the form of a game, such as Tic-Tac-Toe, Bingo, Crossword or some other puzzle, to help add entertainment value. A variation of the scratch card is the break-open (also know as pull-tab) ticket in which, instead of scratching off an opaque substance to reveal the outcome, the player opens a perforated cardboard cover which is hiding the outcome. Since outcomes of scratch and break-open tickets are pre-determined, the cards do not need to be scratched or opened to be validated.</p>
-				<p>A barcode on the ticket can be scanned by the lottery CMS to determine if it is a winner or not. The scratching or breaking open is there for entertainment value to the player only.</p>
+				<p>Instant tickets are numbered tickets from a pre-determined finite pool of outcomes. The most common form of instant tickets is the scratch card. Scratch cards are typically made of paper, with the outcome printed and hidden by an opaque substance that needs to be scratched off, hence the name of these tickets. The cards usually present the information in the form of a game, such as Tic-Tac-Toe, Bingo, Crossword or some other puzzle, to help add entertainment value. A variation of the scratch card is the break-open (also know<ins>n</ins> as pull-tab) ticket in which, instead of scratching off an opaque substance to reveal the outcome, the player opens a perforated cardboard cover which is hiding the outcome. Since outcomes of scratch and break-open tickets are pre-determined, the cards do not need to be scratched or opened to be validated.</p>
+				<p>A barcode on the ticket can be scanned by the lottery <abbr title="Central Management System">CMS</abbr> to determine if it is a winner or not. The scratching or breaking open is there for entertainment value to the player only.</p>
 				<p>The chances of winning on a scratch card are typically much higher than on a traditional lottery, but prize amounts are typically much smaller. The probability of winning on a scratch card can be calculated using the odds found on the back of the scratch ticket.</p>
 				<p>When it comes to lottery operations, it is critical that all parties are confident with the process. For everyone involved, including players, to feel confident, those running the lottery operations must acquire and uphold a secure environment that is documented and accessible. To address this, the Security Control Standard was put in place by the World Lottery Association and lottery organizations are audited against this standard on a regular basis.</p>
 				<h3 id="1.3.3-race-and-sports-wagering">1.3.3 Race and sports wagering</h3>
@@ -224,9 +229,9 @@
 					<li>Local area linked progressive</li>
 					<li>Multi-site linked progressive</li>
 				</ul>
-				<p>A standalone progressive has a jackpot on the individual EGM. Only bets placed on that specific EGM increment the jackpot.</p>
+				<p>A standalone progressive has a jackpot on the individual <abbr title="Electronic Gaming Machine">EGM</abbr>. Only bets placed on that specific <abbr title="Electronic Gaming Machine">EGM</abbr> increment the jackpot.</p>
 				<p>Local area linked progressives are games within a venue that are linked together to contribute to a common progressive jackpot. This type of jackpot is usually found in a casino. This type of network can include as few as a dozen EMGs and as many as hundreds of these.</p>
-				<p>Multi-site (also known as Wide Area) linked progressives link gambling machines from multiple venues to participate in the progressive jackpot. Due to jurisdictional rules being different, Multi-site linked progressives usually only link machines within the same jurisdiction, often across casinos operated by the same organization. However, some examples of multi-jurisdiction progressive jackpots exist. For example, in July 2006, the Multi-State Lottery Association in the U.S. introduced the first multi- jurisdictional progressive jackpot called Ca$hola. This progressive jackpot linked EGMs at nine lottery run casinos; three in Delaware, two in Rhode Island, and four in West Virginia. This linked progressive was replaced in 2011 by the Megahits jackpot and now includes two additional states: Ohio and Maryland.</p>
+				<p>Multi-site (also known as Wide Area) linked progressives link gambling machines from multiple venues to participate in the progressive jackpot. Due to jurisdictional rules being different, Multi-site linked progressives usually only link machines within the same jurisdiction, often across casinos operated by the same organization. However, some examples of multi-jurisdiction progressive jackpots exist. For example, in July 2006, the Multi-State Lottery Association in the U.S. introduced the first multi- jurisdictional progressive jackpot called Ca$hola. This progressive jackpot linked <abbr title="Electronic Gaming Machine">EGM</abbr>s at nine lottery run casinos; three in Delaware, two in Rhode Island, and four in West Virginia. This linked progressive was replaced in 2011 by the Megahits jackpot and now includes two additional states: Ohio and Maryland.</p>
 				<p>A linked progressive jackpot solution adds some additional devices to VLT and slot machine ecosystems:</p>
 				<ul>
 					<li>A progressive jackpot display or sign</li>
@@ -236,20 +241,20 @@
 				<p>The progressive jackpot display or sign is used to display the current amount of the progressive jackpot.</p>
 				<p>The progressive jackpot controller is used by the venue to manage the progressive jackpot. The jackpot controller links the games contributing to the progressive jackpot and communicates the jackpot value to the progressive jackpot display.</p>
 				<p>The progressive jackpot server is used to manage multiple jackpot controllers and different progressive jackpot games that may exist across a venue. It will also monitor and collect all progressive related data to allow for analytics and auditing of progressive jackpots.</p>
-				<h3 id="1.4.2-random-number-generator-rng">1.4.2 Random Number Generator (RNG)</h3>
+				<h3 id="1.4.2-random-number-generator-rng">1.4.2 Random Number Generator (<abbr title="Random Number Generator">PAR</abbr>)</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.4.2 (K2) Explain random number generators</p>
-				<p>The Random Number Generator is a computational or physical device designed to generate a sequence of numbers that lack any pattern, so they are random, or they appear unrelated. RNGs are usedin gambling, statistical sampling, computer simulations and other areas where producing an unpredictable result is desirable. Any machine-base gambling involves an RNG.</p>
-				<p>The RNG is a vital part of all gambling machine operations. Where unpredictability is essential, such as in security applications, hardware generators are generally preferred over pseudo-random algorithms.</p>
-				<p>The RNG is certified by either an ITL or by the jurisdiction’s regulatory board.</p>
+				<p>The Random Number Generator is a computational or physical device designed to generate a sequence of numbers that lack any pattern, so they are random, or they appear unrelated. <abbr title="Random Number Generator">PAR</abbr>s are usedin gambling, statistical sampling, computer simulations and other areas where producing an unpredictable result is desirable. Any machine-base gambling involves an <abbr title="Random Number Generator">PAR</abbr>.</p>
+				<p>The <abbr title="Random Number Generator">PAR</abbr> is a vital part of all gambling machine operations. Where unpredictability is essential, such as in security applications, hardware generators are generally preferred over pseudo-random algorithms.</p>
+				<p>The <abbr title="Random Number Generator">PAR</abbr> is certified by either an <abbr title="Independent Test Lab">ITL</abbr> or by the jurisdiction’s regulatory board.</p>
 				<h3 id="1.4.3-the-win-selection-process">1.4.3 The win selection process</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.4.3 (K2) Explain the win selection process</p>
-				<p>The selection process or the “did I win?” process is another key concept of the gambling industry. All gambling machines such as EGMs use some type of win selection process to determine and display the outcome of the game. This means if the player pulls a lever or presses a button, something happens on the screen and then there's an outcome that says “Yeah! I’ve won!” or” No, I've lost!”.</p>
-				<p>What is also important about the selection process is that it can be performed on the EGM itself or on a server. In some cases, the whole process from “spin the wheel”, “get a response”, “you won or lost” is done on a standalone EGM.</p>
-				<p>The technology being used and the specific jurisdictional rules of where the game is being played will influence the selection process and whether it is performed on the EGM or on the servers.</p>
+				<p>The selection process or the “did I win?” process is another key concept of the gambling industry. All gambling machines such as <abbr title="Electronic Gaming Machine">EGM</abbr>s use some type of win selection process to determine and display the outcome of the game. This means if the player pulls a lever or presses a button, something happens on the screen and then there's an outcome that says “Yeah! I’ve won!” or” No, I've lost!”.</p>
+				<p>What is also important about the selection process is that it can be performed on the <abbr title="Electronic Gaming Machine">EGM</abbr> itself or on a server. In some cases, the whole process from “spin the wheel”, “get a response”, “you won or lost” is done on a standalone <abbr title="Electronic Gaming Machine">EGM</abbr>.</p>
+				<p>The technology being used and the specific jurisdictional rules of where the game is being played will influence the selection process and whether it is performed on the <abbr title="Electronic Gaming Machine">EGM</abbr> or on the servers.</p>
 				<p>This selection process will involve the following:</p>
 				<ol>
 					<li>Start of spin</li>
-					<li>A raw random number is generated by the RNG</li>
+					<li>A raw random number is generated by the <abbr title="Random Number Generator">PAR</abbr></li>
 					<li>The raw random number is scaled to a usable number</li>
 					<li>The number is mapped to a game element (e.g., is it a star? is it a 7? is it Wheel of Fortune?)</li>
 					<li>There is an evaluation of the outcome of the results of that random number generation</li>
@@ -262,22 +267,22 @@
 				<p>Privacy laws in most jurisdictions mandate that any player’s information being tracked, whether for responsible gambling or player loyalty program purposes, adheres to the storage and use of personal information regulations set forth by those laws. An example of testing player privacy is verifying that the solution makes the player information available to only those that should have access, and that any such information is encrypted when being transferred between devices and systems. Some responsible gambling and player loyalty programs require knowing where the player is located. Testing this function consists of ensuring the geolocation functions accurately restrict play based on the rules mandated by the location from which the player is playing.</p>
 				<h3 id="1.4.5-regulatory-commissions-jurisdictions-and-associations">1.4.5 Regulatory commissions, jurisdictions and associations</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.4.5 (K2) Explain regulatory commissions, jurisdictions and associations</p>
-				<p>Compliance testing is also called jurisdictional testing. Each jurisdiction has its own rules, regulations, guidelines (also known as regulatory or jurisdictional specifications or rules) that must be tested. This testing is usually performed by an ITL.</p>
-				<p>In the United States, there are over four hundred regulators and jurisdictions. Canada has at least one per province. South America has at least one jurisdiction per country thathaslegalizedgambling. Europe,AsiaandAfricaalsousuallyhaveonejurisdiction per country. Germany has lottery companies by province. Australia has at least one per state. Within these jurisdictions, there is usually an organization that is responsible for issuing licenses and regulating the licensee or the people who have the licenses. These organizations are typically known as licensing authorities.</p>
-				<p>Every jurisdiction controls the potential manufactures who need a license to operate in that jurisdiction. Manufactures cannot legally operate in any jurisdiction where they do not have a license. If a product fails compliance testing, it must be fixed and returned to the ITL for certification testing until it passes 100% of the mandatory certification tests. The product can be returned many times before it passes the compliance tests.</p>
+				<p>Compliance testing is also called jurisdictional testing. Each jurisdiction has its own rules, regulations, guidelines (also known as regulatory or jurisdictional specifications or rules) that must be tested. This testing is usually performed by an <abbr title="Independent Test Lab">ITL</abbr>.</p>
+				<p>In the United States, there are over four hundred regulators and jurisdictions. Canada has at least one per province. South America has at least one jurisdiction per country that has legalized gambling. Europe, Asia and Africa also usually have one jurisdiction per country. Germany has lottery companies by province. Australia has at least one per state. Within these jurisdictions, there is usually an organization that is responsible for issuing licenses and regulating the licensee or the people who have the licenses. These organizations are typically known as licensing authorities.</p>
+				<p>Every jurisdiction controls the potential manufactures who need a license to operate in that jurisdiction. Manufactures cannot legally operate in any jurisdiction where they do not have a license. If a product fails compliance testing, it must be fixed and returned to the <abbr title="Independent Test Lab">ITL</abbr> for certification testing until it passes 100% of the mandatory certification tests. The product can be returned many times before it passes the compliance tests.</p>
 				<p>Before gambling products are ready for compliance testing, the full range of gambling QA testing must occur. Please refer to section 2.1.1 for more details. Some examples of test types and test techniques that are done for the gambling industry includes exploratory testing, functional testing, regression testing, pre-compliance testing, system integration testing, performance testing, penetration testing and failover testing.</p>
 				<h2 id="1.5-gambling-industry-metrics">1.5 Gambling Industry Metrics</h2>
 				<p>Background: Gambling industry testing uses many of the ISTQB® Foundation Level common test metrics. However, there are a few that are specific to the gambling industry.</p>
 				<h3 id="1.5.1-first-pass-percentage">1.5.1 First pass percentage</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.5.1 (K2) Explain first pass percentage</p>
-				<p>First pass percentage identifies the percentage of games that receive certification from the ITL on the first submission of the product.</p>
+				<p>First pass percentage identifies the percentage of games that receive certification from the <abbr title="Independent Test Lab">ITL</abbr> on the first submission of the product.</p>
 				<p>The importance of receiving a first pass for a gambling product is related to both product cost and its time-to-market. If the product does not receive a first pass, there are extra costs for additional development, testing and product certification. A gambling product that does not receive a first pass is delayed from entering the market until it is certified.</p>
 				<h2 id="1.5.2-escape-compliance-defects">1.5.2 Escape compliance defects</h2>
 				<p class="font-size-small color-secondary italic">GTFL-1.5.2 (K2) Explain escape compliance defects</p>
-				<p>These metrics measure data relating to escaped defects that do not comply with the jurisdictional rules or regulations and are found by the ITL or in the field.</p>
-				<p>The resubmittal factor is the number of times a game must be resubmitted to the ITL to pass certification testing. For example, if on average each game is resubmitted 4.5 times to achieve certification, the resubmittal factor would be equal to 4.5.</p>
+				<p>These metrics measure data relating to escaped defects that do not comply with the jurisdictional rules or regulations and are found by the <abbr title="Independent Test Lab">ITL</abbr> or in the field.</p>
+				<p>The resubmittal factor is the number of times a game must be resubmitted to the <abbr title="Independent Test Lab">ITL</abbr> to pass certification testing. For example, if on average each game is resubmitted 4.5 times to achieve certification, the resubmittal factor would be equal to 4.5.</p>
 				<p>The number of revocations tracks how many games have been pulled from the field per time period, due to escaped compliance defects. For example, if two games have been removed from the field in a year, that would mean two revocations for the year. If a jurisdiction asks for a game to be removed due to an escaped compliance defect the manufacturer has a limited amount of time to remove the game.</p>
-				<p>These two metrics are important because having escaped defects in a jurisdiction can impact a manufacturer’s right to be in that jurisdiction, negatively impacting their brand, making them lose revenue if the EGM and table games is not working on the casino floor. There are a fixed number of EGMs and table games in any casino. Manufacturers fight for floor space amongst themselves, so a revocation might also mean that a manufacturer loses that floor space to a competitor.</p>
+				<p>These two metrics are important because having escaped defects in a jurisdiction can impact a manufacturer’s right to be in that jurisdiction, negatively impacting their brand, making them lose revenue if the <abbr title="Electronic Gaming Machine">EGM</abbr> and table games is not working on the casino floor. There are a fixed number of <abbr title="Electronic Gaming Machine">EGM</abbr>s and table games in any casino. Manufacturers fight for floor space amongst themselves, so a revocation might also mean that a manufacturer loses that floor space to a competitor.</p>
 				<h2 id="1.6-gambling-software-development-lifecycle">1.6 Gambling Software Development Lifecycle</h2>
 				<h3 id="1.6.1-the-gambling-software-development-lifecycle-overview">1.6.1 The gambling software development lifecycle overview</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.6.1 (K2) Summarize the gambling software development lifecycle</p>
@@ -291,19 +296,19 @@
 					<li>Game Concept</li>
 					<li>Game and Technical Design</li>
 				</ul>
-				<p>The Alpha phase, not to be confused with alpha testing, is next. During this phase, game play functionality is developed and implemented, math functionality is completed, video and audio components are partially finished, and the game contains the major features. Black-box testing, especially functional, usability testing, exploratory testing, regression testing, math testing, and RTP testing occur.</p>
+				<p>The Alpha phase, not to be confused with alpha testing, is next. During this phase, game play functionality is developed and implemented, math functionality is completed, video and audio components are partially finished, and the game contains the major features. Black-box testing, especially functional, usability testing, exploratory testing, regression testing, math testing, and <abbr title="Return To Player">RTP</abbr> testing occur.</p>
 				<p>The Code Complete phase is next. All features, audio, video and math components are finalized. At this phase, code is no longer added to the game, unless a change is needed to fix defects. Standard ISTQB® foundation level black-and white-box testing are typically performed at this phase. The emphasis is on test automation, testing for memory leaks, confirmation testing, and regression testing.</p>
-				<p>The Beta Build phase, not to be confused with Beta Testing, continues until no failures occur that prevent the game from being certified. Pre-certification testing is performed by the internal gambling quality assurance test team to assess the game versus the requirements of each jurisdiction. This phase is not a formal certification test cycle. It is a precursor to the ITL certification testing. Any defects discovered at this time will be corrected and the new builds are tested, and regression tests are performed.</p>
-				<p>The Release Build phase is the one that is sent to the ITLs to ensure that the game complies with the requirements of each required jurisdiction. This build receives the final certification signoff, which allows the game to be sent to casinos or be made available online. If the game fails this certification, it is sent back to the game developer and the process starts over.</p>
-				<h3 id="1.6.2-the-role-of-the-independent-test-lab-itl">1.6.2 The role of the independent test lab (ITL)</h3>
-				<p class="font-size-small color-secondary italic">GTFL-1.6.2 (K1) Recognize the role of the independent test lab (ITL)</p>
-				<p>Once the pre-certification phase is completed by the machine manufacturer, the game is ready to be certified by an ITL (also known as the Authorized Test Facility). If this is a game that will be played in North America and in Australia, it must be tested for all applicable jurisdictions which means approximately 450 jurisdictions for these two parts of the world.</p>
-				<p>Once the ITL has tested the game for all applicable jurisdictions, if it fails in any of the jurisdictions, the game is returned to the machine manufacturer or game developer who make the changes in the game or in the EGM and return it for another ITL certification test.</p>
-				<p>The only way to be an accredited ITL is to be accepted by each gambling regulatory commission. This is a lengthy and costly process and thus there are only a few ITLs who can certify games world-wide. A few of the jurisdictions have government-based certification test labs that play the role of the ITL.</p>
+				<p>The Beta Build phase, not to be confused with Beta Testing, continues until no failures occur that prevent the game from being certified. Pre-certification testing is performed by the internal gambling quality assurance test team to assess the game versus the requirements of each jurisdiction. This phase is not a formal certification test cycle. It is a precursor to the <abbr title="Independent Test Lab">ITL</abbr> certification testing. Any defects discovered at this time will be corrected and the new builds are tested, and regression tests are performed.</p>
+				<p>The Release Build phase is the one that is sent to the <abbr title="Independent Test Lab">ITL</abbr>s to ensure that the game complies with the requirements of each required jurisdiction. This build receives the final certification signoff, which allows the game to be sent to casinos or be made available online. If the game fails this certification, it is sent back to the game developer and the process starts over.</p>
+				<h3 id="1.6.2-the-role-of-the-independent-test-lab-itl">1.6.2 The role of the independent test lab (<abbr title="Independent Test Lab">ITL</abbr>)</h3>
+				<p class="font-size-small color-secondary italic">GTFL-1.6.2 (K1) Recognize the role of the independent test lab (<abbr title="Independent Test Lab">ITL</abbr>)</p>
+				<p>Once the pre-certification phase is completed by the machine manufacturer, the game is ready to be certified by an <abbr title="Independent Test Lab">ITL</abbr> (also known as the Authorized Test Facility). If this is a game that will be played in North America and in Australia, it must be tested for all applicable jurisdictions which means approximately 450 jurisdictions for these two parts of the world.</p>
+				<p>Once the <abbr title="Independent Test Lab">ITL</abbr> has tested the game for all applicable jurisdictions, if it fails in any of the jurisdictions, the game is returned to the machine manufacturer or game developer who make the changes in the game or in the <abbr title="Electronic Gaming Machine">EGM</abbr> and return it for another <abbr title="Independent Test Lab">ITL</abbr> certification test.</p>
+				<p>The only way to be an accredited <abbr title="Independent Test Lab">ITL</abbr> is to be accepted by each gambling regulatory commission. This is a lengthy and costly process and thus there are only a few <abbr title="Independent Test Lab">ITL</abbr>s who can certify games world-wide. A few of the jurisdictions have government-based certification test labs that play the role of the <abbr title="Independent Test Lab">ITL</abbr>.</p>
 				<h3 id="1.6.3-the-role-of-regulatory-commissions">1.6.3 The role of regulatory commissions</h3>
 				<p class="font-size-small color-secondary italic">GTFL-1.6.3 (K1) Recognize the role of regulatory commissions</p>
-				<p>Once the ITL has certified a game, the regulatory commission allows the game to be played in all casinos in their jurisdiction. However, the regulatory commission will revoke or pull a game from all its casinos if a major field issue arises. A major field issue is usually a defect that stops the game from playing, provides erroneous payouts or deviates from any of the rules of engagement that are required for certification. The machine manufacturer will have to immediately remove that game from every installation in the jurisdiction.</p>
-				<p>There are also minor field issues that will force the machine manufacturer to modify a game that is in the field, within a given timeframe. In this case the game must be certified again at an ITL and approved by the regulatory commission.</p>
+				<p>Once the <abbr title="Independent Test Lab">ITL</abbr> has certified a game, the regulatory commission allows the game to be played in all casinos in their jurisdiction. However, the regulatory commission will revoke or pull a game from all its casinos if a major field issue arises. A major field issue is usually a defect that stops the game from playing, provides erroneous payouts or deviates from any of the rules of engagement that are required for certification. The machine manufacturer will have to immediately remove that game from every installation in the jurisdiction.</p>
+				<p>There are also minor field issues that will force the machine manufacturer to modify a game that is in the field, within a given timeframe. In this case the game must be certified again at an <abbr title="Independent Test Lab">ITL</abbr> and approved by the regulatory commission.</p>
 			</article>
 
 			<article id="2-the-gambling-industry-ecosystems">
@@ -311,7 +316,7 @@
 				<h2 id="2.1-testing-phases-within-the-gambling-software-development-lifecycle">2.1 Testing phases within the Gambling Software Development Lifecycle</h2>
 				<h3 id="2.1.1-test-types-during-the-gambling-quality-assurance-phase">2.1.1 Test types during the gambling quality assurance phase</h3>
 				<p class="font-size-small color-secondary italic">GTFL-2.1.1 (K2) Classify different test types for the gambling quality assurance testing phase</p>
-				<p>Compliance testing is a very involved process. There are lengthy submission forms to be filled and ITL compliance fees are often much higher than gambling quality assurance testing fees. Therefore, prior to submitting a product to an ITL, a machine manufacturer should ensure the quality of the product being submitted by performing gambling quality assurance testing.</p>
+				<p>Compliance testing is a very involved process. There are lengthy submission forms to be filled and <abbr title="Independent Test Lab">ITL</abbr> compliance fees are often much higher than gambling quality assurance testing fees. Therefore, prior to submitting a product to an <abbr title="Independent Test Lab">ITL</abbr>, a machine manufacturer should ensure the quality of the product being submitted by performing gambling quality assurance testing.</p>
 				<p>Gambling quality assurance testing activities align with the ISTQB® fundamental testprocess. The following test activities are performed to ensure the product is tested for quality:</p>
 				<ul>
 					<li>Test planning</li>
@@ -333,26 +338,26 @@
 					<li><strong>Portability testing:</strong> testing to determine that the product can be installed on all platforms it needs to run on</li>
 					<li><strong>System integration testing:</strong> testing to determine that the product can integrate with systems/components, different versions of an application interface or able to communicate to a system</li>
 					<li><strong>Operational testing:</strong> testing to determine that the product can function and be operated in a production environment, including reliability, security, recovery and failover testing</li>
-					<li><strong>Pre-compliance testing:</strong> testing to determine that all the regulations and standards are met prior to submitting the product to the ITL. This helps ensure a minimal number of submissions of the product to compliance testing</li>
+					<li><strong>Pre-compliance testing:</strong> testing to determine that all the regulations and standards are met prior to submitting the product to the <abbr title="Independent Test Lab">ITL</abbr>. This helps ensure a minimal number of submissions of the product to compliance testing</li>
 					<li><strong>Customer acceptance testing:</strong> Prior to submitting to compliance testing, some products are submitted to the client (i.e., lottery or casino) for customer acceptance testing to ensure all features function as the client expected</li>
 				</ul>
 				<h3 id="2.1.2-compliance-testing">2.1.2 Compliance testing</h3>
 				<p class="font-size-small color-secondary italic">GTFL-2.1.2 (K2) Explain compliance testing</p>
-				<p>Compliance testing occurs when a machine manufacturer wants to enter a jurisdiction with a new or modified product, be it a game, platform, hardware or system. Based on the jurisdiction, the machine manufacturer needs to submit the product with a request for certification to either an ITL or government-based compliance test lab. In some jurisdictions, it goes through both.</p>
+				<p>Compliance testing occurs when a machine manufacturer wants to enter a jurisdiction with a new or modified product, be it a game, platform, hardware or system. Based on the jurisdiction, the machine manufacturer needs to submit the product with a request for certification to either an <abbr title="Independent Test Lab">ITL</abbr> or government-based compliance test lab. In some jurisdictions, it goes through both.</p>
 				<p>The formal submission documents fully detail what is being submitted and what certifications are being requested for the product.</p>
 				<p>Once the product has passed compliance testing, the test lab will provide a certificate of compliance evidencing the certification of the rules and regulations that were to be met.</p>
 				<p>Once the regulatory commission has seen proof of the required certifications, it will allow the product to be installed in the gambling establishments in their jurisdictions.</p>
 				<p>When performing compliance testing, ISTQB® standard test plans are created and specific compliance checklists are used. These may include, but are not limited to:</p>
 				<ul>
 					<li>Jurisdictional specifications – usually defined by a governing body such as the federal, state and/or provincial government</li>
-					<li>ITL defined standards – defined by an ITL in the gambling industry</li>
+					<li><abbr title="Independent Test Lab">ITL</abbr> defined standards – defined by an <abbr title="Independent Test Lab">ITL</abbr> in the gambling industry</li>
 					<li>Other gambling related standards – some jurisdictions require other standards be adhered to. For example, some jurisdictions may require that gambling machines and systems in a jurisdiction are Game to System (G2S) protocol compliant (see Section 3.5.1). The G2S compliance checklist is defined by the Gambling Standards Association, the association that has defined the G2S protocol.</li>
 				</ul>
 				<p>Many areas of the compliance testing will be the same as those performed in gambling quality assurance testing, but they are tested against the jurisdictional specifications and not the game specifications.</p>
 				<p>Some of the areas that are covered during compliance testing include:</p>
 				<ul>
 					<li><strong>Rules of play:</strong> testing to determine that the rules meet the jurisdictional specifications</li>
-					<li><strong></strong>RNG, Payout Percentages, odds and non-cash awards:</strong> testing to determine that the payout percentage is within the range regulated in that jurisdiction</li>
+					<li><strong><abbr title="Random Number Generator">PAR</abbr>, Payout Percentages, odds and non-cash awards:</strong> testing to determine that the payout percentage is within the range regulated in that jurisdiction</li>
 					<li><strong>Bonus games:</strong> testing to determine that the game meets bonus regulations</li>
 					<li><strong>Electronic metering:</strong> testing to determine that all meters required to be monitored within that jurisdiction are being reported</li>
 					<li><strong>Game history:</strong> testing to determine that the game history tracks, at a minimum, the number of games required by the jurisdiction</li>
@@ -367,7 +372,7 @@
 					<li><strong>Game Developers:</strong> develop casino games not specific to a gambling machine model. These games are usually distributed by a manufacturer or casino</li>
 					<li><strong>Machine Manufacturers:</strong> make and sell the hardware, platforms, operating systems and games, developed in house or sub-contracted</li>
 					<li><strong>Independent Test Labs:</strong> test and certify that the game software, hardware, firmware, platform and operating system follow all the jurisdictional rules for each location where the game will be played</li>
-					<li><strong>Regulatory Commissions:</strong> approve every game played in their jurisdiction after the ITL certifies that the game meets the commission’s jurisdictional specifications</li>
+					<li><strong>Regulatory Commissions:</strong> approve every game played in their jurisdiction after the <abbr title="Independent Test Lab">ITL</abbr> certifies that the game meets the commission’s jurisdictional specifications</li>
 				</ul>
 				<p>The regulatory commission licenses the machine manufacturer to deploy the game in casinos or on online gambling sites in that specific jurisdiction. A game may be shipped to a casino before licensing; however, it cannot be deployed. The game must be licensed by the regulatory commission before it is deployed into the jurisdiction. Should any major defects be found in the casino, the regulatory commission can force the machine manufacturer to pull their game out of all casinos or demand that the online sites remove access to the game in that jurisdiction.</p>
 				<figure>
@@ -377,16 +382,16 @@
 				</figure>
 				<h3 id="2.2.2-video-lottery-terminals-and-their-ecosystem">2.2.2 Video lottery terminals and their ecosystem</h3>
 				<p class="font-size-small color-secondary italic">GTFL-2.2.2 (K2) Explain video lottery terminals and their ecosystem</p>
-				<p>As indicated by the name, VLTs always have a video display for the game. VLTs either have standalone or server-based outcome architectures. In the standalone model, each VLT contains an RNG from which game outcomes are generated. In the server- based outcome architecture, VLTs obtain their outcomes from the server. This architecture has two possible models: the RNG model or the pre-determined finite pool model. In the server-based RNG model, the server generates the outcome it will provide to the VLT using an RNG located in the host. In the pre-determined finite pool model, the server obtains the outcome from a database of pre-determined outcomes. This model is similar to instant tickets and is often referred to as electronic instant tickets</p>
+				<p>As indicated by the name, VLTs always have a video display for the game. VLTs either have standalone or server-based outcome architectures. In the standalone model, each VLT contains an <abbr title="Random Number Generator">PAR</abbr> from which game outcomes are generated. In the server- based outcome architecture, VLTs obtain their outcomes from the server. This architecture has two possible models: the <abbr title="Random Number Generator">PAR</abbr> model or the pre-determined finite pool model. In the server-based <abbr title="Random Number Generator">PAR</abbr> model, the server generates the outcome it will provide to the VLT using an <abbr title="Random Number Generator">PAR</abbr> located in the host. In the pre-determined finite pool model, the server obtains the outcome from a database of pre-determined outcomes. This model is similar to instant tickets and is often referred to as electronic instant tickets</p>
 				<p>The types of games typically found on a VLT are: mechanical reel games, poker games and keno games. Most VLTs are multi-game machines, meaning multiple games are available for a player to choose from through a screen menu.</p>
 				<p>VLTs are frequently operated in a distributed environment over a Wide Area Network. For example, a few VLTs deployed in bars and/or pubs are connected to a central server through a Wide Area Network connection.</p>
 				<p>The VLT ecosystem is comprised of:</p>
 				<ul>
-					<li>The EGM</li>
+					<li>The <abbr title="Electronic Gaming Machine">EGM</abbr></li>
 					<li>The site controller and/or bank controller</li>
 					<li>The systems/servers used for monitoring and/or managing functionality</li>
 				</ul>
-				<p>The EGMs are the machines on which the players choose to play the games. Each machine communicates to a site controller and/or bank controller and one or more central servers through a communication interface board using an electronic communication language referred to as a protocol. When VLTs are installed in a distributed environment, each retail location has a site controller to which the VLTs at that location are connected. The site controller serves multiple functions:</p>
+				<p>The <abbr title="Electronic Gaming Machine">EGM</abbr>s are the machines on which the players choose to play the games. Each machine communicates to a site controller and/or bank controller and one or more central servers through a communication interface board using an electronic communication language referred to as a protocol. When VLTs are installed in a distributed environment, each retail location has a site controller to which the VLTs at that location are connected. The site controller serves multiple functions:</p>
 				<ul>
 					<li>Communicates and monitors VLTs to ensure they are online</li>
 					<li>Records game play transactions, cash-in/cash-out transactions and security exceptions</li>
@@ -403,11 +408,11 @@
 				<p>The VLTs and bank controllers and/or site controllers are connected to various central servers based on the functionality offered by a jurisdiction. At a minimum, VLTs installed in a venue environment include the following:</p>
 				<ul>
 					<li>A casino accounting system, which is responsible for monitoring the amounts wagered and paid on each VLT</li>
-					<li>A VLT CMS, which provides the ability to monitor game play, track, record and report security exceptions at the VLT and/or site controller, and monitor network availability in order to ensure continuous VLT operations in the event of communication loss</li>
+					<li>A VLT <abbr title="Central Management System">CMS</abbr>, which provides the ability to monitor game play, track, record and report security exceptions at the VLT and/or site controller, and monitor network availability in order to ensure continuous VLT operations in the event of communication loss</li>
 				</ul>
 				<p>Other central servers may include additional features, not limited to:</p>
 				<ul>
-					<li>A cashless wagering server, which allows for cashless transactions either through ticket-in/ticket-out (TITO) functionality or through electronic funds transfer (EFT)</li>
+					<li>A cashless wagering server, which allows for cashless transactions either through ticket-in/ticket-out (<abbr title="Ticket-In Ticket-Out">TITO</abbr>) functionality or through electronic funds transfer (<abbr title="Electronic funds transfer">EFT</abbr>)</li>
 					<li>A distributed game content management server, which controls the selection, scheduling, distribution and auditing of VLT software to VLTs at remote retail sites</li>
 					<li>A player services server, which supports player loyalty, player rewards and responsible gambling functionality</li>
 					<li>A progressive server, which manages progressive game play</li>
@@ -422,28 +427,28 @@
                 <h3 id="2.2.3-slot-machines-and-their-ecosystem">2.2.3 Slot machines and their ecosystem</h3>
 				<p class="font-size-small color-secondary italic">GTFL-2.2.3 (K2) Explain slot machines and their ecosystem</p>
                 <p>Slot machines may have a video display or mechanical reels which have actual physical reels that spin.</p>
-                <p>Slot machines outcome architectures come from the Indian Gambling Regulatory Act, a 1988 U.S. Federal law that establishes the jurisdictional framework that governs Indian Gambling in the U.S. This law provides definitions for Class I, Class II and Class III architectures. Class I relates to traditional Indian gambling and will not be discussed further in the context of casino gambling. Class II and Class III define the two outcome architectures used by slot machines. Class II (also know as electronic bingo) is defined in the Act as “the game of chance commonly known as bingo whether or not electronic, computer or other technological aids are used”. Class III (also known as traditional slot machines) has a broad definition in the Act. It states “all forms of games that are neither Class I nor Class II. Games commonly played at casinos, such as slot machines and table games, e.g., blackjack, craps, roulette, etc. fall in the Class III category.</p>
+				<p>Slot machines outcome architectures come from the Indian Gambling Regulatory Act, a 1988 U.S. Federal law that establishes the jurisdictional framework that governs Indian Gambling in the U.S. This law provides definitions for Class I, Class II and Class III architectures. Class I relates to traditional Indian gambling and will not be discussed further in the context of casino gambling. Class II and Class III define the two outcome architectures used by slot machines. Class II (also know as electronic bingo) is defined in the Act as “the game of chance commonly known as bingo whether or not electronic, computer or other technological aids are used”. Class III (also known as traditional slot machines) has a broad definition in the Act. It states “all forms of games that are neither Class I nor Class II<ins>”</ins>. Games commonly played at casinos, such as slot machines and table games, e.g., blackjack, craps, roulette, etc. fall in the Class III category.</p>
                 <p>The types of games typically found on a slot machine are: mechanical reel games, bingo games, poker games and keno games. Many slot machines are single-game machines, meaning only one game is available for play on the gambling machine. Slot machines are typically operated in a venue environment such as a casino.</p>
                 <p>Slot machines (also known as Vegas style slot machines) are:</p>
                 <ul>
                     <li>Casino gambling machines with mechanical reels or a video display</li>
-                    <li>Machines that have an RNG that is local to that machine</li>
+                    <li>Machines that have an <abbr title="Random Number Generator">PAR</abbr> that is local to that machine</li>
                 </ul>
                 <p>Machines usually include a currency input device, such as a coin acceptor or a note acceptor, and a currency output device, such as a coin hopper</p>
                 <p>The slot machine ecosystem is comprised of:</p>
                 <ul>
                     <li>The slot machines</li>
-                    <li>A slot machine interface board (SMIB)</li>
+                    <li>A slot machine interface board (<abbr title="Slot Machine Interface Board">SMIB</abbr>)</li>
                     <li>A data collection unit or bank controller</li>
                     <li>Central servers</li>
                 </ul>
-                <p>Each slot machine contains an SMIB that is linked to the data collection unit or bank controller. Historically, an SMIB was a small board that was put into every mechanical or electro-mechanical machines. These early SMIBs connected to a wiring harness that would detect when a mechanical meter was incremented, or a mechanical door switch was opened. As time passed, these SMIBs evolved and now communicate electronically with the gambling machine and are often responsible for implementing the protocol that is used to communicate with the data collection unit or bank controllers and the remote central servers. The SMIBs, at a minimum, capture:</p>
+                <p>Each slot machine contains an <abbr title="Slot Machine Interface Board">SMIB</abbr> that is linked to the data collection unit or bank controller. Historically, an <abbr title="Slot Machine Interface Board">SMIB</abbr> was a small board that was put into every mechanical or electro-mechanical machines. These early <abbr title="Slot Machine Interface Board">SMIB</abbr>s connected to a wiring harness that would detect when a mechanical meter was incremented, or a mechanical door switch was opened. As time passed, these <abbr title="Slot Machine Interface Board">SMIB</abbr>s evolved and now communicate electronically with the gambling machine and are often responsible for implementing the protocol that is used to communicate with the data collection unit or bank controllers and the remote central servers. The <abbr title="Slot Machine Interface Board">SMIB</abbr>s, at a minimum, capture:</p>
                 <ul>
                     <li>The amounts wagered by the player</li>
                     <li>The amounts paid out to the player</li>
                     <li>And if the player is using a player card, any player data tracked by the casino</li>
                 </ul>
-                <p>Data collection units or bank controllers, as suggested by the name, are used to collect and store the data obtained from the SMIBs.</p>
+                <p>Data collection units or bank controllers, as suggested by the name, are used to collect and store the data obtained from the <abbr title="Slot Machine Interface Board">SMIB</abbr>s.</p>
                 <p>The data collected by the data collection unit or bank controller is communicated to the servers to update the data needed for the functionality provided by the servers.</p>
                 <figure>
                     <img src="assets/traditional-slot-ecosystem.png" alt="The traditional slot ecosystem">
@@ -453,7 +458,7 @@
                 <ul>
                     <li>Machines that look and feel like slot games but are actually a game of electronic bingo</li>
                     <li>Machines on which the outcomes are obtained from a centralized bingo server</li>
-                    <li>Machines that offer cashless input methods such as TITO or EFT. These gambling machines do not have currency input/output devices</li>
+                    <li>Machines that offer cashless input methods such as <abbr title="Ticket-In Ticket-Out">TITO</abbr> or <abbr title="Electronic funds transfer">EFT</abbr>. These gambling machines do not have currency input/output devices</li>
                     <li>
                         Machines on which the games:
                         <ul>
@@ -463,7 +468,7 @@
                         </ul>
                     </li>
                 </ul>
-                <p>Each bingo machine contains an SMIB that is linked to the bingo server and other servers. The SMIBs, at a minimum, capture:</p>
+                <p>Each bingo machine contains an <abbr title="Slot Machine Interface Board">SMIB</abbr> that is linked to the bingo server and other servers. The <abbr title="Slot Machine Interface Board">SMIB</abbr>s, at a minimum, capture:</p>
                 <ul>
                     <li>The amounts wagered by the player</li>
                     <li>The outcome obtained from the server and the corresponding results</li>
@@ -478,14 +483,14 @@
 				<h3 id="2.2.4-lottery-and-its-ecosystem">2.2.4 Lottery and its ecosystem</h3>
 				<p class="font-size-small color-secondary italic">GTFL-2.2.4 (K2) Explain lottery and its ecosystem</p>
 				<p>The lottery ecosystem is comprised of systems and devices deployed at the lottery and at each retail location.</p>
-				<p>The main device is the point of sale (POS) lottery terminal. The POS lottery terminal facilitates the sale of traditional lottery tickets by allowing the retail employee to either scan a selection slip containing the player selected numbers, or to select a Quick Pick option where the POS lottery terminal randomly selects numbers for the player. The POS lottery terminal then prints the tickets on the attached printer. The POS lottery terminal facilitates the sale of instant tickets by scanning the instant ticket sold. The attached customer display unit (CDU) allows the customer to view all steps of the sales transaction. The POS lottery terminal must coordinate all lottery ticket sale transactions with the lottery CMS. The POS Lottery terminal, printer and CDU/PDU unit are either separate devices or, in some cases, these devices can be integrated into one unit. When a player is ready to validate a ticket, the player can choose to have the retail employee scan the ticket using the POS Lottery terminal or perform the validating themselves on a POS Self-Serve Terminal.</p>
+				<p>The main device is the point of sale (<abbr title="Point Of Sale">POS</abbr>) lottery terminal. The <abbr title="Point Of Sale">POS</abbr> lottery terminal facilitates the sale of traditional lottery tickets by allowing the retail employee to either scan a selection slip containing the player selected numbers, or to select a Quick Pick option where the <abbr title="Point Of Sale">POS</abbr> lottery terminal randomly selects numbers for the player. The <abbr title="Point Of Sale">POS</abbr> lottery terminal then prints the tickets on the attached printer. The <abbr title="Point Of Sale">POS</abbr> lottery terminal facilitates the sale of instant tickets by scanning the instant ticket sold. The attached customer display unit (<abbr title="Customer Display Unit">CDU</abbr>) allows the customer to view all steps of the sales transaction. The <abbr title="Point Of Sale">POS</abbr> lottery terminal must coordinate all lottery ticket sale transactions with the lottery <abbr title="Central Management System">CMS</abbr>. The <abbr title="Point Of Sale">POS</abbr> Lottery terminal, printer and <abbr title="Customer Display Unit">CDU</abbr>/<abbr title="Personal Display Unit">CDU</abbr> unit are either separate devices or, in some cases, these devices can be integrated into one unit. When a player is ready to validate a ticket, the player can choose to have the retail employee scan the ticket using the <abbr title="Point Of Sale">POS</abbr> Lottery terminal or perform the validating themselves on a <abbr title="Point Of Sale">POS</abbr> Self-Serve Terminal.</p>
 				<p>The final device at the retail location is the multimedia display. The multimedia display is used for in-store advertising of lottery products, upcoming lottery promotions and winning numbers.</p>
-				<p>Once the numbers are drawn, the numbers are entered into the lottery CMS. Using the data stored in the database of the CMS, reports can be generated indicating how many winning traditional lottery tickets were sold and which retail location sold the ticket(s). For instant tickets, the barcode data of each ticket is stored in the CMS database. This allows the lottery employees to generate reports indicating how many tickets remain unsold and manage replenishment of physical tickets to retailers. The lottery CMS is responsible for storing all transactional data of tickets sold at each retail location. It also manages the advertising content to be displayed on the multimedia display units at the retail locations and downloads the appropriate content to the POS lottery terminal from which the multimedia display unit displays the content.</p>
-				<p>Lotteries are beginning to introduce alternative means by which to purchase lottery tickets. For example, purchases can be made at self-serve vending machines for instant tickets, self-serve ATMs like kiosks for traditional lottery tickets or online at their website for lottery tickets. These alternative devices and components must also coordinate all sale transactions with the lottery CMS.</p>
+				<p>Once the numbers are drawn, the numbers are entered into the lottery <abbr title="Central Management System">CMS</abbr>. Using the data stored in the database of the <abbr title="Central Management System">CMS</abbr>, reports can be generated indicating how many winning traditional lottery tickets were sold and which retail location sold the ticket(s). For instant tickets, the barcode data of each ticket is stored in the <abbr title="Central Management System">CMS</abbr> database. This allows the lottery employees to generate reports indicating how many tickets remain unsold and manage replenishment of physical tickets to retailers. The lottery <abbr title="Central Management System">CMS</abbr> is responsible for storing all transactional data of tickets sold at each retail location. It also manages the advertising content to be displayed on the multimedia display units at the retail locations and downloads the appropriate content to the <abbr title="Point Of Sale">POS</abbr> lottery terminal from which the multimedia display unit displays the content.</p>
+				<p>Lotteries are beginning to introduce alternative means by which to purchase lottery tickets. For example, purchases can be made at self-serve vending machines for instant tickets, self-serve <abbr title="Automated Teller Machine">ATM</abbr>s like kiosks for traditional lottery tickets or online at their website for lottery tickets. These alternative devices and components must also coordinate all sale transactions with the lottery <abbr title="Central Management System">CMS</abbr>.</p>
 				<figure>
-					<img src="assets/lottery-site.png"
-						 alt="Lottery site">
-					<figcaption>Lottery site</figcaption>
+					<img src="assets/lottery-ecosystem.png"
+						 alt="Lottery ecosystem">
+					<figcaption>Lottery ecosystem</figcaption>
 				</figure>
 				<p>Some of the areas that are covered during functional testing of the lotter ecosystem include:</p>
 				<ul>
@@ -499,7 +504,7 @@
 					<li>Account based play “cashless”</li>
 					<li>Responsible gaming functionality</li>
 					<li>Game play functionality and playability</li>
-					<li>RNG algorithm and math rules</li>
+					<li><abbr title="Random Number Generator">PAR</abbr> algorithm and math rules</li>
 					<li>Artwork versus requirements</li>
 					<li>Host accounting and reporting – determine that the game pays out what it should and that the money at play goes to the client if they win, or to the casino if the client loses</li>
 					<li>Tournament and real time event setup and management</li>
@@ -519,9 +524,9 @@
 					<li><strong>Game setup and configuration:</strong> testing to determine that the game functions with the specified setup and configuration parameters</li>
 					<li><strong>Game functionality:</strong> testing to determine the complete game functionality versus the Game Design documents</li>
 					<li><strong>Game play:</strong> testing to determine the game functions as stated in the Game Design documents</li>
-					<li><strong>Math and probability accounting report (PAR) sheet testing:</strong> testing to determine that the game returns the correct mathematical results to the screen, the correct amount of money to the player’s account, and the correct amount of money to the casino account in all cases</li>
+					<li><strong>Math and probability accounting report (<abbr title="Probability Accounting Report or Pay table and mechanical reel strips">PAR</abbr>) sheet testing:</strong> testing to determine that the game returns the correct mathematical results to the screen, the correct amount of money to the player’s account, and the correct amount of money to the casino account in all cases</li>
 					<li><strong>Memory and memory leaks:</strong> testing to determine that the game correctly manages memory allocations in such a way that memory which is no longer needed is properly released</li>
-					<li><strong>Game lockups, tilts and recovery:</strong> testing to determine areas that may lock the game, cause it to go into a “tilt” state and how well the game recovers. When the EGM is in a tilt state the gambling machine must be disabled and normal play must not occur until the error conditions have been cleared</li>
+					<li><strong>Game lockups, tilts and recovery:</strong> testing to determine areas that may lock the game, cause it to go into a “tilt” state and how well the game recovers. When the <abbr title="Electronic Gaming Machine">EGM</abbr> is in a tilt state the gambling machine must be disabled and normal play must not occur until the error conditions have been cleared</li>
 					<li><strong>Attract Mode:</strong> testing to determine the proper pre-recorded demonstration of a video game when the game is not being played. Attract mode is also known as display mode or show mode</li>
 					<li><strong>Help Screen:</strong> testing to determine the help screen versus all documentation and the Game Design documents</li>
 					<li><strong>Audit Mode:</strong> testing to determine the audit mode game functionality versus the Game Design documents and jurisdictional specifications</li>
@@ -586,7 +591,7 @@
 				<p>Some of the areas that are covered during casino game compliance testing per the jurisdictional specifications include:</p>
 				<ul>
 					<li>Rules of play</li>
-					<li>RNG</li>
+					<li><abbr title="Random Number Generator">PAR</abbr></li>
 					<li>Payout Percentages, odds and non-cash awards</li>
 					<li>Bonus games</li>
 					<li>Multiple games on a machine</li>
@@ -601,14 +606,14 @@
 				<ul>
 					<li>multitude of different pay tables</li>
 					<li>any permutations that there are to those pay tables</li>
-					<li>RNG results</li>
-					<li>RTP computations</li>
+					<li><abbr title="Random Number Generator">PAR</abbr> results</li>
+					<li><abbr title="Return To Player">RTP</abbr> computations</li>
 				</ul>
-				<p>Math testing focuses on ensuring that the game returns the correct mathematical results to the player and to the casino operator (i.e., casino or lottery). The mathematics of a gambling machine center around the RNG and the RTP percentage.</p>
-				<p>The RTP, sometimes also called theoretical payback percentage, is the percentage of money wagered on a gambling machine that is returned to players in the form of winnings over a period of over time.</p>
-				<p>To achieve the required RTP, the mathematicians design the mathematics behind a game by deciding the frequency of symbols on the mechanical reel strips and the amount any given combination of game stops will pay. The RNG is the algorithm or program within the slot machine that determines where the mechanical reels will stop each time. The RNG works independently and is unaware of the overall odds of each “stop position”. The RNG waits until someone presses a button or pulls a handle, at which point it generates the required amount of numbers depending on how many mechanical reels are being played. The odds of the game itself are designed by the mathematician by defining the number of mechanical reels, the stops and the symbols in proportion to the pay lines.</p>
-				<p>The odds defined by the mathematician are described in a operator mode. A PAR sheet is defined as “a document that details how a game’s match is designed, including pay table, mechanical reel strips, and any other pertinent information to rules of the game, e.g., bonuses”. Various theories exist of what the acronym PAR comes from. Some say it stands for “Probability Accounting Report”, while others say it stands for “Pay table and mechanical reel strips”.</p>
-				<p>The PAR sheet includes information such as:</p>
+				<p>Math testing focuses on ensuring that the game returns the correct mathematical results to the player and to the casino operator (i.e., casino or lottery). The mathematics of a gambling machine center around the <abbr title="Random Number Generator">PAR</abbr> and the <abbr title="Return To Player">RTP</abbr> percentage.</p>
+				<p>The <abbr title="Return To Player">RTP</abbr>, sometimes also called theoretical payback percentage, is the percentage of money wagered on a gambling machine that is returned to players in the form of winnings over a period of over time.</p>
+				<p>To achieve the required <abbr title="Return To Player">RTP</abbr>, the mathematicians design the mathematics behind a game by deciding the frequency of symbols on the mechanical reel strips and the amount any given combination of game stops will pay. The <abbr title="Random Number Generator">PAR</abbr> is the algorithm or program within the slot machine that determines where the mechanical reels will stop each time. The <abbr title="Random Number Generator">PAR</abbr> works independently and is unaware of the overall odds of each “stop position”. The <abbr title="Random Number Generator">PAR</abbr> waits until someone presses a button or pulls a handle, at which point it generates the required amount of numbers depending on how many mechanical reels are being played. The odds of the game itself are designed by the mathematician by defining the number of mechanical reels, the stops and the symbols in proportion to the pay lines.</p>
+				<p>The odds defined by the mathematician are described in a operator mode. A <abbr title="Probability Accounting Report or Pay table and mechanical reel strips">PAR</abbr> sheet is defined as “a document that details how a game’s match is designed, including pay table, mechanical reel strips, and any other pertinent information to rules of the game, e.g., bonuses”. Various theories exist of what the acronym <abbr title="Probability Accounting Report or Pay table and mechanical reel strips">PAR</abbr> comes from. Some say it stands for “Probability Accounting Report”, while others say it stands for “Pay table and mechanical reel strips”.</p>
+				<p>The <abbr title="Probability Accounting Report or Pay table and mechanical reel strips">PAR</abbr> sheet includes information such as:</p>
 				<ul>
 					<li>The game name</li>
 					<li>The number of mechanical reels</li>
@@ -616,18 +621,18 @@
 					<li>Supported denominations and the value of one credit wagered</li>
 					<li>The minimum and maximum wager per spin</li>
 					<li>The number of symbols per mechanical reel</li>
-					<li>Payback percentage RTP</li>
+					<li>Payback percentage <abbr title="Return To Player">RTP</abbr></li>
 					<li>Hit frequency, i.e., the percentage of times, on average, that the player will win something on each line</li>
 					<li>If the game has a jackpot, the average number of plays before the jackpot is won</li>
 					<li>If the game has a bonus, the average number of plays before the bonus is won</li>
 					<li>Volatility Index, which is an indication of how much the game’s payback percentage will vary for a given number of games played. Games with a high volatility index have a larger variance in the payback percentage per gambling session than do games with a low volatility index</li>
 					<li>Diagrams of the line, scatter or pattern wins</li>
 				</ul>
-				<p>Below is an example of a PAR Sheet:</p>
+				<p>Below is an example of a <abbr title="Probability Accounting Report or Pay table and mechanical reel strips">PAR</abbr> Sheet:</p>
 				<figure>
 					<img src="assets/par-sheet.png"
 						 alt="Example PAR sheet">
-					<figcaption>Example PAR sheet</figcaption>
+					<figcaption>Example <abbr title="Probability Accounting Report or Pay table and mechanical reel strips">PAR</abbr> sheet</figcaption>
 				</figure>
 				<p>Below is an example of a pay table:</p>
 				<figure>
@@ -637,15 +642,15 @@
 				</figure>
 				<p>The goal of math testing is:</p>
 				<ul>
-					<li>To test that the RNG is truly generating random numbers, i.e., that no patterns can be seen over time</li>
-					<li>To test that the game implementation matches the mathematical design documented in the PAR sheet</li>
+					<li>To test that the <abbr title="Random Number Generator">PAR</abbr> is truly generating random numbers, i.e., that no patterns can be seen over time</li>
+					<li>To test that the game implementation matches the mathematical design documented in the <abbr title="Probability Accounting Report or Pay table and mechanical reel strips">PAR</abbr> sheet</li>
 					<li>To test all game specifications that affect the payback percentage</li>
 					<li>To test all jurisdictional specifications that relate to the mathematics of the game</li>
 				</ul>
 				<h2 id="3.3-platform-testing">3.3 Platform Testing</h2>
 				<h3 id="3.3.1-platform-functional-testing-overview">3.3.1 Platform functional testing overview</h3>
 				<p class="font-size-small color-secondary italic">GTFL-3.3.1 (K2) Summarize the concepts of platform functional testing</p>
-				<p>The platform is the total package on which casino games can run. From a casino games perspective, this includes the platform’s hardware, the EGM, the operating systems and runtime libraries that reside on the EGM and / or on the servers, for server centric systems. The casino games are distributed through the platform and run on top of the platform.</p>
+				<p>The platform is the total package on which casino games can run. From a casino games perspective, this includes the platform’s hardware, the <abbr title="Electronic Gaming Machine">EGM</abbr>, the operating systems and runtime libraries that reside on the <abbr title="Electronic Gaming Machine">EGM</abbr> and / or on the servers, for server centric systems. The casino games are distributed through the platform and run on top of the platform.</p>
 				<p>These platforms provide the following capabilities:</p>
 				<ul>
 					<li>Open architecture, to allow casinos to choose the content they want from multiple games</li>
@@ -700,7 +705,7 @@
 				<ul>
 					<li><strong>Cashless wagering:</strong> testing to determine that systems which facilitate electronic transfers of money directly to or from a game or gambling machine meet the game specifications</li>
 					<li><strong>Peripheral integration:</strong> testing to determine that all peripherals integrate as per the game specifications</li>
-					<li><strong></strong>Redemption:</strong> testing to determine that the system allows the user to properly get or win the proper amounts as specified</li>
+					<li><strong>Redemption:</strong> testing to determine that the system allows the user to properly get or win the proper amounts as specified</li>
 					<li><strong>Patron kiosk:</strong> testing to determine that the kiosk captures, reports and measures the player’s play as specified</li>
 					<li><strong>End-to-end testing:</strong> testing to determine that a user can navigate the system as expected and that it works as specified using an actual flow through the system in a realistic end user scenario</li>
 				</ul>
@@ -719,37 +724,37 @@
 				<h3 id="3.5.1-protocol-functional-testing-overview">3.5.1 Protocol functional testing overview</h3>
 				<p class="font-size-small color-secondary italic">GTFL-3.5.1 (K2) Summarize the concepts of protocol functional testing</p>
 				<p>Protocols are a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity. These are the rules or standards that define the syntax, semantics and synchronization of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both. The protocols used in a casino include G2S, SAS and QCOM.</p>
-				<p>G2S is one of the protocols that connects the slot machines to the host systems. It is a communication protocol that allows networked gambling and controls the way information is exchanged between EGMs and host systems. This protocol enables software download, remote configuration, and remote software verification. G2S is comprised of multiple classes. Each class is responsible for supporting a specific function such as voucher, cabinet, printer, communications, etc. Each of these classes has specific commands and responses to support the function described in the class name. Also, each class must have an owner host. These hosts may be separate and distinct servers. They may all be owned by a single owner host or they may be any combination thereof.</p>
+				<p>G2S is one of the protocols that connects the slot machines to the host systems. It is a communication protocol that allows networked gambling and controls the way information is exchanged between <abbr title="Electronic Gaming Machine">EGM</abbr>s and host systems. This protocol enables software download, remote configuration, and remote software verification. G2S is comprised of multiple classes. Each class is responsible for supporting a specific function such as voucher, cabinet, printer, communications, etc. Each of these classes has specific commands and responses to support the function described in the class name. Also, each class must have an owner host. These hosts may be separate and distinct servers. They may all be owned by a single owner host or they may be any combination thereof.</p>
 				<p>The SAS protocol was initially designed to automate slot machine meter reporting and event logging. However, SAS has steadily evolved over the years to meet the needs of the industry, including player tracking, bonusing, ticketing and cashless gambling.</p>
-				<p>In Queensland, EGMs in clubs and hotels must be connected to an electronic monitoring system using the QCOM protocol. QCOM is an Australian version of G2S following the Queensland jurisdictional requirements.</p>
+				<p>In Queensland, <abbr title="Electronic Gaming Machine">EGM</abbr>s in clubs and hotels must be connected to an electronic monitoring system using the QCOM protocol. QCOM is an Australian version of G2S following the Queensland jurisdictional requirements.</p>
 				<p>Casino gambling protocol compatibility needs to be tested for gambling quality assurance, pre-compliance and compliance specifications. Each jurisdiction will have specific requirements for the protocol and how they interact with games. So, in addition to testing the game and the platform functionality, protocol functionality needs to be tested as well.</p>
 				<h3 id="3.5.2-areas-covered-by-protocol-functional-testing">3.5.2 Areas covered by protocol functional testing</h3>
 				<p class="font-size-small color-secondary italic">GTFL-3.5.2 (K2) Identify what areas are covered by protocol functional testing</p>
 				<p>Some of the areas that are covered during protocol functional testing per the game specifications include:</p>
 				<ul>
-					<li>Communication link with EGM and the host</li>
+					<li>Communication link with <abbr title="Electronic Gaming Machine">EGM</abbr> and the host</li>
 					<li>Real time clock and time synchronization</li>
 					<li>Host reporting of accounting meters</li>
 					<li>Host reporting of peripherals and device drivers</li>
 					<li>Host reporting of security doors</li>
-					<li>Cashless transfer and TITO</li>
+					<li>Cashless transfer and <abbr title="Ticket-In Ticket-Out">TITO</abbr></li>
 					<li>Host reporting of game status</li>
-					<li>Non-volatile random-access memory (RAM) clears – testing to determine after physically pulling the plug on the EGM, when the EGM is again plugged in, it contains all the same data as before the plug was pulled.</li>
+					<li>Non-volatile random-access memory (RAM) clears – testing to determine after physically pulling the plug on the <abbr title="Electronic Gaming Machine">EGM</abbr>, when the <abbr title="Electronic Gaming Machine">EGM</abbr> is again plugged in, it contains all the same data as before the plug was pulled.</li>
 					<li>Rebooting</li>
 					<li>Volume control</li>
 					<li>Power off</li>
 					<li>Power on</li>
 				</ul>
-				<p>Various tools are available to facilitate the testing of communication protocols. Protocol simulation tools can simulate one end of the protocol conversation or the other. For example, if an EGM is being tested, a host protocol simulator can be used, or if the system is being tested, an EGM protocol simulator can be used. A protocol compliance verification tool can help determine that gambling products meet a basic standard implementation of a protocol. This type of tool helps to ensure interoperability. ITLs use protocol compliance verification tools to certify compliance of a protocol implementation.</p>
+				<p>Various tools are available to facilitate the testing of communication protocols. Protocol simulation tools can simulate one end of the protocol conversation or the other. For example, if an <abbr title="Electronic Gaming Machine">EGM</abbr> is being tested, a host protocol simulator can be used, or if the system is being tested, an <abbr title="Electronic Gaming Machine">EGM</abbr> protocol simulator can be used. A protocol compliance verification tool can help determine that gambling products meet a basic standard implementation of a protocol. This type of tool helps to ensure interoperability. <abbr title="Independent Test Lab">ITL</abbr>s use protocol compliance verification tools to certify compliance of a protocol implementation.</p>
 				<h3 id="3.5.3-protocol-compliance-testing-overview">3.5.3 Protocol compliance testing overview</h3>
 				<p class="font-size-small color-secondary italic">GTFL-3.5.3 (K2) Summarize the concepts of protocol compliance testing</p>
-				<p>Gambling protocols connect EGMs to the host systems. It is a communication protocol that allows networked gambling and controls the way information is exchanged between EGMs and host systems.</p>
+				<p>Gambling protocols connect <abbr title="Electronic Gaming Machine">EGM</abbr>s to the host systems. It is a communication protocol that allows networked gambling and controls the way information is exchanged between <abbr title="Electronic Gaming Machine">EGM</abbr>s and host systems.</p>
 				<p>When performing protocol compliance testing, ISTQB® standard test plans and compliance checklists are used. Many areas of the protocol compliance testing will be the same as those performed in protocol functional testing, but they refer to the jurisdictional specifications as a test basis not the game specifications.</p>
 				<h3 id="3.5.4-areas-covered-by-protocol-compliance-testing">3.5.4 Areas covered by protocol compliance testing</h3>
 				<p class="font-size-small color-secondary italic">GTFL-3.5.4 (K2) Identify what areas are covered by protocol compliance testing</p>
 				<p>Some of the areas that are covered during protocol compliance test per the jurisdictional specifications include:</p>
 				<ul>
-					<li>Communication link with EGM and host. The gambling machine hardware, the printers and the bill readers must utilize a communication protocol which ensures that erroneous data or signals will not adversely affect the operation of the gambling machine</li>
+					<li>Communication link with <abbr title="Electronic Gaming Machine">EGM</abbr> and host. The gambling machine hardware, the printers and the bill readers must utilize a communication protocol which ensures that erroneous data or signals will not adversely affect the operation of the gambling machine</li>
 					<li>Host reporting of accounting meters. Any associated equipment that communicates with the host equipment must only pass the data or signals necessary for the operation of the game, such as acceptance of a specific bill denomination or valid coin in</li>
 					<li>Power off and Power on. During the loss of communication with external associated equipment, any critical information related to revenue, integrity, and security of the equipment must be preserved and transmitted as soon as the communication resumes</li>
 					<li>Progressive jackpots. The communication between the gambling machine and the progressive jackpot controllers must employ a secure, real time, two-way communication protocol. Progressive jackpot communications may only be used for progressive jackpot functions and to complement game approved functions.</li>
@@ -763,7 +768,7 @@
 				<p>The tester references the game specification as a test basis to look for defects in each of the hardware components. Some of the areas covered during hardware functional testing include:</p>
 				<ul>
 					<li>Testing to determine that all doors must resist forced illegal entry into the gambling machine and must retain evidence of any such forced entry</li>
-					<li>Testing to determine that the game logic, program storage devices and any other circuitry affecting game outcome, accounting, communication, security and integrity including, but not limited to, game programs, RNG, RAM, read- only memory (ROM), and boot storage media, must be secured in a separately locked metal cabinet inside the gambling machine cabinet</li>
+					<li>Testing to determine that the game logic, program storage devices and any other circuitry affecting game outcome, accounting, communication, security and integrity including, but not limited to, game programs, <abbr title="Random Number Generator">PAR</abbr>, RAM, read- only memory (ROM), and boot storage media, must be secured in a separately locked metal cabinet inside the gambling machine cabinet</li>
 					<li>Testing to determine that the cashbox must be equipped with a separate keyed lock that is required to remove the bills from within the machine</li>
 					<li>Testing to determine that gambling machine must be equipped with a tower light located on top of the gambling machine cabinet, or in case of bar top games, there must be at least one tower light that is shared among all games on the bar</li>
 				</ul>
@@ -791,7 +796,7 @@
 				<p>Some of the areas covered during hardware compliance testing per the jurisdictional specifications include:</p>
 				<ul>
 					<li><strong>Cabinet Door:</strong> the cabinet must be of rigid construction and must resist forced illegal entry, tampering and willful damage using human force such as kicking, blows and bending, or using small tools such as a screwdriver</li>
-					<li><strong>BNA:</strong> — must satisfy Hardware Integrity Standards — testing to determine whether an electrostatic discharge (ESD) impacts the integrity of a gambling machine. ESD testing is intended to simulate techniques observed in the field that may be used to disrupt the integrity of EGMs</li>
+					<li><strong>BNA:</strong> — must satisfy Hardware Integrity Standards — testing to determine whether an electrostatic discharge (ESD) impacts the integrity of a gambling machine. ESD testing is intended to simulate techniques observed in the field that may be used to disrupt the integrity of <abbr title="Electronic Gaming Machine">EGM</abbr>s</li>
 					<li><strong>Tower Light:</strong> validate that the gambling machine is equipped with a tower light located on top of the gambling machine cabinet</li>
 					<li><strong>Printers:</strong> testing to determine that an audible alarm or the display of a message is provided to the player when a voucher is ready for collection and must not allow the printing of another voucher until the previous voucher has been collected</li>
 					<li><strong>Money Handling Device:</strong> testing to determine that any money handling devices such as coin boxes, note stackers or coin hoppers are equipped with a separate keyed lock that is required to remove the money from within, and that they accept only currency accepted in that jurisdiction, i.e., do not accept foreign currency and accept only enabled denominations</li>
@@ -871,13 +876,13 @@
 				<h3 id="3.9.1-jackpot-controller-testing-overview">3.9.1 Jackpot controller testing overview</h3>
 				<p class="font-size-small color-secondary italic">GTFL-3.9.1 (K2) Summarize the concepts of jackpot controller testing</p>
 				<p>A jackpot controller is a system that can remotely manage jackpots and progressive jackpots, update jackpot settings, emphasize jackpot values and trigger special effects. A jackpot controller can manage more than a thousand slot machines.</p>
-				<p>A progressive jackpot is a jackpot for an EGM where the amount of the jackpot increases incrementally with each game played, until the jackpot is won. Normally, multiple gambling machines are linked together to form one large progressive jackpot that grows as multiple players are contributing to the jackpot at the same time.</p>
+				<p>A progressive jackpot is a jackpot for an <abbr title="Electronic Gaming Machine">EGM</abbr> where the amount of the jackpot increases incrementally with each game played, until the jackpot is won. Normally, multiple gambling machines are linked together to form one large progressive jackpot that grows as multiple players are contributing to the jackpot at the same time.</p>
 				<h3 id="3.9.2-areas-covered-by-jackpot-controller-testing">3.9.2 Areas covered by jackpot controller testing</h3>
 				<p class="font-size-small color-secondary italic">GTFL-3.9.2 (K2) Identify what areas are covered by jackpot controller testing</p>
 				<p>Some of the jackpot controller areas to test include:</p>
 				<ul>
 					<li>Jackpot management</li>
-					<li>EGM interfaces</li>
+					<li><abbr title="Electronic Gaming Machine">EGM</abbr> interfaces</li>
 					<li>Bonus mode activation</li>
 					<li>Jackpot display system</li>
 					<li>Incremental contributions – the difference between the amount of a progressive jackpot and the amounts added as the result of wagers</li>
@@ -900,8 +905,8 @@
 					<li>Ensure that the game requested is the game that is loaded for each player for multi-player games</li>
 					<li>Ensure that the game meets functional requirements, is playable, and that game play corresponds to the rules of the game</li>
 					<li>Ensure that the game/system is compliant with relevant gambling standards including geolocation and security</li>
-					<li>The RNG is correctly implemented</li>
-					<li>The RTP calculation for each game is accurate and that the player history is correct</li>
+					<li>The <abbr title="Random Number Generator">PAR</abbr> is correctly implemented</li>
+					<li>The <abbr title="Return To Player">RTP</abbr> calculation for each game is accurate and that the player history is correct</li>
 					<li>Player administration module such as player registration and accounts, protection, privacy and backup and recovery</li>
 					<li>Financial transactions between payment gateways and the individual users</li>
 					<li>Backend financial transactions, analytics and administrative services</li>
@@ -944,7 +949,7 @@
 					<li>Network testing</li>
 					<li>Platform testing</li>
 					<li>Load and performance testing</li>
-					<li>RNG testing as required</li>
+					<li><abbr title="Random Number Generator">PAR</abbr> testing as required</li>
 					<li>Pre-compliance testing</li>
 					<li>Compliance testing, as required</li>
 					<li>Security testing is performed at the application, network and host level</li>
@@ -987,7 +992,7 @@
 					<dt>G2S</dt>
 					<dd>Game to System</dd>
 
-					<dt>ITL</dt>
+					<dt><abbr title="Independent Test Lab">ITL</abbr></dt>
 					<dd>Independent test lab</dd>
 
 					<dt>NVRAM</dt>
@@ -1032,10 +1037,10 @@
 					<dd>A pre-recorded demonstration of a video game that is displayed when the game is not being played</dd>
 
 					<dt>Audit mode</dt>
-					<dd>The mode that allows EGM meters and statistics to be displayed</dd>
+					<dd>The mode that allows <abbr title="Electronic Gaming Machine">EGM</abbr> meters and statistics to be displayed</dd>
 
 					<dt>Bank controller</dt>
-					<dd>A controller that collects and stores the data obtained from the SMIBs</dd>
+					<dd>A controller that collects and stores the data obtained from the <abbr title="Slot Machine Interface Board">SMIB</abbr>s</dd>
 
 					<dt>Bank note acceptor (BNA)</dt>
 					<dd>A device for accepting paper money</dd>
@@ -1050,7 +1055,7 @@
 					<dd>A server that provides data warehousing and business analytics</dd>
 
 					<dt>Cashbox</dt>
-					<dd>A device that contains the money put into the EGM</dd>
+					<dd>A device that contains the money put into the <abbr title="Electronic Gaming Machine">EGM</abbr></dd>
 
 					<dt>Cashless wagering server</dt>
 					<dd>A server that allows for cashless transactions either through ticket-in/ticket-out functionality or through electronic funds transfer on electronic gaming machines</dd>
@@ -1080,7 +1085,7 @@
 					<dd>Simultaneous transmission between two or more network domain devices or nodes</dd>
 
 					<dt>Coin acceptor</dt>
-					<dd>A device that accepts coins put into an EGM</dd>
+					<dd>A device that accepts coins put into an <abbr title="Electronic Gaming Machine">EGM</abbr></dd>
 
 					<dt>Coin diverter</dt>
 					<dd>A device that takes the coins from the coin hopper and drops them into the drop box</dd>
@@ -1092,7 +1097,7 @@
 					<dd>A device that allows players to view their order, tax, discounts, and loyalty information during the checkout process</dd>
 
 					<dt>Data collection unit</dt>
-					<dd>Software that resides in the EGM that stores data collected in the EGM, sends it to the banking and game servers, stores the results of the game playback and payouts, and then distributes it to the EGM</dd>
+					<dd>Software that resides in the <abbr title="Electronic Gaming Machine">EGM</abbr> that stores data collected in the <abbr title="Electronic Gaming Machine">EGM</abbr>, sends it to the banking and game servers, stores the results of the game playback and payouts, and then distributes it to the <abbr title="Electronic Gaming Machine">EGM</abbr></dd>
 
 					<dt>Distributed game content management server</dt>
 					<dd>A server that controls the selection, scheduling, distribution and auditing of VLT software to VLTs at remote retail sites</dd>
@@ -1101,7 +1106,7 @@
 					<dd>A container located in a slot machine's base where excess coins are diverted from the coin hopper</dd>
 
 					<dt>Edge lighting</dt>
-					<dd>A lighting arrangement for an EGM that includes an edge and a lamp for transmitting light through at least a portion of the panel via the edge</dd>
+					<dd>A lighting arrangement for an <abbr title="Electronic Gaming Machine">EGM</abbr> that includes an edge and a lamp for transmitting light through at least a portion of the panel via the edge</dd>
 
 					<dt>Electronic funds transfer (EFT)</dt>
 					<dd>The electronic transfer of money from one bank account to another, either within a single financial institution or across multiple institutions, via computer-based systems, without the direct intervention of bank staff</dd>
@@ -1116,7 +1121,7 @@
 					<dd>The sudden flow of electricity between two electrically charged objects caused by contact, an electrical short, or dielectric breakdown</dd>
 
 					<dt>Escaped compliance defect</dt>
-					<dd>A defect that has been missed by an ITL during pre-compliance testing and is found either by the compliance test team, the customer acceptance test team, or a player once the product has been deployed</dd>
+					<dd>A defect that has been missed by an <abbr title="Independent Test Lab">ITL</abbr> during pre-compliance testing and is found either by the compliance test team, the customer acceptance test team, or a player once the product has been deployed</dd>
 
 					<dt>Fantasy sports</dt>
 					<dd>A type of online game where participants assemble imaginary or virtual teams of real players of a professional sport</dd>
@@ -1125,7 +1130,7 @@
 					<dd>The game outcome obtained by a VLT from a database of pre-determined outcomes</dd>
 
 					<dt>First pass percentage</dt>
-					<dd>The percentage of games that receive certification from an ITL on the first submission of a product</dd>
+					<dd>The percentage of games that receive certification from an <abbr title="Independent Test Lab">ITL</abbr> on the first submission of a product</dd>
 
 					<dt>Future wager</dt>
 					<dd>A bet made with a long-term horizon measured in weeks or months that is placed before the sports season starts or on occasion midway through a season, and if successful, is paid at the end of the season</dd>
@@ -1140,10 +1145,10 @@
 					<dd>The physical components which make up the gambling ecosystem</dd>
 
 					<dt>Gambling platform</dt>
-					<dd>The entity which contains the hardware, the EGM, the operating systems and runtime libraries that reside on the EGM and / or on the servers on which casino games run</dd>
+					<dd>The entity which contains the hardware, the <abbr title="Electronic Gaming Machine">EGM</abbr>, the operating systems and runtime libraries that reside on the <abbr title="Electronic Gaming Machine">EGM</abbr> and / or on the servers on which casino games run</dd>
 
 					<dt>Gambling regulatory commission</dt>
-					<dd>An organization that is responsible for approving every game played in its jurisdiction after the ITL certifies that the game meets the commission’s regulatory specifications</dd>
+					<dd>An organization that is responsible for approving every game played in its jurisdiction after the <abbr title="Independent Test Lab">ITL</abbr> certifies that the game meets the commission’s regulatory specifications</dd>
 
 					<dt>Gambling software</dt>
 					<dd>A set of components containing source code, game graphics, mathematical models, sound effects and music which grouped together, make a game that is installed on a gambling machine</dd>
@@ -1155,7 +1160,7 @@
 					<dd>The gambling industry software development lifecycle phase in which game play functionality is developed and implemented, math functionality is completed, video and audio components are partially finished, and the game contains the major features</dd>
 
 					<dt>Game Authentic Terminal (GAT)</dt>
-					<dd>The process performed by the host to verify or validate the hash code value result of the files on the EGM terminal that is triggered by an event on the VLT</dd>
+					<dd>The process performed by the host to verify or validate the hash code value result of the files on the <abbr title="Electronic Gaming Machine">EGM</abbr> terminal that is triggered by an event on the VLT</dd>
 
 					<dt>Game design phase</dt>
 					<dd>The gambling industry software development lifecycle phase in which the development team produces the first version of a Game Design document incorporating all or most of the material from the product development plan, the artwork, mathematical models and prototype results</dd>
@@ -1314,7 +1319,7 @@
 					<dd>A set of initiatives aimed at educating players to play responsibly</dd>
 
 					<dt>Resubmittal factor</dt>
-					<dd>The number of times a game must be resubmitted to the ITL to pass certification</dd>
+					<dd>The number of times a game must be resubmitted to the <abbr title="Independent Test Lab">ITL</abbr> to pass certification</dd>
 
 					<dt>Retailer</dt>
 					<dd>The licensed owner of the casino or lottery terminal</dd>
@@ -1323,7 +1328,7 @@
 					<dd>The expected percentage of money wagered on a gambling machine that is returned to players in the form of winnings over a large number of spins or over time</dd>
 
 					<dt>Rules and pay and help screens</dt>
-					<dd>Screens available to a player on an EGM to provide guidance on the rules and payouts for the game</dd>
+					<dd>Screens available to a player on an <abbr title="Electronic Gaming Machine">EGM</abbr> to provide guidance on the rules and payouts for the game</dd>
 
 					<dt>Security control standard (SCS)</dt>
 					<dd>The standard designed to help lottery and gambling organizations around the world achieve levels of control that are in accordance with both generally accepted information security and quality practices as well as specific industry requirements</dd>
@@ -1346,7 +1351,7 @@
 					<dt>Slot machine</dt>
 					<dd>A casino gambling machine that contains mechanical reels or a video display, a random number generator, and optional currency input and output devices</dd>
 
-					<dt>Slot machine interface board (SMIB)</dt>
+					<dt>Slot machine interface board (<abbr title="Slot Machine Interface Board">SMIB</abbr>)</dt>
 					<dd>A casino gambling machine that contains mechanical reels or a video display, a random number generator, and optional currency input and output devices</dd>
 
 					<dt>Social gambling</dt>
@@ -1370,7 +1375,7 @@
 					<dt>Theoretical hold versus actual hold report</dt>
 					<dd>A report that shows the amount of money a casino can theoretically anticipate earning from a particular gambling machine over the long run</dd>
 
-					<dt>Ticket-in/ticket-out (TITO)</dt>
+					<dt>Ticket-in/ticket-out (<abbr title="Ticket-In Ticket-Out">TITO</abbr>)</dt>
 					<dd>A slip of paper with a barcode indicating the amount of money represented</dd>
 
 					<dt>Tilt switch</dt>
@@ -1386,7 +1391,7 @@
 					<dd>The amount that the game’s payback percentage will vary for a given number of games played</dd>
 
 					<dt>Voucher</dt>
-					<dd>A piece of paper that is printed when a player cashes out an EGM that entitles the holder to a certain amount of money</dd>
+					<dd>A piece of paper that is printed when a player cashes out an <abbr title="Electronic Gaming Machine">EGM</abbr> that entitles the holder to a certain amount of money</dd>
 
 					<dt>World Lottery Association</dt>
 					<dd>A member-based organization to advance the interests of state-authorized lotteries</dd>
@@ -1395,6 +1400,6 @@
 
 		</div><!--/column-->
 	</div><!--/flex row-->
-</main><!--/container-->
+</div><!--/container-->
 
 </body>
