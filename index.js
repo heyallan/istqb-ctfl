@@ -188,7 +188,21 @@ window.addEventListener('click', function(event) {
 })();
 
 
-
+// calculator
+(function() {
+	const calculator = document.querySelector('#calculator');
+	if (!calculator) return false;
+	const display = calculator.querySelector('[data-id="calc-display"]');
+	calculator.addEventListener('click', function(event) {
+		 const key = event.target.closest('[data-id="calc-key"]');
+		 const clear = event.target.closest('[data-id="calc-clear"]');
+		 const submit = event.target.closest('[data-id="calc-submit"]');
+		 if (key && display.innerText === '0') display.innerText = '';
+		 if (key) display.innerText += key.innerText;
+		 if (clear) display.innerText = '0';
+		 if (submit) display.innerText = eval(display.innerText);
+	});
+})();
 
 
 

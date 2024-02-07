@@ -23,8 +23,10 @@
 
 <ui-navbar></ui-navbar>
 
-<main class="container margin-top-2">
-	<!--title-->
+<div class="container margin-top-2">
+	<div class="display-flex gap-2">
+		<div class="width-12 width-8-md">
+			<!--title-->
 	<h1><span class="underscore">Practice Assessment #1 - Gambling Industry Tester (CT-GT)</span></h1>
 	<h2 class="font-weight-400 color-primary">This assessment contains questions and answers and associated justifications</h2>
 
@@ -871,7 +873,40 @@
 	  	</div><!-- /actions -->
 
 	</form><!--/exam-->
-</main>
+		</div><!-- /column -->
+		<div class="width-12 width-4-md">
+			<h2>Notebook</h2>
+			<textarea
+					name=""
+					id=""
+					cols="30"
+					rows="5"></textarea>
+			<h2>Calculator</h2>
+            <div class="padding-2 box-shadow border border-radius-0.3">
+                <div id="calculator" class="display-grid gap-1 font-family-mono text-align-center">
+                    <div class="width-12 padding-1 border-1 text-align-right" data-id="calc-display">0</div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">7</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">8</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">9</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">+</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">4</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">5</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">6</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">-</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">1</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">2</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">3</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">*</button></div>
+                    <div class="width-6"><button class="padding-1 border-1 display-block" data-id="calc-key">0</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">.</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-key">/</button></div>
+                    <div class="width-3"><button class="padding-1 border-1 display-block" data-id="calc-clear">C</button></div>
+                    <div class="width-9"><button class="padding-1 border-1 display-block" data-id="calc-submit">=</button></div>
+                </div><!-- /calc -->
+            </div>
+		</div>
+	</div><!-- /column -->
+</div><!-- /container -->
 
 </body>
 
