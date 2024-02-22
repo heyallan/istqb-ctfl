@@ -45,21 +45,26 @@ window.addEventListener('click', function(event) {
 	// finish assessment
 	if (button.matches('[data-action="finish"]')) {
 		form.classList.add('highlight-answers');
-		const formData = new FormData(form);
-		let answers = [];
 		// variables
 		let actualPoints = 0;
 		let actualScore = 0;
-		let message = '';
-		// iterate FormData values
+		// get field values
+		const answers = [];
+		const formFields = form.querySelectorAll('input');
+		for (const currentField of formFields) {
+			if (!currentField.checked) continue;
+			answers.push([currentField.id, currentField.value]);
+			actualPoints += parseInt(currentField.value);
+		}
+		// iterate FormData values (formData does not have access to element attributes)
+		const formData = new FormData(form);
 		for (const [name, value] of formData) {
 			answers.push([name, value]);
 			if (value === '1') { actualPoints++ }
 			else {}
 		}
 		// save answers
-		answers = JSON.stringify(answers);
-		localStorage.setItem(form.id, answers);
+		localStorage.setItem(form.id, JSON.stringify(answers));
 		// compute results
 		actualScore = (actualPoints / maxPoints) * 100;
 		// update interface

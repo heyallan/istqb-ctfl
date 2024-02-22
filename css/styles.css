@@ -200,3 +200,10 @@ table {
 th, td {
 	vertical-align:top;
 }
+
+
+details {
+	& a {
+		display: inline;
+	}
+}

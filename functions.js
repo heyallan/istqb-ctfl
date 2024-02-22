@@ -59,16 +59,18 @@ function displayStatus() {
 	});
 }
 
-
+/**
+ * refactor later
+ */
 function refillForm() {
-	const formId = document.forms[0]?.id;
-	if (!formId) { return; }
-	const options = JSON.parse(localStorage.getItem(formId));
-	if (!options) { return; }
-	for (let optionName of options) {
-		optionName = optionName[0];
-		document.querySelector(`[name="${optionName}"]`).checked = true;
-	}
+//	const formId = document.forms[0]?.id;
+//	if (!formId) { return; }
+//	const options = JSON.parse(localStorage.getItem(formId));
+//	if (!options) { return; }
+//	for (let optionName of options) {
+//		optionName = optionName[0];
+//		document.querySelector(`[name="${optionName}"]`).checked = true;
+//	}
 }
 
 
