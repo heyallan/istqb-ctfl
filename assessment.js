@@ -23,7 +23,7 @@ document.querySelector('.max-points').innerText = maxPoints;
 
 window.addEventListener('click', function(event) {
 
-	// get the button
+	// get clicked button
 	const button = event.target.closest('button');
 	if (button === null) return false;
 
@@ -44,26 +44,29 @@ window.addEventListener('click', function(event) {
 
 	// finish assessment
 	if (button.matches('[data-action="finish"]')) {
+		// highlight results
 		form.classList.add('highlight-answers');
-		// variables
+		// data points
+		const answers = [];
 		let actualPoints = 0;
 		let actualScore = 0;
-		// get field values
-		const answers = [];
-		const formFields = form.querySelectorAll('input');
-		for (const currentField of formFields) {
-			if (!currentField.checked) continue;
-			answers.push([currentField.id, currentField.value]);
-			actualPoints += parseInt(currentField.value);
+
+		// count data
+		for (const input of form.querySelectorAll('input')) {
+			// skip empty answers
+			if (input.checked === false) continue;
+			// mark incorrect answers
+			if (input.value === '0') {
+				const status = document.createElement('span');
+				status.innerText = ' (Incorrect)';
+				status.classList.add('color-red');
+				input.closest('fieldset').querySelector('legend').insertAdjacentElement('beforeend', status);
+			}
+			// accumulate
+			answers.push([input.id, input.value]);
+			actualPoints += parseInt(input.value);
 		}
-		// iterate FormData values (formData does not have access to element attributes)
-		const formData = new FormData(form);
-		for (const [name, value] of formData) {
-			answers.push([name, value]);
-			if (value === '1') { actualPoints++ }
-			else {}
-		}
-		// save answers
+		// save answers to memory
 		localStorage.setItem(form.id, JSON.stringify(answers));
 		// compute results
 		actualScore = (actualPoints / maxPoints) * 100;

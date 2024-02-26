@@ -448,17 +448,17 @@
 				<p class="learning-objective color-secondary">ALTA-E-3.1.1 (K2) Explain the structure of the <abbr title="Generic Test Automation Architecture">gTAA</abbr></p>
 				<p>The <abbr title="Generic Test Automation Architecture">gTAA</abbr> is structured into horizontal layers for the following:</p>
 				<ul>
-					<li>Test generation</li>
-					<li>Test definition</li>
-					<li>Test execution</li>
-					<li>Test adaptation</li>
+					<li><strong>Test generation</strong></li>
+					<li><strong>Test definition</strong></li>
+					<li><strong>Test execution</strong></li>
+					<li><strong>Test adaptation</strong></li>
 				</ul>
 				<p>The <abbr title="Generic Test Automation Architecture">gTAA</abbr> (see Figure 1: The Generic Test Automation Architecture) encompasses the following:</p>
 				<ul>
-					<li>The Test Generation Layer that supports the manual or automated design of test cases. It provides the means for designing test cases.</li>
-					<li>The Test Definition Layer that supports the definition and implementation of test suites and/or test cases. It separates the test definition from the <abbr title="System Under Test">SUT</abbr> and/or test system technologies and tools. It contains means to define high-level and low-level tests, which are handled in the test data, test cases, test procedures, and test library components or combinations thereof.</li>
-					<li>The Test Execution Layer that supports the execution of test cases and test logging. It provides a test execution tool to execute the selected tests automatically and a logging and reporting component.</li>
-					<li>The Test Adaptation Layer which provides the necessary code to adapt the automated tests for the various components or interfaces of the <abbr title="System Under Test">SUT</abbr>. It provides different adaptors for connecting to the <abbr title="System Under Test">SUT</abbr> via APIs, protocols, services, and others.</li>
+					<li><strong>The Test Generation Layer</strong> that supports the manual or automated design of test cases. It provides the means for designing test cases.</li>
+					<li><strong>The Test Definition Layer</strong> that supports the definition and implementation of test suites and/or test cases. It separates the test definition from the <abbr title="System Under Test">SUT</abbr> and/or test system technologies and tools. It contains means to define high-level and low-level tests, which are handled in the test data, test cases, test procedures, and test library components or combinations thereof.</li>
+					<li><strong>The Test Execution Layer</strong> that supports the execution of test cases and test logging. It provides a test execution tool to execute the selected tests automatically and a logging and reporting component.</li>
+					<li><strong>The Test Adaptation Layer</strong> which provides the necessary code to adapt the automated tests for the various components or interfaces of the <abbr title="System Under Test">SUT</abbr>. It provides different adaptors for connecting to the <abbr title="System Under Test">SUT</abbr> via APIs, protocols, services, and others.</li>
 					<li>It also has interfaces for project management, configuration management and test management in relation to test automation. For example, the interface between test management and test adaptation layer copes with the selection and configuration of the appropriate adaptors in relation to the chosen test configuration.</li>
 				</ul>
 				<p>The interfaces between the <abbr title="Generic Test Automation Architecture">gTAA</abbr> layers and their components are typically specific and, therefore, not further elaborated here.</p>
@@ -667,6 +667,20 @@
 					<li>Model-based testing (including the process-driven approach), which can be used for option 4</li>
 				</ul>
 				<p>These approaches are explained subsequently in terms of principal concepts and pros and cons.</p>
+
+				<div class="bg-primary-light padding-1 margin-bottom-1">
+					<p class="font-weight-700">Summary:</p>
+					<ul class="margin-0">
+						<li><strong>Capture/playback approach:</strong> Tools are used to capture interactions with the SUT.</li>
+						<li><strong>Linear scripting:</strong> Each test is run manually while the test tool records the sequence of actions (procedural scripting)</li>
+						<li><strong>Structured scripting:</strong> The major difference between the structured scripting technique and the linear scripting technique is the introduction of a script library (uses scripting library)</li>
+						<li><strong>Data-driven testing:</strong> The inputs are extracted from the scripts and put into a separate data file (scripts derive from data file)</li>
+						<li><strong>Keyword-driven testing:</strong> Keywords represent high level business interactions with the system (keyword scripting) (e.g., “place order”) (represent steps)</li>
+						<li><strong>Process-driven scripting:</strong> scenarios constitute the scripts which are parameterized with test data or combined into higher-level test definitions (sceanrio based scripting) (e.g., ‘check order status’ after ‘place order’ in feature testing or ‘check order status’ without previous ‘place order’ in robustness testing) (represent flows)</li>
+						<li><strong>Model-based testing:</strong> automated generation of test cases (finite state machine automation) (automation from UML or source code)</li>
+					</ul>
+				</div>
+
 				<p><strong>Capture/playback approach</strong></p>
 				<p><em>Principal concept</em></p>
 				<ul>
